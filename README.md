@@ -1,4 +1,4 @@
-# Ronin oncology FHIR profile
+# Ronin Oncology FHIR Profile
 The Ronin oncology FHIR profile assembles a core set of structured data elements for oncology based on FHIR 4.0.1 and mCODE™ standards.  While mCODE™ is a step towards capturing research-quality data from the treatment of all cancer patients, Ronin's profile modifies/extends mCODE™ to include partner-specific information necessary for Ronin's products.
 
 # FHIR Shorthand (FSH aka fish)
@@ -9,7 +9,7 @@ The following references provide information about FHIR Shorthand:
  
 This code is a first step to define the Ronin profile constraints and extensions on FHIR.  The Ronin profiles are generated using the [sushi](https://github.com/FHIR/sushi) compiler as shown in the **Build process** section.
 
-# Build process
+# Build Process
 To build the profiles, use the following commands:
 ```
 $ npm install -g fsh-sushi
