@@ -1,6 +1,8 @@
 # Ronin Oncology FHIR Profile
 The Ronin oncology FHIR profile assembles a core set of structured data elements for oncology based on FHIR 4.0.1 and mCODE™ standards.  While mCODE™ is a step towards capturing research-quality data from the treatment of all cancer patients, Ronin's profile modifies/extends mCODE™ to include partner-specific information necessary for Ronin's products.
 
+The mapping between MDA Resources and Ronin R4/mCODE is detailed in the [FHIR Resources](https://docs.google.com/spreadsheets/d/1qSqmaAK_GaDUUZACUQ6TI5Q9qvQ2BwvQ_KRjl10OoU0/edit?ts=60be5536#gid=0) sheet.
+
 # FHIR Shorthand (FSH aka fish)
 The following references provide information about FHIR Shorthand:
 1. [FHIR Profiling: Overview and Information](https://www.youtube.com/watch?v=dku3lqIYEls)
