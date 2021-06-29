@@ -36,4 +36,4 @@ All profiles will be in `fsh-generated` directory and implementation guide in `o
 - [ ] Implement github actions to compile profiles and generate Implementation Guide.
 - [ ] Implement github actions to deploy new Implementation Guide to hosting platform.
 - [ ] Peer review with clinical/product teams to ensure specifications meet Ronin's requirements.
-- [ ] Explore how to differentiate Patient and Provider Appointments - maybe add a flag extension and consolidate the structures?
+- [ ] Consolidate Patient and Provider Appointments FSH structures - no need to differentiate types.
