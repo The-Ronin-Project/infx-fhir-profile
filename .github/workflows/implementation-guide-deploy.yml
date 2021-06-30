@@ -20,13 +20,15 @@ jobs:
           with:
             ssh-private-key: ${{ secrets.DP_RONIN_FHIR_PROFILE_PAGES_PRIV_KEY }}
         - run: |
+            npm install -g fsh-sushi
+            ./_updatePublisher.sh
+            sushi .
+            ./_genonce.sh
             cd ..
             git clone git@github.com:projectronin/dp-ronin-fhir-profile-pages.git
             git config --global user.email "data-platform@projectronin.com"
             git config --global user.name "data platform auto user"
             rm -rf dp-ronin-fhir-profile-pages/docs
-            mkdir -p dp-ronin-fhir-profile/output
-            echo "TEST" >> dp-ronin-fhir-profile/output/file.html
             cp -rp dp-ronin-fhir-profile/output dp-ronin-fhir-profile-pages/docs
             cd dp-ronin-fhir-profile-pages
             git add docs
