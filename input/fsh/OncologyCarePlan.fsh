@@ -11,9 +11,16 @@ Description: "A CarePlan resource that is used for oncology patients"
 * ^experimental = true
 * activity MS
 * activity.detail MS
-// * subject MS default
+* extension contains OncologyCarePlanTreatmentDayName named treatmentDayName 0..1
 
-// Try deleting goal, identifier, title as already included in USCore
-// * goal MS
-// * identifier MS
-// * title MS
+Extension: OncologyCarePlanTreatmentDayName
+Id:  treatmentDayName
+Title: "Treatment Day Name"
+Description: "Treatment Day Name"
+* value[x] only string
+
+Extension: OncologyCarePlanTreatmentDayNumber
+Id:  treatmentDayName
+Title: "Treatment Day Number"
+Description: "Treatment Day Number"
+* value[x] only decimal
