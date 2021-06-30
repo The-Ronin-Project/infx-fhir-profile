@@ -20,7 +20,7 @@ jobs:
           with:
             ssh-private-key: ${{ secrets.DP_RONIN_FHIR_PROFILE_PAGES_PRIV_KEY }}
         - run: |
-            npm install -g fsh-sushi
+            sudo npm install -g fsh-sushi
             ./_updatePublisher.sh
             sushi .
             ./_genonce.sh
