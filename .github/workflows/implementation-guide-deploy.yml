@@ -15,22 +15,28 @@ jobs:
           id: short-sha
           with:
             length: 8
-        - name: Copy guide to dp-ronin-fhir-profile-page
-          uses: webfactory/ssh-agent@v0.5.1
+        - uses: webfactory/ssh-agent@v0.5.1
           with:
             ssh-private-key: ${{ secrets.DP_RONIN_FHIR_PROFILE_PAGES_PRIV_KEY }}
-        - run: |
-            sudo npm install -g fsh-sushi
-            ./_updatePublisher.sh
-            sushi .
-            ./_genonce.sh
+        - name: Install fsh-sushi
+          run: sudo npm install -g fsh-sushi
+        - name: Install jekyll
+          run: sudo gem install jekyll
+        - name: Update Publisher
+          run: ./_updatePublisher.sh -y
+        - name: Run sushi
+          run: sushi .
+        - name: Run genonce
+          run: ./_genonce.sh
+        - name: Copy guide to dp-ronin-fhir-profile-page
+          run: |
             cd ..
-            git clone git@github.com:projectronin/dp-ronin-fhir-profile-pages.git
+            git clone git@github.com:projectronin/dp-ronin-fhir-profile-ig.git
             git config --global user.email "data-platform@projectronin.com"
             git config --global user.name "data platform auto user"
-            rm -rf dp-ronin-fhir-profile-pages/docs
-            cp -rp dp-ronin-fhir-profile/output dp-ronin-fhir-profile-pages/docs
-            cd dp-ronin-fhir-profile-pages
+            rm -rf dp-ronin-fhir-profile-ig/docs
+            cp -rp dp-ronin-fhir-profile/output dp-ronin-fhir-profile-ig/docs
+            cd dp-ronin-fhir-profile-ig
             git add docs
-            git commit -m "refreshing dp Ronin FHIR profile docs ${{ steps.short-sha.outputs.sha }}"
+            git commit -m "Refreshing DP Ronin FHIR profile docs ${{ steps.short-sha.outputs.sha }}"
             git push
