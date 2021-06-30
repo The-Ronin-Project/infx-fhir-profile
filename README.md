@@ -32,7 +32,7 @@ All profiles will be in `fsh-generated` directory and implementation guide in `o
 - [ ] Finish CarePlan resource to model TreatmentPlan.
 - [ ] Add Extensions where noted in fsh files.
 - [ ] Finish TNM representations in stagings to model after mCODE CancerStaging.
-- [ ] Add FSH code for each resource that generate sample resources for testing.
+- [ ] Add FSH code for each resource to generate sample JSON for testing.
 - [ ] Implement github actions to compile profiles and generate Implementation Guide.
 - [ ] Implement github actions to deploy new Implementation Guide to hosting platform.
 - [ ] Peer review with clinical/product teams to ensure specifications meet Ronin's requirements.
