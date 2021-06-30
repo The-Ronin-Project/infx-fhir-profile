@@ -20,7 +20,19 @@ Description: "Treatment Day Name"
 * value[x] only string
 
 Extension: OncologyCarePlanTreatmentDayNumber
-Id:  treatmentDayName
+Id:  treatmentDayNumber
 Title: "Treatment Day Number"
 Description: "Treatment Day Number"
 * value[x] only decimal
+
+Extension: OncologyCarePlanStartDate
+Id:  treatmentStartDate
+Title: "Treatment Plan Start Date"
+Description: "Treatment Plan Start Date"
+* value[x] only date
+
+Extension: OncologyCarePlanEndDate
+Id:  treatmentEndDate
+Title: "Treatment Plan End Date"
+Description: "Treatment Plan End Date"
+* value[x] only date
