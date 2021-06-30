@@ -61,5 +61,5 @@ Description: "A DocumentReference resource that is used to model note details fo
 // cosignTime	
 // cosigner	
 
-//* context.related.extension contains Reference(RoninDeletionStatus)
-//* context.related contains Reference(RoninDeletionStatus) 0..1
+// TODO(theo): may need to register this somewhere before referencing?
+* deletionStatus only Reference(RoninDeletionStatus)
