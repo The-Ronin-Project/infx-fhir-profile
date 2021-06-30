@@ -13,9 +13,6 @@ Description: "A DocumentReference resource that is used to model note details fo
 * ^experimental = true
 * identifier MS
 * status MS
-//isDeleted	Need an extension
-//deletionUser	
-//deletionTime	
 //lastEditTime	N/A
 * date MS //creationTime
 * context MS
@@ -61,5 +58,24 @@ Description: "A DocumentReference resource that is used to model note details fo
 // cosignTime	
 // cosigner	
 
-// TODO(theo): may need to register this somewhere before referencing?
-* deletionStatus only Reference(RoninDeletionStatus)
+* extension contains OncologyDocumentReferenceIsDeleted named isDeleted 0..1
+* extension contains OncologyDocumentReferenceDeletionUser named deletionUser 0..1
+* extension contains OncologyDocumentReferenceDeletionTime named deletionTime 0..1
+
+Extension: OncologyDocumentReferenceIsDeleted
+Id:  isDeleted
+Title: "Is Deleted"
+Description: "Document Reference is Deleted"
+* value[x] only boolean
+
+Extension: OncologyDocumentReferenceDeletionUser
+Id:  deletionUser
+Title: "Deletion User"
+Description: "Deletion User"
+* value[x] only string
+
+Extension: OncologyDocumentReferenceDeletionTime
+Id:  deletionTime
+Title: "Deletion Time"
+Description: "Deletion Time"
+* value[x] only dateTime
