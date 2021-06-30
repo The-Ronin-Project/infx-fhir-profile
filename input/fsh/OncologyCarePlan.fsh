@@ -12,6 +12,12 @@ Description: "A CarePlan resource that is used for oncology patients"
 * activity MS
 * activity.detail MS
 * extension contains OncologyCarePlanTreatmentDayName named treatmentDayName 0..1
+* extension contains OncologyCarePlanTreatmentDayNumber named treatmentDayNumber 0..1
+* extension contains OncologyCarePlanStartDate named treatmentStartDate 0..1
+* extension contains OncologyCarePlanEndDate named treatmentEndDate 0..1
+* extension contains OncologyCarePlanLineOfTreatment named lineOfTreatment 0..1
+* extension contains OncologyCarePlanDayStatus named dayStatus 0..1
+* extension contains OncologyCarePlanCycleName named cycleName 0..1
 
 Extension: OncologyCarePlanTreatmentDayName
 Id:  treatmentDayName
