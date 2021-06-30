@@ -36,3 +36,15 @@ Id:  treatmentEndDate
 Title: "Treatment Plan End Date"
 Description: "Treatment Plan End Date"
 * value[x] only date
+
+Extension: OncologyCarePlanLineOfTreatment
+Id:  lineOfTreatment
+Title: "Line of Treatment"
+Description: "Line of Treatment"
+* value[x] only string
+
+Extension: OncologyCarePlanDayStatus
+Id:  dayStatus
+Title: "Treatment Day Status"
+Description: "Treatment Day Status"
+* value[x] only string
