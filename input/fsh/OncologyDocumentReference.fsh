@@ -81,4 +81,4 @@ Extension: OncologyDocumentReferenceDeletionTime
 Id:  deletionTime
 Title: "Deletion Time"
 Description: "Deletion Time"
-* value[x] only datetime
+* value[x] only dateTime
