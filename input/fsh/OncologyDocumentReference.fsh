@@ -61,6 +61,9 @@ Description: "A DocumentReference resource that is used to model note details fo
 // cosignTime	
 // cosigner	
 
+//* context.related.extension contains Reference(RoninDeletionStatus)
+//* context.related include deletionStatus 0..1
+
 * extension contains OncologyDocumentReferenceIsDeleted named isDeleted 0..1
 * extension contains OncologyDocumentReferenceDeletionUser named deletionUser 0..1
 * extension contains OncologyDocumentReferenceDeletionTime named deletionTime 0..1
