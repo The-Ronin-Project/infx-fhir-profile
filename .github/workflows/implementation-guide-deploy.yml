@@ -3,7 +3,7 @@ name: Compile and deploy Ronin FHIR implementation guide
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 jobs:
   update_dp_ronin_profile_pages:
