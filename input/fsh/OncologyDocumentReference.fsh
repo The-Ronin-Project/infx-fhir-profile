@@ -46,15 +46,6 @@ Description: "A DocumentReference resource that is used to model note details fo
 // author.displayName	
 // author.ini	
 // author.recordLastUpdatedOn	
-// lastEditor.id	extension required
-// lastEditor.extId	
-// lastEditor.name	
-// lastEditor.displayName	
-// lastEditor.ini	
-// lastEditor.recordLastUpdatedOn	
-// cosignRequirement.abbreviation	extension required
-// cosignRequirement.title	
-// cosignRequirement.value	
 // cosignTime	
 // cosigner	
 
@@ -79,3 +70,13 @@ Id:  deletionTime
 Title: "Deletion Time"
 Description: "Deletion Time"
 * value[x] only dateTime
+
+// lastEditor.id	extension required
+// lastEditor.extId	
+// lastEditor.name	
+// lastEditor.displayName	
+// lastEditor.ini	
+// lastEditor.recordLastUpdatedOn	
+// cosignRequirement.abbreviation	extension required
+// cosignRequirement.title	
+// cosignRequirement.value	

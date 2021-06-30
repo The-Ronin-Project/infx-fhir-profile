@@ -17,3 +17,6 @@ Alias:   USCoreCarePlan = http://hl7.org/fhir/us/core/StructureDefinition/us-cor
 Alias:   USCoreBirthSex = http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex
 Alias:   USCoreRace = http://hl7.org/fhir/us/core/StructureDefinition/us-core-race
 Alias:   USCoreEthnicity = http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity
+
+Alias: LastEditor = http://projectronin.com/fhir/us/ronin/StructureDefinition/document-reference-last-editor
+
