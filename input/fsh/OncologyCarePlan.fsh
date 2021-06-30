@@ -60,3 +60,15 @@ Id:  cycleName
 Title: "Cycle Name"
 Description: "Cycle Name"
 * value[x] only string
+
+Extension: OncologyCarePlanCycleNumber
+Id:  cycleNumber
+Title: "Cycle Number"
+Description: "Cycle Number"
+* value[x] only decimal
+
+Extension: OncologyCarePlanCycleStartDate
+Id:  cycleStartDate
+Title: "Cycle Start Date"
+Description: "Cycle Start Date"
+* value[x] only date
