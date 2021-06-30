@@ -24,10 +24,11 @@ jobs:
             git clone git@github.com:projectronin/dp-ronin-fhir-profile-pages.git
             git config --global user.email "data-platform@projectronin.com"
             git config --global user.name "data platform auto user"
-            rm -rf dp-ronin-fhir-profile-page/docs
+            rm -rf dp-ronin-fhir-profile-pages/docs
             mkdir -p dp-ronin-fhir-profile/output
             echo "TEST" >> dp-ronin-fhir-profile/output/file.html
-            cp -rp dp-ronin-fhir-profile/output dp-ronin-fhir-profile-page/docs
-            git add dp-ronin-fhir-profile-page/docs
+            cp -rp dp-ronin-fhir-profile/output dp-ronin-fhir-profile-pages/docs
+            cd dp-ronin-fhir-profile-pages
+            git add docs
             git commit -m "refreshing dp Ronin FHIR profile docs ${{ steps.short-sha.outputs.sha }}"
             git push
