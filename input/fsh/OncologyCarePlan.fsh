@@ -48,3 +48,9 @@ Id:  dayStatus
 Title: "Treatment Day Status"
 Description: "Treatment Day Status"
 * value[x] only string
+
+Extension: OncologyCarePlanCycleName
+Id:  cycleName
+Title: "Cycle Name"
+Description: "Cycle Name"
+* value[x] only string
