@@ -9,10 +9,6 @@ Description: "A Deletion Status models when a related Resource was deleted and b
 
 * ^status = #draft
 * ^experimental = true
-// * identifier MS
-// * isDeleted MS
-// * deletionUser MS
-// * deletionTime MS
 
 * extension contains RoninIsDeleted named isDeleted 0..1
 * extension contains RoninDeletionUser named deletionUser 0..1
