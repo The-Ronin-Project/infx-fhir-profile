@@ -6,7 +6,7 @@ on:
     branches: [DP-693]
 
 jobs:
-  update_ichi:
+  update_dp_ronin_profile_pages:
     runs-on: ubuntu-latest
 
     steps:
@@ -25,6 +25,8 @@ jobs:
             git config --global user.email "data-platform@projectronin.com"
             git config --global user.name "data platform auto user"
             rm -rf dp-ronin-fhir-profile-page/docs
+            mkdir -p dp-ronin-fhir-profile/output
+            echo "TEST" >> dp-ronin-fhir-profile/output/file.html
             cp -rp dp-ronin-fhir-profile/output dp-ronin-fhir-profile-page/docs
             git add dp-ronin-fhir-profile-page/docs
             git commit -m "refreshing dp Ronin FHIR profile docs ${{ steps.short-sha.outputs.sha }}"
