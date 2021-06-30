@@ -62,26 +62,4 @@ Description: "A DocumentReference resource that is used to model note details fo
 // cosigner	
 
 //* context.related.extension contains Reference(RoninDeletionStatus)
-//* context.related include deletionStatus 0..1
-
-* extension contains OncologyDocumentReferenceIsDeleted named isDeleted 0..1
-* extension contains OncologyDocumentReferenceDeletionUser named deletionUser 0..1
-* extension contains OncologyDocumentReferenceDeletionTime named deletionTime 0..1
-
-Extension: OncologyDocumentReferenceIsDeleted
-Id:  isDeleted
-Title: "Is Deleted"
-Description: "Document Reference is Deleted"
-* value[x] only boolean
-
-Extension: OncologyDocumentReferenceDeletionUser
-Id:  deletionUser
-Title: "Deletion User"
-Description: "Deletion User"
-* value[x] only string
-
-Extension: OncologyDocumentReferenceDeletionTime
-Id:  deletionTime
-Title: "Deletion Time"
-Description: "Deletion Time"
-* value[x] only dateTime
+//* context.related contains Reference(RoninDeletionStatus) 0..1
