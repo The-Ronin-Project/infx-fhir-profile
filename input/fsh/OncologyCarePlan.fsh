@@ -18,6 +18,8 @@ Description: "A CarePlan resource that is used for oncology patients"
 * extension contains OncologyCarePlanLineOfTreatment named lineOfTreatment 0..1
 * extension contains OncologyCarePlanDayStatus named dayStatus 0..1
 * extension contains OncologyCarePlanCycleName named cycleName 0..1
+* extension contains OncologyCarePlanCycleNumber named cycleNumber 0..1
+* extension contains OncologyCarePlanCycleStartDate named cycleStartDate 0..1
 
 Extension: OncologyCarePlanTreatmentDayName
 Id:  treatmentDayName
