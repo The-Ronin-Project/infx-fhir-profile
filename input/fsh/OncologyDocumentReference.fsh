@@ -87,7 +87,7 @@ Description: "Deletion Time"
 DocumentReferenceLastEditor
 */
 Extension: DocumentReferenceLastEditor
-Id: documentReferenceLastEditor
+Id: lastEditor
 Title: "Last Editor"
 Description: "Last Editor"
 * extension contains id 0..1
