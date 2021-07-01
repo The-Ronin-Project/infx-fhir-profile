@@ -1,6 +1,8 @@
 /*
 DocumentReferenceLastEditor
 */
+
+/*
 Profile: DocumentReferenceLastEditor
 Parent: Basic
 Id: document-reference-last-editor
@@ -22,3 +24,4 @@ Description: "Last Editor"
 // cosignRequirement.title	
 // cosignRequirement.value	
 
+*/
