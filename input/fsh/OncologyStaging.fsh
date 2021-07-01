@@ -33,7 +33,9 @@ Description: "Diagnosis Date"
 * value[x] only dateTime
 
 
-//diagnosisDate
+// TODO(theo): all these probably exist in mCode
+// Need Clinical help to map fields and find correct field in mCode
+// Requires interpreting clinical concepts
 //erStatus
 //heR2Status
 //histologicGrade.grade
