@@ -108,3 +108,12 @@ Description: "Cosign Requirement"
 * extension contains abbreviation 0..1
 * extension contains title 0..1
 * extension contains value 0..1
+
+/*
+Cosigner
+*/
+Extension: Cosigner
+Id: cosigner
+Title: "Cosigner"
+Description: "Cosigner"
+* value[x] only string
