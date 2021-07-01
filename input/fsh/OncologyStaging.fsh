@@ -9,3 +9,10 @@ Description: "A cancer stagings that uses mCODE to model TNM stagings for oncolo
 
 * ^status = #draft
 * ^experimental = true
+* extension contains Classification named classification 0..1
+
+Extension: Classification
+Id:  classification
+Title: "Classification"
+Description: "Classification"
+* value[x] only string
