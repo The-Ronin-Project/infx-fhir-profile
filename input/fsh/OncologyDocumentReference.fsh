@@ -46,14 +46,14 @@ Description: "A DocumentReference resource that is used to model note details fo
 // author.displayName	
 // author.ini	
 // author.recordLastUpdatedOn	
-// cosignTime	
-// cosigner	
 
 * extension contains OncologyDocumentReferenceIsDeleted named isDeleted 0..1
 * extension contains OncologyDocumentReferenceDeletionUser named deletionUser 0..1
 * extension contains OncologyDocumentReferenceDeletionTime named deletionTime 0..1
 * extension contains LastEditor named lastEditor 0..1
 * extension contains CosignRequirement named cosignRequirement 0..1
+* extension contains CosignTime named cosignTime 0..1
+* extension contains Cosigner named cosigner 0..1
 
 Extension: OncologyDocumentReferenceIsDeleted
 Id:  isDeleted
@@ -72,16 +72,6 @@ Id:  deletionTime
 Title: "Deletion Time"
 Description: "Deletion Time"
 * value[x] only dateTime
-
-// lastEditor.id	extension required
-// lastEditor.extId	
-// lastEditor.name	
-// lastEditor.displayName	
-// lastEditor.ini	
-// lastEditor.recordLastUpdatedOn	
-// cosignRequirement.abbreviation	extension required
-// cosignRequirement.title	
-// cosignRequirement.value	
 
 
 /*
@@ -117,3 +107,12 @@ Id: cosigner
 Title: "Cosigner"
 Description: "Cosigner"
 * value[x] only string
+
+/*
+Cosign Time
+*/
+Extension: CosignTime
+Id: cosignTime
+Title: "Cosign Time"
+Description: "Cosign Time"
+* value[x] only dateTime
