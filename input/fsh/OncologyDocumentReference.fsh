@@ -52,8 +52,7 @@ Description: "A DocumentReference resource that is used to model note details fo
 * extension contains OncologyDocumentReferenceIsDeleted named isDeleted 0..1
 * extension contains OncologyDocumentReferenceDeletionUser named deletionUser 0..1
 * extension contains OncologyDocumentReferenceDeletionTime named deletionTime 0..1
-* extension contains
-    DocumentReferenceLastEditor named lastEditor 0..1
+* extension contains DocumentReferenceLastEditor named lastEditor 0..1
 
 Extension: OncologyDocumentReferenceIsDeleted
 Id:  isDeleted
@@ -91,8 +90,12 @@ Extension: DocumentReferenceLastEditor
 Id: documentReferenceLastEditor
 Title: "Last Editor"
 Description: "Last Editor"
-* extension contains DocumentReferenceLastEditorIni named ini 0..1
-* extension contains DocumentReferenceLastEditorExtId named extId 0..1
+* extension contains id 0..1
+* extension contains extId 0..1
+* extension contains name 0..1
+* extension contains displayName 0..1
+* extension contains ini 0..1
+* extension contains recordLastUpdatedOn 0..1
 
 // lastEditor.id	extension required
 // lastEditor.extId	
@@ -103,21 +106,3 @@ Description: "Last Editor"
 // cosignRequirement.abbreviation	extension required
 // cosignRequirement.title	
 // cosignRequirement.value	
-
-/*
-DocumentReferenceLastEditorIni
-*/
-Extension: DocumentReferenceLastEditorIni
-Id: ini
-Title: "ini"
-Description: "ini"
-* valueString MS
-
-/*
-DocumentReferenceLastEditorExtId
-*/
-Extension: DocumentReferenceLastEditorExtId
-Id: extId
-Title: "extId"
-Description: "extId"
-* valueString MS
