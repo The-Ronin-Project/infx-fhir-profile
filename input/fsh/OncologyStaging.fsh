@@ -52,3 +52,12 @@ Description: "Diagnosis Date"
 //stageDate
 //stagingMethod
 //tValue
+
+Instance:   OncologyStagingExample
+InstanceOf: OncologyStaging
+// TODO(theo): MDA data doesn't have a plain "status" field
+// but this is required for an Observation
+* status = #active
+* code = SCT#373808002 "Curative - procedure intent"
+* extension[classification].valueString = "Pathologic"
+* valueCodeableConcept = AJCC#cN3 "N3"
