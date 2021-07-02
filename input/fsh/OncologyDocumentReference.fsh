@@ -11,11 +11,8 @@ Description: "A DocumentReference resource that is used to model note details fo
 
 * ^status = #draft
 * ^experimental = true
-//identifier MS
-//status MS
-//isDeleted	Need an extension
-//deletionUser
-//deletionTime
+* identifier MS
+* status MS
 //lastEditTime	N/A
 //date MS //creationTime
 //context MS
@@ -49,14 +46,73 @@ Description: "A DocumentReference resource that is used to model note details fo
 // author.displayName	
 // author.ini	
 // author.recordLastUpdatedOn	
-// lastEditor.id	extension required
-// lastEditor.extId	
-// lastEditor.name	
-// lastEditor.displayName	
-// lastEditor.ini	
-// lastEditor.recordLastUpdatedOn	
-// cosignRequirement.abbreviation	extension required
-// cosignRequirement.title	
-// cosignRequirement.value	
-// cosignTime	
-// cosigner	
+
+* extension contains OncologyDocumentReferenceIsDeleted named isDeleted 0..1
+* extension contains OncologyDocumentReferenceDeletionUser named deletionUser 0..1
+* extension contains OncologyDocumentReferenceDeletionTime named deletionTime 0..1
+* extension contains LastEditor named lastEditor 0..1
+* extension contains CosignRequirement named cosignRequirement 0..1
+* extension contains CosignTime named cosignTime 0..1
+* extension contains Cosigner named cosigner 0..1
+
+Extension: OncologyDocumentReferenceIsDeleted
+Id:  isDeleted
+Title: "Is Deleted"
+Description: "Document Reference is Deleted"
+* value[x] only boolean
+
+Extension: OncologyDocumentReferenceDeletionUser
+Id:  deletionUser
+Title: "Deletion User"
+Description: "Deletion User"
+* value[x] only string
+
+Extension: OncologyDocumentReferenceDeletionTime
+Id:  deletionTime
+Title: "Deletion Time"
+Description: "Deletion Time"
+* value[x] only dateTime
+
+
+/*
+Last Editor
+*/
+Extension: LastEditor
+Id: lastEditor
+Title: "Last Editor"
+Description: "Last Editor"
+* extension contains id 0..1
+* extension contains extId 0..1
+* extension contains name 0..1
+* extension contains displayName 0..1
+* extension contains ini 0..1
+* extension contains recordLastUpdatedOn 0..1
+
+/*
+Cosign Requirement
+*/
+Extension: CosignRequirement
+Id: cosignRequirement
+Title: "Cosign Requirement"
+Description: "Cosign Requirement"
+* extension contains abbreviation 0..1
+* extension contains title 0..1
+* extension contains value 0..1
+
+/*
+Cosigner
+*/
+Extension: Cosigner
+Id: cosigner
+Title: "Cosigner"
+Description: "Cosigner"
+* value[x] only string
+
+/*
+Cosign Time
+*/
+Extension: CosignTime
+Id: cosignTime
+Title: "Cosign Time"
+Description: "Cosign Time"
+* value[x] only dateTime
