@@ -11,6 +11,9 @@ Description: "A CarePlan resource that is used for oncology patients"
 * ^experimental = true
 * activity MS
 * activity.detail MS
+// * goal MS -> included in R4/USCore
+// * title MS -> included in R4/USCore
+
 * extension contains OncologyCarePlanTreatmentDayName named treatmentDayName 0..1
 * extension contains OncologyCarePlanTreatmentDayNumber named treatmentDayNumber 0..1
 * extension contains OncologyCarePlanStartDate named treatmentStartDate 0..1
