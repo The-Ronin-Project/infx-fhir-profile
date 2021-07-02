@@ -1,5 +1,5 @@
 /*
-OncologyPatient profile is a Patient modeled to meet Ronin's minimal requirements/constraints.  
+OncologyPatient profile is a Patient modeled to meet Ronin's minimal requirements/constraints.
 All other fields are automatically inherited from Parent: Patient
 */
 Profile: OncologyPatient
@@ -8,7 +8,7 @@ Id: oncology-patient
 Title: "Oncology Patient"
 Description: "A person who is diagnosed with or is receiving medical treatment for a malignant growth or tumor "
 /*
-identifier contains social security number with Identifier.system = http://hl7.org/fhir/sid/us-ssn and 
+identifier contains social security number with Identifier.system = http://hl7.org/fhir/sid/us-ssn and
 Identifier.value = ssn with dashes removed per https://www.hl7.org/fhir/identifier-registry.html
 */
 * ^status = #draft
@@ -57,9 +57,33 @@ Identifier.value = ssn with dashes removed per https://www.hl7.org/fhir/identifi
 
 
 // Just to demo how to write invariant rules.  This and associated condition referenced above can be removed
-// They will be automatically inherited (I think)    
+// They will be automatically inherited (I think)
 Invariant: us-core-8
 Description: "Patient.name.given or Patient.name.family or both SHALL be present"
 Severity: #error
 Expression: "family.exists() or given.exists()"
 XPath: "f:given or f:family"
+
+
+// Example Patient
+Instance: ExamplePatient
+InstanceOf: OncologyPatient
+* name.family = "Pablo"
+* name.given = "Corwin"
+* identifier.system = "http://projectronin.com/fhir/us/ronin"
+* identifier.value = "12345"
+* telecom.system = #phone
+* telecom.value = "1-791-760-3413"
+* telecom.use = #home
+* gender = #female
+* birthDate = "2020-01-01"
+* address.line = "81947 Stracke Crest"
+* address.city = "Hillsboro"
+* address.district = "Berkshire"
+* address.state = "Georgia"
+* address.postalCode = "32624-2413"
+* address.country = "Nicaragua"
+* maritalStatus.coding.code = #M
+* maritalStatus.coding.system = "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"
+* maritalStatus.text = "Married"
+* generalPractitioner.display = "Harvey Feest"
