@@ -127,13 +127,13 @@ InstanceOf: OncologyDocumentReference
 * type = AJCC#3C "IIIC"
 * category = AJCC#3C "IIIC"
 * subject = Reference(ExamplePatient)
-//* content = BackboneElement(subject)
+* content.id = "exampleContentId"
+* content.attachment.url = "http://example.com"
+* content.attachment.contentType = #json
 
 //* context.period.start MS //dateOfService	
 ////isSensitive	N/A
 //* subject.identifier MS //mrn	
-//* content.attachment.url MS //noteID.id
-//* content.attachment.contentType MS //noteID.type
 //// noteContactID.id	
 //// noteContactID.type	
 //* subject.identifier MS //patientID.id	
