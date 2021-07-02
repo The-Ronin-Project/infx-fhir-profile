@@ -9,7 +9,7 @@ The following references provide information about FHIR Shorthand:
 2. [FHIR Profiling: Overview and Information](https://www.youtube.com/watch?v=dku3lqIYEls)
 3. [Introduction to FHIR Shorthand](https://www.youtube.com/watch?v=RfmqpUA606U)
 4. [Let's Build - Profiling with FHIR Shorthand](https://www.youtube.com/watch?v=7yzLzQjict0)
- 
+
 This code is a first step to define the Ronin profile constraints and extensions on FHIR.  The Ronin profiles are generated using the [sushi](https://github.com/FHIR/sushi) compiler as shown in the **Build process** section.
 
 # Build Process
