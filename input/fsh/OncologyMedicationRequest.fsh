@@ -1,6 +1,5 @@
 /*
 OncologyMedicationRequest is a resource that models the medication Request for an oncology patient.
-TODO DRAFT - do not use before revisiting and extending
 reference http://hl7.org/fhir/us/core/StructureDefinition-us-core-medicationrequest.html
 */
 Profile: OncologyMedicationRequest
@@ -46,3 +45,18 @@ Description: "A MedicationRequest resource that is used for oncology patients"
 * substitution.reason MS
 //revisedDose
 //revisedUnit
+
+* extension contains RevisedDose named revisedDose 0..1
+* extension contains RevisedUnit named revisedUnit 0..1
+
+Extension: RevisedDose
+Id:  revisedDose
+Title: "Revised Dose"
+Description: "Revised Dose"
+* value[x] only string
+
+Extension: RevisedUnit
+Id:  revisedUnit
+Title: "Revised Unit"
+Description: "Revised Unit"
+* value[x] only string
