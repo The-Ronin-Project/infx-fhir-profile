@@ -37,6 +37,7 @@ Description: "Diagnosis Date"
 // TODO(theo): all these probably exist in mCode
 // Need Clinical help to map fields and find correct field in mCode
 // Requires interpreting clinical concepts
+// JIRA ticket: https://projectronin.atlassian.net/browse/DP-723
 //erStatus
 //heR2Status
 //histologicGrade.grade
