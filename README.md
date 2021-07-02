@@ -30,9 +30,8 @@ All profiles will be in `fsh-generated` directory and implementation guide in `o
 - [ ] Add Cardinality where different from standard.
 - [ ] Add text descriptions and images to document Implementation Guide (IG).
 - [X] Finish CarePlan resource to model TreatmentPlan.
-- [ ] Finish DocumentReference
-  - [ ] context.related should reference a custom Resource
-- [ ] Add Extensions where noted in fsh files.
+- [X] Finish DocumentReference
+- [X] Add Extensions where noted in fsh files.
 - [ ] Finish TNM representations in stagings to model after mCODE CancerStaging.
 - [ ] Add FSH code for each resource to generate sample JSON for testing.
 - [ ] Implement github actions to compile profiles and generate Implementation Guide.
