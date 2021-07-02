@@ -53,22 +53,21 @@ Description: "Diagnosis Date"
 //stagingMethod
 //tValue
 
-Instance:   OncologyStagingExample
+Instance:   ExampleStaging
 InstanceOf: OncologyStaging
 // TODO(theo): MDA data doesn't have a plain "status" field
 // but this is required for an Observation
+* id = "mCODETNMClinicalStageGroupExample01"
 * status = #active
 * code = SCT#373808002 "Curative - procedure intent"
 * valueCodeableConcept = AJCC#cN3 "N3"
-* extension[classification].valueString = "Pathologic"
-* extension[diagnosisCode].valueCodeableConcept = AJCC#cN3 "N3"
-* extension[diagnosisDate].valueDateTime = "2019-04-01"
-
-* id = "mCODETNMClinicalStageGroupExample01"
 * meta.profile = "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-clinical-stage-group"
 * status = #final "final"
 * category = ObsCat#survey "Survey"
 * method = MTH#C146985 "AJCC Cancer Staging Manual 8th Edition"
-* subject = Reference(mCODEPatientExample01)
+* subject = Reference(ExamplePatient)
 * effectiveDateTime = "2019-04-01"
 * valueCodeableConcept = AJCC#3C "IIIC"
+* extension[classification].valueString = "Pathologic"
+* extension[diagnosisCode].valueCodeableConcept = AJCC#cN3 "N3"
+* extension[diagnosisDate].valueDateTime = "2019-04-01"
