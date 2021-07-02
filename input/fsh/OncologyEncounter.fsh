@@ -45,3 +45,16 @@ Description: "An Encounter resource that is used for oncology patients"
 //* reasonCode MS
 * reasonCode.coding MS
 * reasonCode.text MS
+
+
+// Example Encounter
+Instance: ExampleEncounter
+InstanceOf: OncologyEncounter
+* identifier.system = "http://projectronin.com/fhir/us/ronin"
+* identifier.value = "12345"
+* subject.display = "Josefina Hammes"
+* status = #arrived
+* class.code = #AMB
+* class.display = "ambulatory"
+* class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+* type.text = "Outpatient"

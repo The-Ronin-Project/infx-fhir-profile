@@ -9,7 +9,7 @@ Description: "An Appointment resource that is used for oncology patients"
 
 * ^status = #draft
 * ^experimental = true
-// identifier must include MRN of patient not just resource identifier. 
+// identifier must include MRN of patient not just resource identifier.
 * identifier MS
 * minutesDuration MS
 * comment MS
