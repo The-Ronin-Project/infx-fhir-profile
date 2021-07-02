@@ -25,7 +25,7 @@ Description: "Diagnosis Code"
 // TODO(theo): this value should use maybe ICD-10-CM or some VS
 // TODO(theo): either define diagnosisCodeSet or use existing alias
 // JIRA ticket: https://projectronin.atlassian.net/browse/DP-723
-* value[x] only string
+* value[x] only CodeableConcept
 
 Extension: DiagnosisDate
 Id:  diagnosisDate
@@ -61,3 +61,4 @@ InstanceOf: OncologyStaging
 * code = SCT#373808002 "Curative - procedure intent"
 * extension[classification].valueString = "Pathologic"
 * valueCodeableConcept = AJCC#cN3 "N3"
+* extension[diagnosisCode].valueCodeableConcept = AJCC#cN3 "N3"
