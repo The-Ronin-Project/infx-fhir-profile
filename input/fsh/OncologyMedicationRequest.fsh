@@ -24,8 +24,8 @@ Description: "A MedicationRequest resource that is used for oncology patients"
 * basedOn.identifier MS //treatmentPlanID
 //hormonalTherapyIndicator? Y
 * medication[x] MS
-    * medicationCodeableConcept MS //rxNormPlanned
-    * medicationReference MS
+    //* medicationCodeableConcept MS //rxNormPlanned
+    //* medicationReference MS
     * medicationReference.display MS
     * medicationReference.identifier MS
 * dispenseRequest MS
