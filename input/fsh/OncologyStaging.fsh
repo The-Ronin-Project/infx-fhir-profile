@@ -59,6 +59,7 @@ InstanceOf: OncologyStaging
 // but this is required for an Observation
 * status = #active
 * code = SCT#373808002 "Curative - procedure intent"
-* extension[classification].valueString = "Pathologic"
 * valueCodeableConcept = AJCC#cN3 "N3"
+* extension[classification].valueString = "Pathologic"
 * extension[diagnosisCode].valueCodeableConcept = AJCC#cN3 "N3"
+* extension[diagnosisDate].valueDateTime = ""2019-04-01"
