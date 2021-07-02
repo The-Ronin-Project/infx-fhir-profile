@@ -62,4 +62,13 @@ InstanceOf: OncologyStaging
 * valueCodeableConcept = AJCC#cN3 "N3"
 * extension[classification].valueString = "Pathologic"
 * extension[diagnosisCode].valueCodeableConcept = AJCC#cN3 "N3"
-* extension[diagnosisDate].valueDateTime = ""2019-04-01"
+* extension[diagnosisDate].valueDateTime = "2019-04-01"
+
+* id = "mCODETNMClinicalStageGroupExample01"
+* meta.profile = "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-clinical-stage-group"
+* status = #final "final"
+* category = ObsCat#survey "Survey"
+* method = MTH#C146985 "AJCC Cancer Staging Manual 8th Edition"
+* subject = Reference(mCODEPatientExample01)
+* effectiveDateTime = "2019-04-01"
+* valueCodeableConcept = AJCC#3C "IIIC"
