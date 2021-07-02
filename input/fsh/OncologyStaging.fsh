@@ -1,5 +1,5 @@
 /*
-OncologyRelatedMedicationStatement is a resource that models the medication statements for an oncology patient.
+OncologyStaging is a resource that models the cancer staging.
 */
 Profile: OncologyStaging
 Parent: CancerStageParent
