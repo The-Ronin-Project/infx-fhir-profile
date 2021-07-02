@@ -44,3 +44,13 @@ Description: "An Observation resource that is used for oncology patients"
 * performer.display MS
 * performer.reference MS
 * value[x] MS  // string
+
+
+// Example Observation
+Instance: ExampleObservation
+InstanceOf: OncologyObservation
+* identifier.system = "http://projectronin.com/fhir/us/ronin"
+* identifier.value = "12345"
+* subject.display = "Luke Ruecker"
+* status = #registered
+* code.text = "code text"

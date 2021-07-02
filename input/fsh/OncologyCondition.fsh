@@ -41,3 +41,14 @@ Description: "A Condition resource that is used for oncology patients"
 //    ProcessPriority named priority 0..1 MS
 
 //TODO add mCODE additions to TNM and other fields
+
+
+// Example Condition
+Instance: ExampleCondition
+InstanceOf: OncologyCondition
+* identifier.system = "http://projectronin.com/fhir/us/ronin"
+* identifier.value = "12345"
+* category.coding.display = "encounter-diagnosis"
+* category.text = "Encounter Diagnosis"
+* code.text = "code text"
+* subject.display = "Margarita Bergnaum"
