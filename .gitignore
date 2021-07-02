@@ -7,3 +7,5 @@ Thumbs.db
 /template
 /node_modules
 *.swp
+node_modules
+/bundle.json

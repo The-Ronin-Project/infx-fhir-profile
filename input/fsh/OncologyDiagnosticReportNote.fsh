@@ -13,7 +13,7 @@ Description: "A DiagnosticReport resource that is used for oncology patients"
 * specimen MS
 // performer.reference (Practitioner) default
 * subject only Reference(OncologyPatient)
-* subject MS
+//* subject MS
 * subject.display MS
 * subject.identifier MS
 // * issued or effectiveDateTime default
