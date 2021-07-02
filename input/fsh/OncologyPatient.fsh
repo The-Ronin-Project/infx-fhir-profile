@@ -13,32 +13,32 @@ Identifier.value = ssn with dashes removed per https://www.hl7.org/fhir/identifi
 */
 * ^status = #draft
 * ^experimental = true
-* identifier 1..* MS
+//* identifier 1..* MS
 * birthDate 1..1 MS
 * telecom 1..* MS
-* telecom.system 1..1 MS
-* telecom.value 1..1 MS
+//* telecom.system 1..1 MS
+//* telecom.value 1..1 MS
 * telecom.use 1..1 MS
-* name 1..* MS  //"Note that middle name is included in name.given and maiden name is name.family where name.use = maiden"
+//* name 1..* MS  //"Note that middle name is included in name.given and maiden name is name.family where name.use = maiden"
 * name obeys us-core-8
 * name.use MS
-* name.family MS
+//* name.family MS
 * name.family ^condition = "us-core-8"
-* name.given MS
+//* name.given MS
 * name.given ^condition = "us-core-8"
 * name.suffix MS
 * name.prefix MS
 * deceased[x] MS
-* gender 1..1 MS
+//* gender 1..1 MS
 * maritalStatus 1..1 MS
 * address 1..* MS
-* address.city MS
+//* address.city MS
 * address.country MS
 * address.district MS
-* address.state MS
+//* address.state MS
 * address.state from UspsTwoLetterAlphabeticCodes (extensible)
-* address.line MS
-* address.postalCode MS
+//* address.line MS
+//* address.postalCode MS
 * address.postalCode ^short = "US Zip Codes"
 * generalPractitioner 1..* MS
 * generalPractitioner.reference MS

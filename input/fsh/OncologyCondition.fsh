@@ -10,17 +10,17 @@ Description: "A Condition resource that is used for oncology patients"
 * ^status = #draft
 * ^experimental = true
 * identifier MS
-* clinicalStatus MS
-* verificationStatus MS
-* category MS
+// clinicalStatus MS
+// verificationStatus MS
+// category MS
 * category.coding MS // TODO add restriction to encounter-diagnosis and problem-list-item
 * category.text MS // TODO add text restriction to "Encounter Diagnosis" or "Problem List Item"
 * recordedDate MS
-* code MS
+// code MS
 * code.coding MS
 * code.text MS
 * subject only Reference(OncologyPatient)
-* subject MS
+// subject MS
 * subject.reference MS
 * subject.display MS
 * abatementPeriod MS
