@@ -26,3 +26,14 @@ Description: "A MedicationAdministation resource that is used for oncology patie
     ScheduledDateTimeType named scheduledDateTime 0..1 MS
 * dosage.text MS
 * effectiveDateTime MS
+
+
+// Example MedicationAdministration
+Instance: ExampleMedicationAdministration
+InstanceOf: OncologyMedicationAdministration
+* identifier.system = "http://projectronin.com/fhir/us/ronin"
+* identifier.value = "12345"
+* subject.display = "Ethel O'Hara"
+* status = #in-progress
+* medicationCodeableConcept.text = "code text"
+* effectiveDateTime = "2017-01-01T00:00:00.000Z"

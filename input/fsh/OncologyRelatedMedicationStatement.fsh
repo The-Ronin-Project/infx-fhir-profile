@@ -48,3 +48,13 @@ Description: "A Medication Statement resource that is used for oncology patients
 * subject.reference MS
 * subject.display MS
 * note.text MS
+
+
+// Example MedicationStatement
+Instance: ExampleMedicationStatement
+InstanceOf: OncologyRelatedMedicationStatement
+* identifier.system = "http://projectronin.com/fhir/us/ronin"
+* identifier.value = "12345"
+* subject.display = "Mr. Johnnie Purdy"
+* status = #active
+* medicationReference.display = "medication display"

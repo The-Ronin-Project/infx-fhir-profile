@@ -17,3 +17,11 @@ Description: "A Medication resource that is used for oncology patients"
 * ingredient.itemReference.reference MS
 * form MS
 * form.text MS
+
+
+// Example Medication
+Instance: ExampleRelatedMedication
+InstanceOf: OncologyRelatedMedication
+* identifier.system = "http://projectronin.com/fhir/us/ronin"
+* identifier.value = "12345"
+* code.text = "code text"
