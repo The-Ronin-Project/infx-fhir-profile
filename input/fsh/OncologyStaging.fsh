@@ -22,8 +22,9 @@ Extension: DiagnosisCode
 Id:  diagnosisCode
 Title: "Diagnosis Code"
 Description: "Diagnosis Code"
-// TODO(theo): this value should use maybe SNOMED or some VS
+// TODO(theo): this value should use maybe ICD-10-CM or some VS
 // TODO(theo): either define diagnosisCodeSet or use existing alias
+// JIRA ticket: https://projectronin.atlassian.net/browse/DP-723
 * value[x] only string
 
 Extension: DiagnosisDate
