@@ -6,3 +6,5 @@ Thumbs.db
 /temp
 /template
 *.swp
+node_modules
+/bundle.json
