@@ -66,7 +66,12 @@ InstanceOf: OncologyMedicationRequest
 * id = "medicationRequestExampleId"
 * status = #active
 * intent = #proposal
-//* medication[0][medicationCodeableConcept].id = "testId"
+* medication[x][medicationReference] = Reference(ExampleMedication)
 * subject = Reference(ExamplePatient)
 * authoredOn = "2021-02-02"
 * requester = Reference(ExamplePatient)
+
+Instance: ExampleMedication
+InstanceOf: Medication
+* id = "medicationIdExample"
+* code = RXN#349472 "gefitinib 250 MG Oral Tablet"
