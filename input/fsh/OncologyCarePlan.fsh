@@ -77,3 +77,12 @@ Id:  cycleStartDate
 Title: "Cycle Start Date"
 Description: "Cycle Start Date"
 * value[x] only date
+
+Instance: ExampleCarePlan
+InstanceOf: OncologyCarePlan
+* id = "carePlanExampleId"
+* status = #active
+* intent = #proposal
+* subject = Reference(ExamplePatient)
+* text.status = #additional
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">There is a history of <span id=\"a1\">Asthma</span></div>"
