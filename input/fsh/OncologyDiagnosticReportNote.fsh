@@ -13,7 +13,7 @@ Description: "A DiagnosticReport resource that is used for oncology patients"
 * specimen MS
 // performer.reference (Practitioner) default
 * subject only Reference(OncologyPatient)
-* subject MS
+//* subject MS
 * subject.display MS
 * subject.identifier MS
 // * issued or effectiveDateTime default
@@ -27,3 +27,16 @@ Description: "A DiagnosticReport resource that is used for oncology patients"
 // * presentedForm.url MS default
 // * encounter.reference MS default
 // appointmentDate is in encounter->appointment - it will help us link encounter to report.
+
+
+// Example DiagnosticReportNote
+Instance: ExampleDiagnosticReportNote
+InstanceOf: OncologyDiagnosticReportNote
+* identifier.system = "http://projectronin.com/fhir/us/ronin"
+* identifier.value = "12345"
+* category.coding.display = "Imaging"
+* category.text = "Imaging"
+* code.text = "code text"
+* subject.display = "Clay Kihn"
+* status = #registered
+* effectiveDateTime = "2017-01-01T00:00:00.000Z"

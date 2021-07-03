@@ -9,3 +9,12 @@ Description: "A cancer center department"
 
 * text MS //description
 * active MS
+
+
+// Example PartnerDepartment
+Instance: ExamplePartnerDepartment
+InstanceOf: PartnerDepartment
+* active = true
+* name = "Project Ronin"
+* text.status = #status
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">text content</div>"
