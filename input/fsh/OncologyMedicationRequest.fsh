@@ -66,3 +66,4 @@ InstanceOf: OncologyMedicationRequest
 * id = "medicationRequestExampleId"
 * status = #active
 * intent = #proposal
+* medication[0][medicationCodeableConcept].id = "testId"
