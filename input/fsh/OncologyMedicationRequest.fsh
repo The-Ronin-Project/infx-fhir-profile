@@ -60,3 +60,9 @@ Id:  revisedUnit
 Title: "Revised Unit"
 Description: "Revised Unit"
 * value[x] only string
+
+Instance: ExampleMedicationRequest
+InstanceOf: OncologyMedicationRequest
+* id = "medicationRequestExampleId"
+* status = #active
+* intent = #proposal
