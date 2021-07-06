@@ -1,5 +1,5 @@
 /*
-OncologyRelatedMedicationStatement is a resource that models the medication statements for an oncology patient.
+OncologyStaging is a resource that models the cancer staging.
 */
 Profile: OncologyStaging
 Parent: CancerStageParent
@@ -25,7 +25,7 @@ Description: "Diagnosis Code"
 // TODO(theo): this value should use maybe ICD-10-CM or some VS
 // TODO(theo): either define diagnosisCodeSet or use existing alias
 // JIRA ticket: https://projectronin.atlassian.net/browse/DP-723
-* value[x] only string
+* value[x] only CodeableConcept
 
 Extension: DiagnosisDate
 Id:  diagnosisDate
@@ -52,3 +52,22 @@ Description: "Diagnosis Date"
 //stageDate
 //stagingMethod
 //tValue
+
+Instance:   ExampleStaging
+InstanceOf: OncologyStaging
+// TODO(theo): MDA data doesn't have a plain "status" field
+// but this is required for an Observation
+* id = "mCODETNMClinicalStageGroupExample01"
+* status = #active
+* code = SCT#373808002 "Curative - procedure intent"
+* valueCodeableConcept = AJCC#cN3 "N3"
+* meta.profile = "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-clinical-stage-group"
+* status = #final "final"
+* category = ObsCat#survey "Survey"
+* method = MTH#C146985 "AJCC Cancer Staging Manual 8th Edition"
+* subject = Reference(ExamplePatient)
+* effectiveDateTime = "2019-04-01"
+* valueCodeableConcept = AJCC#3C "IIIC"
+* extension[classification].valueString = "Pathologic"
+* extension[diagnosisCode].valueCodeableConcept = AJCC#cN3 "N3"
+* extension[diagnosisDate].valueDateTime = "2019-04-01"

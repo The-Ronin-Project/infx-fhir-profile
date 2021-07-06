@@ -116,3 +116,17 @@ Id: cosignTime
 Title: "Cosign Time"
 Description: "Cosign Time"
 * value[x] only dateTime
+
+Instance:   ExampleDocumentReference
+InstanceOf: OncologyDocumentReference
+//Must Support
+* id = "documentReferenceExample1"
+* status = #active
+* date = "2015-02-07T13:28:17.239+02:00"
+* context.id = "exampleContextId"
+* type = AJCC#3C "IIIC"
+* category = AJCC#3C "IIIC"
+* subject = Reference(ExamplePatient)
+* content.id = "exampleContentId"
+* content.attachment.url = "http://example.com"
+* content.attachment.contentType = #json

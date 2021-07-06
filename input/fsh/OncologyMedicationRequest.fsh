@@ -60,3 +60,18 @@ Id:  revisedUnit
 Title: "Revised Unit"
 Description: "Revised Unit"
 * value[x] only string
+
+Instance: ExampleMedicationRequest
+InstanceOf: OncologyMedicationRequest
+* id = "medicationRequestExampleId"
+* status = #active
+* intent = #proposal
+* medication[x][medicationReference] = Reference(ExampleMedication)
+* subject = Reference(ExamplePatient)
+* authoredOn = "2021-02-02"
+* requester = Reference(ExamplePatient)
+
+Instance: ExampleMedication
+InstanceOf: Medication
+* id = "medicationIdExample"
+* code = RXN#349472 "gefitinib 250 MG Oral Tablet"
