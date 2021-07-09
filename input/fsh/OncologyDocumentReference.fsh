@@ -18,14 +18,14 @@ Description: "A DocumentReference resource that is used to model note details fo
 //context MS
 //context.period.start MS //dateOfService
 //isSensitive	N/A
-//subject only Reference(OncologyPatient)
-* subject.identifier MS //mrn	
+//subject.identifier MS //mrn
 //content MS
 //content.attachment.url MS //noteID.id
 //content.attachment.contentType MS //noteID.type
 //noteContactID.id
 //noteContactID.type
-* subject.identifier MS //patientID.id	
+* subject only Reference(OncologyPatient)
+* subject.identifier MS //mrn and patientID.id
 * subject.type MS //patientID.type	
 * custodian MS //contactID.id
 * custodian.type MS //contactID.type

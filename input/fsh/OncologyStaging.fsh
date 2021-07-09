@@ -57,7 +57,7 @@ Instance:   ExampleStaging
 InstanceOf: OncologyStaging
 // TODO(theo): MDA data doesn't have a plain "status" field
 // but this is required for an Observation
-* id = "mCODETNMClinicalStageGroupExample01"
+* id = "roninTNMClinicalStageGroupExample01"
 * status = #active
 * code = SCT#373808002 "Curative - procedure intent"
 * valueCodeableConcept = AJCC#cN3 "N3"
