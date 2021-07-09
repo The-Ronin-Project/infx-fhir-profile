@@ -25,6 +25,12 @@ $ open ./output/index.html
 ```
 All profiles will be in `fsh-generated` directory and implementation guide in `output` directory.
 
+# Example Profile Instances
+The diagram below is a bundle image of the generated instances from OncologyExamples.fsh file.
+The visualization was done with [Bundle Visualizer](http://clinfhir.com/bundleVisualizer.html) by replacing *ronin* with *xyz* and *MDA* with *abc*
+
+![Ronin Oncology Example](./input/images/RoninOncologyExample.png?raw=true "Ronin Oncology Example")
+
 # TODO
 - [X] Check fields against inherited MS (must support) constraints and remove redundancies.
 - [ ] Add Cardinality where different from standard.
