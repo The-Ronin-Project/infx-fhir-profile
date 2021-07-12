@@ -1,11 +1,11 @@
 /*
-OncologyProviderAppointment is a resource that models the appointment from a provider's perspective.
+OncologyAppointment is a resource that models the appointment from patients and providers.
 */
-Profile: OncologyProviderAppointment
+Profile: OncologyAppointment
 Parent: Appointment
-Id: oncology-provider-appointment
-Title: "Oncology Provider Appointment"
-Description: "An Appointment resource that is used for oncology providers"
+Id: oncology-appointment
+Title: "Oncology Appointment"
+Description: "An Appointment resource that is used for oncology patients and providers"
 
 * ^status = #draft
 * ^experimental = true
