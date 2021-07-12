@@ -177,10 +177,10 @@ Description: "Ronin Example for Oncology CarePlan"
 
 
 Instance: roninOncologyPatientAppointmentExample01
-InstanceOf: OncologyPatientAppointment
+InstanceOf: OncologyAppointment
 Description: "Ronin Example for Oncology Patient Appointment"
 * id = "roninOncologyPatientAppointmentExample01"
-* meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-patient-appointment"
+* meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-appointment"
 * identifier[0].system = "http://projectronin.com/fhir/us/ronin"
 * identifier[0].value = "appointment_12345"
 * identifier[1].system = "http://projectronin.com/fhir/tenantId"
