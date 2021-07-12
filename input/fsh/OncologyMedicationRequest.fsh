@@ -66,7 +66,7 @@ InstanceOf: OncologyMedicationRequest
 * id = "medicationRequestExampleId"
 * status = #active
 * intent = #proposal
-* medication[x][medicationReference] = Reference(ExampleMedication)
+* medicationReference = Reference(ExampleMedication)
 * subject = Reference(ExamplePatient)
 * authoredOn = "2021-02-02"
 * requester = Reference(ExamplePatient)

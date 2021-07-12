@@ -15,6 +15,6 @@ Description: "A cancer center department"
 Instance: ExamplePartnerDepartment
 InstanceOf: PartnerDepartment
 * active = true
-* name = "Project Ronin"
-* text.status = #status
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">text content</div>"
+* name = "MDA"
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">MDA</div>"
