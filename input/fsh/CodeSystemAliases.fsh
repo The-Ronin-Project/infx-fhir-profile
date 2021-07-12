@@ -20,6 +20,7 @@ Alias:   MedStatus = http://hl7.org/fhir/CodeSystem/medication-statement-status
 Alias:   MedCat = http://terminology.hl7.org/CodeSystem/medication-statement-category
 Alias:   ObsCat = http://terminology.hl7.org/CodeSystem/observation-category
 Alias:   ObsInt = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
+Alias:   DocCat = http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category
 Alias:   DiagnosticService = http://terminology.hl7.org/CodeSystem/v2-0074
 Alias:   UspsTwoLetterAlphabeticCodes = http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state
 Alias:   LanguageCodesWithLanguageAndOptionallyARegionModifier = http://hl7.org/fhir/us/core/ValueSet/simple-language

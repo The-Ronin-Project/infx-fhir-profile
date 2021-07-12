@@ -59,7 +59,8 @@ InstanceOf: OncologyStaging
 // but this is required for an Observation
 * id = "roninTNMClinicalStageGroupExample01"
 * status = #active
-* code = SCT#373808002 "Curative - procedure intent"
+//code must be LNC not SCT
+* code = LNC#21908-9 //"Stage group.clinical Cancer"
 * valueCodeableConcept = AJCC#cN3 "N3"
 * meta.profile = "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-clinical-stage-group"
 * status = #final "final"

@@ -31,8 +31,8 @@ Description: "A Condition resource that is used for oncology patients"
 * evidence.detail.reference MS
 * note MS
 * note.text MS
-* onsetPeriod MS
 * onsetDateTime MS
+* onsetPeriod MS
 * severity MS
 * severity.text MS
 * recorder MS
