@@ -64,7 +64,6 @@ Description: "Example Oncology Staging"
 //code must be LNC not SCT
 * code = LNC#21908-9 //"Stage group.clinical Cancer"
 * valueCodeableConcept = AJCC#cN3 "N3"
-//* meta.profile = "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-clinical-stage-group"
 * status = #final "final"
 * category = ObsCat#survey "Survey"
 * method = MTH#C146985 "AJCC Cancer Staging Manual 8th Edition"
