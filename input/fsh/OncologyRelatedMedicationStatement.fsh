@@ -9,7 +9,17 @@ Description: "A Medication Statement resource that is used for oncology patients
 
 * ^status = #draft
 * ^experimental = true
-* identifier MS
+* identifier 1..* MS
+//Slice identifier to ensure tenantId identifier is present.
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+
+* identifier contains
+    tenantId 1..1
+
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+
 * basedOn MS
 * basedOn.display MS
 * basedOn.identifier MS
@@ -54,8 +64,10 @@ Description: "A Medication Statement resource that is used for oncology patients
 Instance: ExampleMedicationStatement
 InstanceOf: OncologyRelatedMedicationStatement
 Description: "Example Related Medication Statement"
-* identifier.system = "http://projectronin.com/fhir/us/ronin"
-* identifier.value = "12345"
+* identifier[0].system = "http://projectronin.com/fhir/us/ronin"
+* identifier[0].value = "12345"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "013"
 * subject.display = "Mr. Johnnie Purdy"
 * status = #active
 * medicationReference.display = "medication display"

@@ -11,7 +11,17 @@ Description: "A DocumentReference resource that is used to model note details fo
 
 * ^status = #draft
 * ^experimental = true
-* identifier MS
+* identifier 1..* MS
+//Slice identifier to ensure tenantId identifier is present.
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+
+* identifier contains
+    tenantId 1..1
+
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+
 * status MS
 //lastEditTime	N/A
 //date MS //creationTime
@@ -159,6 +169,8 @@ InstanceOf: OncologyDocumentReference
 Description: "Example Document Reference"
 //Must Support
 * id = "documentReferenceExample1"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "013"
 * status = #current
 * date = "2015-02-07T13:28:17.239+02:00"
 * context.id = "exampleContextId"

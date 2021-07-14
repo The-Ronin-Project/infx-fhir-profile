@@ -9,7 +9,17 @@ Description: "An Encounter resource that is used for oncology patients"
 
 * ^status = #draft
 * ^experimental = true
-//* identifier MS
+* identifier 1..* MS
+//Slice identifier to ensure tenantId identifier is present.
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+
+* identifier contains
+    tenantId 1..1
+
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+
 //* status MS
 //* type MS
 //* location MS
@@ -51,8 +61,10 @@ Description: "An Encounter resource that is used for oncology patients"
 Instance: ExampleEncounter
 InstanceOf: OncologyEncounter
 Description: "Example Encounter"
-* identifier.system = "http://projectronin.com/fhir/us/ronin"
-* identifier.value = "12345"
+* identifier[0].system = "http://projectronin.com/fhir/us/ronin"
+* identifier[0].value = "12345"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "013"
 * subject.display = "Josefina Hammes"
 * status = #arrived
 * class.code = #AMB

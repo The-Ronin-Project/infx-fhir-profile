@@ -7,7 +7,9 @@ Id: oncology-practitioner
 Title: "Oncology Practitioner"
 Description: "An oncologist practitioner resource"
 
-* identifier MS //adid, empid, external, psId, serId
+//more identifiers adid, empid, external, psId, serId
+* identifier 1..* MS
+
 //* name 1..* MS
 * qualification MS
 * qualification.issuer MS

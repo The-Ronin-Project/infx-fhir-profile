@@ -9,6 +9,17 @@ Description: "A MedicationAdministation resource that is used for oncology patie
 
 * ^status = #draft
 * ^experimental = true
+* identifier 1..* MS
+//Slice identifier to ensure tenantId identifier is present.
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+
+* identifier contains
+    tenantId 1..1
+
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+
 * subject only Reference(OncologyPatient)
 * subject MS
 * subject.identifier MS
@@ -34,6 +45,8 @@ InstanceOf: OncologyMedicationAdministration
 Description: "Example Medication Administration"
 * identifier.system = "http://projectronin.com/fhir/us/ronin"
 * identifier.value = "12345"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "013"
 * subject.display = "Ethel O'Hara"
 * status = #in-progress
 * medicationCodeableConcept.text = "code text"
