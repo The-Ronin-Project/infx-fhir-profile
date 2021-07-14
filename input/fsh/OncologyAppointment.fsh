@@ -9,7 +9,17 @@ Description: "An Appointment resource that is used for oncology patients and pro
 
 * ^status = #draft
 * ^experimental = true
-* identifier MS
+* identifier 1..* MS
+//Slice identifier to ensure tenantId identifier is present.
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+
+* identifier contains
+    tenantId 1..1
+
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+
 * created MS
 * minutesDuration MS
 * comment MS

@@ -10,7 +10,16 @@ Description: "A MedicationRequest resource that is used for oncology patients"
 
 * ^status = #draft
 * ^experimental = true
-* identifier MS
+* identifier 1..* MS
+//Slice identifier to ensure tenantId identifier is present.
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier contains
+    tenantId 1..1
+
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+
 //supportive care?
 * dispenseRequest MS
 // TODO Need to revisit this 
@@ -65,6 +74,8 @@ Instance: ExampleMedicationRequest
 InstanceOf: OncologyMedicationRequest
 Description: "Example Medication Request"
 * id = "medicationRequestExampleId"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "013"
 * status = #active
 * intent = #proposal
 * medicationReference = Reference(ExampleMedication)

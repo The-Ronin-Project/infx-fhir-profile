@@ -13,7 +13,17 @@ Identifier.value = ssn with dashes removed per https://www.hl7.org/fhir/identifi
 */
 * ^status = #draft
 * ^experimental = true
-//* identifier 1..* MS
+* identifier 1..* MS
+//Slice identifier to ensure tenantId identifier is present.
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+
+* identifier contains
+    tenantId 1..1
+
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+
 * birthDate 1..1 MS
 * telecom 1..* MS
 //* telecom.system 1..1 MS
@@ -69,10 +79,12 @@ XPath: "f:given or f:family"
 Instance: ExamplePatient
 InstanceOf: OncologyPatient
 Description: "Example Oncology Patient"
+* identifier[0].system = "http://projectronin.com/fhir/us/ronin"
+* identifier[0].value = "12345"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "013"
 * name.family = "Pablo"
 * name.given = "Corwin"
-* identifier.system = "http://projectronin.com/fhir/us/ronin"
-* identifier.value = "12345"
 * telecom.system = #phone
 * telecom.value = "1-791-760-3413"
 * telecom.use = #home

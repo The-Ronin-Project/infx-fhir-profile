@@ -9,6 +9,17 @@ Description: "A cancer stagings that uses mCODE to model TNM stagings for oncolo
 
 * ^status = #draft
 * ^experimental = true
+* identifier 1..* MS
+//Slice identifier to ensure tenantId identifier is present.
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+
+* identifier contains
+    tenantId 1..1
+
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+
 * extension contains Classification named classification 0..1
 * extension contains DiagnosisDate named diagnosisDate 0..1
 
@@ -59,6 +70,8 @@ Description: "Example Oncology Staging"
 // TODO(theo): MDA data doesn't have a plain "status" field
 // but this is required for an Observation
 * id = "roninTNMClinicalStageGroupExample01"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "013"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-staging"
 * status = #active
 //code must be LNC not SCT
