@@ -60,8 +60,8 @@ Description: "An Observation resource that is used for oncology patients"
 Instance: ExampleObservation
 InstanceOf: OncologyObservation
 Description: "Example Oncology Observation"
-* identifier.system = "http://projectronin.com/fhir/us/ronin"
-* identifier.value = "12345"
+* identifier[0].system = "http://projectronin.com/fhir/us/ronin"
+* identifier[0].value = "12345"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "013"
 * subject.display = "Luke Ruecker"
