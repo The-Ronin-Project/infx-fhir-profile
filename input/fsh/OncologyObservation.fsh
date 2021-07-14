@@ -49,6 +49,7 @@ Description: "An Observation resource that is used for oncology patients"
 // Example Observation
 Instance: ExampleObservation
 InstanceOf: OncologyObservation
+Description: "Example Oncology Observation"
 * identifier.system = "http://projectronin.com/fhir/us/ronin"
 * identifier.value = "12345"
 * subject.display = "Luke Ruecker"

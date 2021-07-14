@@ -47,78 +47,116 @@ Description: "A DocumentReference resource that is used to model note details fo
 // author.ini	
 // author.recordLastUpdatedOn	
 
-* extension contains OncologyDocumentReferenceIsDeleted named isDeleted 0..1
-* extension contains OncologyDocumentReferenceDeletionUser named deletionUser 0..1
-* extension contains OncologyDocumentReferenceDeletionTime named deletionTime 0..1
-* extension contains LastEditor named lastEditor 0..1
-* extension contains CosignRequirement named cosignRequirement 0..1
-* extension contains CosignTime named cosignTime 0..1
-* extension contains Cosigner named cosigner 0..1
+* extension contains 
+    DeletionStatus named isDeleted 0..1 MS and
+    DeletionUser named deletionUser 0..1 MS and
+    DeletionDate named deletionDate 0..1 MS and
+    LastEditorId named lastEditorId 0..1 MS and
+    LastEditorExtId named lastEditorExtId 0..1 MS and
+    LastEditorName named lastEditorName 0..1 MS and
+    LastEditorDisplayName named lastEditorDisplayName 0..1 MS and
+    LastEditorIni named lastEditorIni 0..1 MS and
+    LastEditorUpdate named lastEditorUpdate 0..1 MS and
+    CosignRequirementAbbreviation named cosignRequirementAbbreviation 0..1 MS and
+    CosignRequirementTitle named cosignRequirementTitle 0..1 MS and
+    CosignRequirementName named cosignRequirementName 0..1 MS and
+    CosignerName named cosignerName 0..1 MS and
+    CosignDateTime named cosignDateTime 0..1 MS
 
-Extension: OncologyDocumentReferenceIsDeleted
-Id:  isDeleted
-Title: "Is Deleted"
-Description: "Document Reference is Deleted"
+
+Extension: DeletionStatus
+Id: isDeleted
+Title: "Status of deletion"
+Description: "Document Reference Deletion Status"
 * value[x] only boolean
 
-Extension: OncologyDocumentReferenceDeletionUser
-Id:  deletionUser
-Title: "Deletion User"
-Description: "Deletion User"
+Extension: DeletionUser
+Id: deletionUser
+Title: "User who deleted the document"
+Description: "Document Reference Deletion User"
 * value[x] only string
 
-Extension: OncologyDocumentReferenceDeletionTime
-Id:  deletionTime
-Title: "Deletion Time"
-Description: "Deletion Time"
+Extension: DeletionDate
+Id: deletionDate
+Title: "Date of document deletion"
+Description: "Document Reference Deletion Date"
+* value[x] only date
+
+Extension: LastEditorId
+Id: lastEditorId
+Title: "Last Editor ID"
+Description: "Last Editor ID"
+* value[x] only string
+
+Extension: LastEditorExtId
+Id: lastEditorExtId
+Title: "Last Editor ExtID"
+Description: "Last Editor ExtID"
+* value[x] only string
+
+Extension: LastEditorName
+Id: lastEditorName
+Title: "Last Editor Name"
+Description: "Last Editor Name"
+* value[x] only string
+
+Extension: LastEditorDisplayName
+Id: lastEditorDisplayName
+Title: "Last Editor Display Name"
+Description: "Last Editor Display Name"
+* value[x] only string
+
+Extension: LastEditorIni
+Id: lastEditorIni
+Title: "Last Editor Ini"
+Description: "Last Editor Ini"
+* value[x] only string
+
+Extension: LastEditorUpdate
+Id: lastEditorUpdate
+Title: "Last Editor Update"
+Description: "Last Editor Update"
 * value[x] only dateTime
 
 
 /*
-Last Editor
+Cosign Information
 */
-Extension: LastEditor
-Id: lastEditor
-Title: "Last Editor"
-Description: "Last Editor"
-* extension contains id 0..1
-* extension contains extId 0..1
-* extension contains name 0..1
-* extension contains displayName 0..1
-* extension contains ini 0..1
-* extension contains recordLastUpdatedOn 0..1
-
-/*
-Cosign Requirement
-*/
-Extension: CosignRequirement
-Id: cosignRequirement
-Title: "Cosign Requirement"
-Description: "Cosign Requirement"
-* extension contains abbreviation 0..1
-* extension contains title 0..1
-* extension contains value 0..1
-
-/*
-Cosigner
-*/
-Extension: Cosigner
-Id: cosigner
-Title: "Cosigner"
-Description: "Cosigner"
+Extension: CosignRequirementAbbreviation
+Id: cosignRequirementAbbreviation
+Title: "Cosign Requirement Abbreviation"
+Description: "Cosign Requirement Abbreviation"
 * value[x] only string
 
-/*
-Cosign Time
-*/
-Extension: CosignTime
-Id: cosignTime
+Extension: CosignRequirementTitle
+Id: cosignRequirementTitle
+Title: "Cosign Requirement Title"
+Description: "Cosign Requirement Title"
+* value[x] only string
+
+Extension: CosignRequirementName
+Id: cosignRequirementName
+Title: "Cosign Requirement Name"
+Description: "Cosign Requirement Name"
+* value[x] only string
+
+Extension: CosignerName
+Id: cosignerName
+Title: "Cosigner Name"
+Description: "Cosign Requirement Cosigner Name"
+* value[x] only string
+
+Extension: CosignDateTime
+Id: cosignDateTime
 Title: "Cosign Time"
-Description: "Cosign Time"
+Description: "Cosign Requirement Time"
 * value[x] only dateTime
 
+
+/* Sample Document Reference*/
 Instance:   ExampleDocumentReference
 InstanceOf: OncologyDocumentReference
+Description: "Example Document Reference"
 //Must Support
 * id = "documentReferenceExample1"
 * status = #current
@@ -130,3 +168,19 @@ InstanceOf: OncologyDocumentReference
 * content.id = "exampleContentId"
 * content.attachment.url = "http://example.com"
 * content.attachment.contentType = #json
+* extension[isDeleted].valueBoolean = true
+* extension[deletionUser].valueString = "Tony"
+* extension[deletionDate].valueDate = "2019-02-07"
+* extension[deletionUser].valueString = "Tony"
+* extension[lastEditorId].valueString = "123"
+* extension[lastEditorExtId].valueString = "ABC"
+* extension[lastEditorName].valueString = "Tony"
+* extension[lastEditorDisplayName].valueString = "Tony T"
+* extension[lastEditorIni].valueString = "No clue"
+* extension[lastEditorUpdate].valueDateTime = "2019-02-07T13:28:17.000Z"
+* extension[cosignRequirementAbbreviation].valueString = "ABC"
+* extension[cosignRequirementName].valueString = "ABC XYZ"
+* extension[cosignRequirementTitle].valueString = "Some title"
+* extension[cosignDateTime].valueDateTime = "2019-02-07T13:28:17.000Z"
+* extension[cosignerName].valueString = "Steve"
+

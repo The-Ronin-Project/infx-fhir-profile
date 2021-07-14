@@ -29,14 +29,18 @@ Description: "A DiagnosticReport resource that is used for oncology patients"
 // appointmentDate is in encounter->appointment - it will help us link encounter to report.
 
 
+
 // Example DiagnosticReportNote
 Instance: ExampleDiagnosticReportNote
 InstanceOf: OncologyDiagnosticReportNote
+Description: "Example Diagnostic Report Note"
 * identifier.system = "http://projectronin.com/fhir/us/ronin"
 * identifier.value = "12345"
 * category.coding.display = "Imaging"
 * category.text = "Imaging"
-* code.text = "code text"
+* code = LNC#10207-9
+* code.text = "Physical findings of Thorax and Lungs Narrative"
 * subject.display = "Clay Kihn"
 * status = #registered
 * effectiveDateTime = "2017-01-01T00:00:00.000Z"
+* extension[referringDoctor].valueReference = Reference(ExamplePractitioner)

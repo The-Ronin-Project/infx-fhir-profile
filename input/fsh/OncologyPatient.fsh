@@ -6,7 +6,7 @@ Profile: OncologyPatient
 Parent: USCorePatient
 Id: oncology-patient
 Title: "Oncology Patient"
-Description: "A person who is diagnosed with or is receiving medical treatment for a malignant growth or tumor "
+Description: "A person who is diagnosed with or is receiving medical treatment for a malignant growth or tumor"
 /*
 identifier contains social security number with Identifier.system = http://hl7.org/fhir/sid/us-ssn and
 Identifier.value = ssn with dashes removed per https://www.hl7.org/fhir/identifier-registry.html
@@ -68,6 +68,7 @@ XPath: "f:given or f:family"
 // Example Patient
 Instance: ExamplePatient
 InstanceOf: OncologyPatient
+Description: "Example Oncology Patient"
 * name.family = "Pablo"
 * name.given = "Corwin"
 * identifier.system = "http://projectronin.com/fhir/us/ronin"

@@ -80,9 +80,19 @@ Description: "Cycle Start Date"
 
 Instance: ExampleCarePlan
 InstanceOf: OncologyCarePlan
+Description: "Example CarePlan"
 * id = "carePlanExampleId"
 * status = #active
 * intent = #proposal
 * subject = Reference(ExamplePatient)
 * text.status = #additional
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">There is a history of <span id=\"a1\">Asthma</span></div>"
+* extension[treatmentDayName].valueString = "Thrusday"
+* extension[treatmentDayNumber].valueDecimal = 10
+* extension[treatmentStartDate].valueDate = "2019-02-07"
+* extension[treatmentEndDate].valueDate = "2019-02-10"
+* extension[lineOfTreatment].valueString = "test"
+* extension[dayStatus].valueString = "good"
+* extension[cycleName].valueString = "some name"
+* extension[cycleNumber].valueDecimal = 20
+* extension[cycleStartDate].valueDate = "2019-02-07"
