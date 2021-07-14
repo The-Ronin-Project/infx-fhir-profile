@@ -25,7 +25,7 @@ Description: "Ronin Example for Primary Oncology Condition"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-condition"
 * clinicalStatus = ClinStatus#active "Active"
 * verificationStatus = VerStatus#confirmed "Confirmed"
-* code = SCT#254637007 "Non-small cell lung Oncology (disorder)"
+* code = SCT#254637007 "Non-small cell lung cancer"
 //* extension[histologyMorphologyBehavior].valueCodeableConcept = SCT#35917007 "Adenocarcinoma"
 * bodySite = SCT#39607008 "Lung structure (body structure)"
 //* bodySite.extension[laterality].valueCodeableConcept = SCT#7771000 "Left (qualifier value)"
@@ -114,7 +114,9 @@ Description: "Ronin Example for Encounter"
 * class.code = #AMB
 * class.display = "ambulatory"
 * class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
-* type.text = "Outpatient"
+* type = SCT#185347001
+* type.text = "Encounter for problem"
+
 
 
 Instance: roninDiagnosticReportNoteExample01
@@ -128,7 +130,8 @@ Description: "Ronin Example for Diagnostic Report Note"
 * identifier[1].value = "013"
 * category.coding.display = "Imaging"
 * category.text = "Imaging"
-* code.text = "code text"
+* code = LNC#10207-9
+* code.text = "Physical findings of Thorax and Lungs Narrative"
 * subject = Reference(roninPatientExample01)
 * subject.display = "John Anyperson"
 * status = #registered

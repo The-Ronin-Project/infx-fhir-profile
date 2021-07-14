@@ -50,6 +50,7 @@ Description: "An Encounter resource that is used for oncology patients"
 // Example Encounter
 Instance: ExampleEncounter
 InstanceOf: OncologyEncounter
+Description: "Example Encounter"
 * identifier.system = "http://projectronin.com/fhir/us/ronin"
 * identifier.value = "12345"
 * subject.display = "Josefina Hammes"
@@ -57,4 +58,5 @@ InstanceOf: OncologyEncounter
 * class.code = #AMB
 * class.display = "ambulatory"
 * class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
-* type.text = "Outpatient"
+* type = SCT#185347001
+* type.text = "Encounter for problem"

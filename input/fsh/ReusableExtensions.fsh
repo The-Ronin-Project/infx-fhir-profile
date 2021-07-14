@@ -20,4 +20,4 @@ Extension: ReferringDoctorType
 Id:  referringDoctor
 Title: "Referring Doctor Type"
 Description: "Referring Doctor type that referred the patient."
-* value[x] only Reference(USCorePractitioner)
+* value[x] only Reference(OncologyPractitioner)

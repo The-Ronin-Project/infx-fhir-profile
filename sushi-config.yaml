@@ -4,7 +4,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: projectronin.fhir
 canonical: http://projectronin.com/fhir/us/ronin
-name: dp-ronin-fhir-profile
+name: RoninOncologyFHIRProfile
 status: draft
 version: 0.1.0
 fhirVersion: 4.0.1

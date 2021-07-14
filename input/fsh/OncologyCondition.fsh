@@ -46,9 +46,11 @@ Description: "A Condition resource that is used for oncology patients"
 // Example Condition
 Instance: ExampleCondition
 InstanceOf: OncologyCondition
+Description: "Example condition"
 * identifier.system = "http://projectronin.com/fhir/us/ronin"
 * identifier.value = "12345"
 * category.coding.display = "encounter-diagnosis"
 * category.text = "Encounter Diagnosis"
+* code = SCT#162573006 "Suspected lung cancer"
 * code.text = "code text"
 * subject.display = "Margarita Bergnaum"

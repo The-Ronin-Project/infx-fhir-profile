@@ -31,9 +31,11 @@ Description: "A MedicationAdministation resource that is used for oncology patie
 // Example MedicationAdministration
 Instance: ExampleMedicationAdministration
 InstanceOf: OncologyMedicationAdministration
+Description: "Example Medication Administration"
 * identifier.system = "http://projectronin.com/fhir/us/ronin"
 * identifier.value = "12345"
 * subject.display = "Ethel O'Hara"
 * status = #in-progress
 * medicationCodeableConcept.text = "code text"
 * effectiveDateTime = "2017-01-01T00:00:00.000Z"
+* extension[scheduledDateTime].valueDateTime =  "2017-01-01T00:00:00.000Z"

@@ -22,6 +22,10 @@ Description: "A Medication resource that is used for oncology patients"
 // Example Medication
 Instance: ExampleRelatedMedication
 InstanceOf: OncologyRelatedMedication
+Description: "Example Related Medication"
 * identifier.system = "http://projectronin.com/fhir/us/ronin"
 * identifier.value = "12345"
-* code.text = "code text"
+* code = RXN#582620 "Nizatidine 15 MG/ML Oral Solution [Axid]"
+* code.text = "Nizatidine 15 MG/ML Oral Solution [Axid]"
+* extension[isBrand].valueBoolean = true
+* extension[isOverTheCounter].valueBoolean = false

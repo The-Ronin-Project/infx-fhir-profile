@@ -14,6 +14,7 @@ Description: "A cancer center department"
 // Example PartnerDepartment
 Instance: ExamplePartnerDepartment
 InstanceOf: PartnerDepartment
+Description: "Example Partner Department"
 * active = true
 * name = "MDA"
 * text.status = #generated
