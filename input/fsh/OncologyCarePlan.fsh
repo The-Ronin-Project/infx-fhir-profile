@@ -87,7 +87,7 @@ Description: "Example CarePlan"
 * subject = Reference(ExamplePatient)
 * text.status = #additional
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">There is a history of <span id=\"a1\">Asthma</span></div>"
-* extension[treatmentDayName].valueString = "Thrusday"
+* extension[treatmentDayName].valueString = "Thursday"
 * extension[treatmentDayNumber].valueDecimal = 10
 * extension[treatmentStartDate].valueDate = "2019-02-07"
 * extension[treatmentEndDate].valueDate = "2019-02-10"
