@@ -15,6 +15,7 @@ This code is a first step to define the Ronin profile constraints and extensions
 # Build Process
 To build the profiles, use the following commands:
 ```
+$ gem install jekyll
 $ npm install -g fsh-sushi
 $ git clone git@github.com:projectronin/dp-ronin-fhir-profile.git
 $ cd dp-ronin-fhir-profile
