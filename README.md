@@ -26,6 +26,13 @@ $ open ./output/index.html
 ```
 All profiles will be in `fsh-generated` directory and implementation guide in `output` directory.
 
+If you want to obtain an ndjson.gz to test with Aidbox use the following command:
+```
+$ ./_genExample01.sh
+```
+
+The resultant example01.ndjson.gz can be uploaded to Aidbox for testing.
+
 # Example Profile Instances
 The diagram below is a bundle image of the generated instances from OncologyExamples.fsh file.
 The visualization was done with [Bundle Visualizer](http://clinfhir.com/bundleVisualizer.html) by replacing *ronin* with *xyz* and *MDA* with *abc*
