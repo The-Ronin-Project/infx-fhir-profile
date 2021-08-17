@@ -21,7 +21,7 @@ Description: "An oncologist practitioner resource"
 // Example Practitioner
 Instance: ExamplePractitioner
 InstanceOf: OncologyPractitioner
-Description: "Example Oncolgoy Practitioner"
+Description: "Example Oncology Practitioner"
 * name.family = "Clarence"
 * name.given = "Frami"
 * identifier.system = "http://projectronin.com/fhir/us/ronin"
