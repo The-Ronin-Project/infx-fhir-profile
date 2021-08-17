@@ -17,6 +17,3 @@ Description: "Example Oncology Practitioner"
 * organization.display = "Ronin"
 * code.text = "Physician Assistant"
 * code.coding.display = "Physician Assistant"
-* telecom[0].system = #phone
-* telecom[0].value = "111-222-3333"
-* telecom[0].use = #work
