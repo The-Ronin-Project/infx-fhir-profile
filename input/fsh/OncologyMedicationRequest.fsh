@@ -22,7 +22,7 @@ Description: "A MedicationRequest resource that is used for oncology patients"
 
 //supportive care?
 * dispenseRequest MS
-// TODO Need to revisit this 
+// TODO Need to revisit this
 //* dispenseRequest.quantity.value MS  //calcDose
 //* dispenseRequest.quantity.unit MS   //calcDoseUnit
 //chemotherapyIndicator? Y
@@ -32,10 +32,10 @@ Description: "A MedicationRequest resource that is used for oncology patients"
 * basedOn.identifier MS //treatmentPlanID
 //hormonalTherapyIndicator? Y
 * medication[x] MS
-    //* medicationCodeableConcept MS //rxNormPlanned
-    //* medicationReference MS
-    * medicationReference.display MS
-    * medicationReference.identifier MS
+//* medicationCodeableConcept MS //rxNormPlanned
+//* medicationReference MS
+* medicationReference.display MS
+* medicationReference.identifier MS
 * dispenseRequest MS
 * dispenseRequest.quantity MS
 * dispenseRequest.quantity.value MS  // orderDose
