@@ -147,12 +147,15 @@ Description: "Ronin Example for Oncology Document Reference"
 * status = #current
 * date = "2015-02-07T13:28:17.239+02:00"
 * context.id = "exampleContextId"
-* type = LNC#11526-1 "Pathology study"
+* type = LNC#28568-4 "Physician Emergency department Note"
 * category = DocCat#clinical-note "Clinical Note"
 * subject = Reference(roninPatientExample01)
 * content.id = "exampleContentId"
 * content.attachment.url = "http://example.com"
 * content.attachment.contentType = #json
+* content.extension[edVisitDate].valueDate = "2015-02-07"
+* content.extension[edVisitClassification].valueCode = REDVCS#1
+* content.extension[isEdVisitClassificationValid].valueBoolean = true
 * author = Reference(roninPractitionerExample01)
 
 
