@@ -34,3 +34,7 @@ Description: "An Appointment resource that is used for oncology patients and pro
 * appointmentType MS
 * appointmentType.coding MS
 * appointmentType.text MS
+* extension MS
+* extension contains
+    DepartmentType named department 0..* MS
+
