@@ -21,3 +21,9 @@ Id:  referringDoctor
 Title: "Referring Doctor Type"
 Description: "Referring Doctor type that referred the patient."
 * value[x] only Reference(OncologyPractitioner)
+
+Extension: DepartmentType
+Id:  department
+Title: "department"
+Description: "Extension to add PartnerDepartment link"
+* value[x] only Reference(PartnerDepartment)
