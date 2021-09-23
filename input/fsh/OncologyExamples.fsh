@@ -202,3 +202,4 @@ Description: "Ronin Example for Oncology Patient Appointment"
 * participant[1].status = #accepted
 * appointmentType = AppmtType#CHECKUP "A routine check-up, such as an annual physical"
 * reasonReference = Reference(roninPrimaryOncologyConditionExample01)
+* extension[department][0].valueReference = Reference(roninPartnerDepartmentExample01)
