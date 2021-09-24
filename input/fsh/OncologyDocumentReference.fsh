@@ -35,15 +35,23 @@ Description: "A DocumentReference resource that is used to model note details fo
 //noteContactID.id
 //noteContactID.type
 * subject only Reference(OncologyPatient)
+// subject type/identifier can be replaced by subject.reference=type/identifier
 * subject.identifier MS //mrn and patientID.id
 * subject.type MS //patientID.type	
 * custodian MS //contactID.id
 * custodian.type MS //contactID.type
 //* type MS
+// For notes:
+// type.text = "Physician Emergency department Note"
+// type.coding.code = 28568-4
+// type.coding.display = type.text
+// type.coding.system = "http://loinc.org"
 * type.coding.display MS //type.abbreviation
 * type.text MS //type.title
-* type.coding.code MS 
+* type.coding.code MS
+* type.coding.system MS
 //type.value	
+// content MS is part of US Core
 * context.related MS //service.abbreviation service.title service.value	
 //* author MS
 
