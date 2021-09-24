@@ -4,12 +4,13 @@ DetectedEDVisit is a logical resource that models ED Visits extracted from notes
 Logical: DetectedEDVisit
 Parent: Element
 Id: DetectedEDVisit
-Title: "Detected ED Visits"
+Title: "Detected ED Visit"
 Description: "A custom resource that is used for NLP detected emergency department visit"
 
 * ^status = #draft
 * ^experimental = true
-
+// id is in Element
+//* id 1..1 SU string "Logical identifier" "Logical identifier for this resource"
 * identifier 1..* SU Identifier "Identifier" "Other identifiers for the document"
 * identifier.tenantId 1..1 SU Identifier "tenantid" "The tenant identifier"
 //Slice identifier to ensure tenantId identifier is present.
