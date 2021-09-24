@@ -81,12 +81,6 @@ Description: "A DocumentReference resource that is used to model note details fo
     CosignerName named cosignerName 0..1 MS and
     CosignDateTime named cosignDateTime 0..1 MS
 
-* content.extension MS
-* content.extension contains
-    EdVisitDateOfService named edVisitDate 0..1 MS and
-    EdVisitClassification named edVisitClassification 0..1 MS and
-    EdVisitClassificationUserInput named isEdVisitClassificationValid 0..1 MS
-
 
 Extension: DeletionStatus
 Id: isDeleted
@@ -176,25 +170,6 @@ Title: "Cosign Time"
 Description: "Cosign Requirement Time"
 * value[x] only dateTime
 
-Extension: EdVisitDateOfService
-Id: edVisitDateOfService
-Title: "Date Of Service"
-Description: "Date of service as detected from Note"
-* value[x] only date
-
-Extension: EdVisitClassification
-Id: edVisitClassification
-Title: "Detected ED visit classification"
-Description: "Note classifier ouput, 0 = no ED visit, 1 = ED visit, 2 = ED visit suggested"
-* value[x] only code
-* valueCode from RDEDVS
-
-Extension: EdVisitClassificationUserInput
-Id: isEdVisitClassificationValid
-Title: "User validation of detected ED visit"
-Description: "Users can invalidate the classifier's output"
-* value[x] only boolean
-
 
 /* Sample Document Reference*/
 Instance:   ExampleDocumentReference
@@ -213,9 +188,6 @@ Description: "Example Document Reference"
 * content.id = "exampleContentId"
 * content.attachment.url = "http://example.com"
 * content.attachment.contentType = #json
-* content.extension[edVisitDate].valueDate = "2015-02-07"
-* content.extension[edVisitClassification].valueCode = REDVCS#2
-* content.extension[isEdVisitClassificationValid].valueBoolean = false
 * extension[isDeleted].valueBoolean = true
 * extension[deletionUser].valueString = "Tony"
 * extension[deletionDate].valueDate = "2019-02-07"

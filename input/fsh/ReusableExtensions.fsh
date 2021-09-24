@@ -24,6 +24,6 @@ Description: "Referring Doctor type that referred the patient."
 
 Extension: DepartmentType
 Id:  partnerDepartmentReference
-Title: "Referring department"
+Title: "Department"
 Description: "Extension to add PartnerDepartment link"
 * value[x] only Reference(PartnerDepartment)

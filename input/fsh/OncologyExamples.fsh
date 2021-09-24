@@ -153,9 +153,6 @@ Description: "Ronin Example for Oncology Document Reference"
 * content.id = "exampleContentId"
 * content.attachment.url = "http://example.com"
 * content.attachment.contentType = #json
-* content.extension[edVisitDate].valueDate = "2015-02-07"
-* content.extension[edVisitClassification].valueCode = REDVCS#1
-* content.extension[isEdVisitClassificationValid].valueBoolean = true
 * author = Reference(roninPractitionerExample01)
 
 
