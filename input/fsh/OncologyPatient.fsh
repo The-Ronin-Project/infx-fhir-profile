@@ -50,7 +50,7 @@ Identifier.value = ssn with dashes removed per https://www.hl7.org/fhir/identifi
 //* address.line MS
 //* address.postalCode MS
 * address.postalCode ^short = "US Zip Codes"
-* generalPractitioner 0..* MS
+* generalPractitioner MS
 * generalPractitioner.reference MS
 * generalPractitioner.display MS
 * communication MS
