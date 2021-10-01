@@ -6,6 +6,7 @@ Thumbs.db
 /temp
 /template
 /node_modules
+/ronin-zen-profile
 *.swp
 node_modules
 /bundle.json
