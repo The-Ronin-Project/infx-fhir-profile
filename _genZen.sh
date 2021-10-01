@@ -134,8 +134,7 @@ DEPENDENCIES=$(${CAT} sushi-config.yaml \
                | ${SED} 's/: /@/' \
                | ${TR} -d '\n')
 
-#FHIR_DEP=hl7.fhir.core@$FHIR_VERSION # works only with ${NPM} 6
-FHIR_DEP="hl7.fhir.r4.core@${FHIR_VERSION}" # TODO: remove hardcode
+FHIR_DEP="hl7.fhir.r4.core@${FHIR_VERSION}"
 
 shw_info "Package Name: ${PACKAGE_NAME}"
 shw_info "Package Version: ${PACKAGE_VERSION}"
