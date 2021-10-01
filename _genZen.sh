@@ -79,6 +79,7 @@ ZEN_LANG_REPO="https://github.com/zen-lang/fhir/releases/latest/"
 ZEN_LANG_DOWNLOAD="https://github.com/zen-lang/fhir/releases/download/"
 ZEN_VERSION=$(${CURL} -s ${ZEN_LANG_REPO} | ${SED} 's/.*tag\/\(.*\)\".*/\1/')
 ZEN_FHIR_JAR="zen-fhir-${ZEN_VERSION}-standalone.jar"
+ZEN_FHIR_JAR_WILDCARD="zen-fhir-*-standalone.jar"
 ZEN_FHIR_DOWNLOAD=${ZEN_LANG_DOWNLOAD}${ZEN_VERSION}
 DLURL_ZEN_FHIR_JAR=${ZEN_FHIR_DOWNLOAD}/${ZEN_FHIR_JAR}
 
@@ -97,6 +98,7 @@ if test -f "${ZEN_FHIR}" ; then
 	shw_norm "Zen FHIR jar FOUND in input-cache"
 else
 	shw_norm "Zen FHIR jar NOT FOUND in input-cache - downloading"
+  rm ${INPUT_CACHE_PATH}${ZEN_FHIR_JAR_WILDCARD}
 	${CURL} -L ${DLURL_ZEN_FHIR_JAR} -o "${JAR_LOCATION}" --create-dirs
   if [ $? -ne 0 ] ; then
     shw_err "Offline (or github is down), unable to download.  Exiting"
