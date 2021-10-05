@@ -17,3 +17,7 @@ Description: "Example Oncology Practitioner"
 * organization.display = "Ronin"
 * code.text = "Physician Assistant"
 * code.coding.display = "Physician Assistant"
+* telecom.system = #phone
+* telecom.value = "1-555-544-3334"
+* telecom.use = #work
+
