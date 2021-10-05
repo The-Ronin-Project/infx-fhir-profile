@@ -24,5 +24,7 @@ InstanceOf: OncologyPractitioner
 Description: "Example Oncology Practitioner"
 * name.family = "Clarence"
 * name.given = "Frami"
-* identifier.system = "http://projectronin.com/fhir/us/ronin"
-* identifier.value = "12345"
+* identifier[NPI].type.coding.system = IDTYPE
+* identifier[NPI].type.coding.code = IDTYPE#NPI
+* identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
+* identifier[NPI].value = "9988776444"
