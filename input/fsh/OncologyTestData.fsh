@@ -7,12 +7,10 @@ InstanceOf: OncologyPatient
 Description: "Ronin Test Patient 01 - MDA"
 * id = "roninPatient01Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-patient"
-* identifier[1].use = #usual
-* identifier[1].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR "Medical Record Number"
-* identifier[1].system = "http://hospital.mda.org"
-* identifier[1].value = "01111"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
+* identifier[mrn].system = "http://projectronin.com/id/mrn"
+* identifier[mrn].value = "01111"
 * name.family = "Bass"
 * name.given[0] = "John"
 * name.given[1] = "B."
@@ -45,12 +43,10 @@ InstanceOf: OncologyPatient
 Description: "Ronin Test Patient 02 - MDA"
 * id = "roninPatient02Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-patient"
-* identifier[1].use = #usual
-* identifier[1].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR "Medical Record Number"
-* identifier[1].system = "http://hospital.mda.org"
-* identifier[1].value = "01112"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
+* identifier[mrn].system = "http://projectronin.com/id/mrn"
+* identifier[mrn].value = "01112"
 * name.family = "Wyatt"
 * name.given[0] = "Chad"
 * name.given[1] = "A."
@@ -83,12 +79,10 @@ InstanceOf: OncologyPatient
 Description: "Ronin Test Patient 03 - MDA"
 * id = "roninPatient03Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-patient"
-* identifier[1].use = #usual
-* identifier[1].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR "Medical Record Number"
-* identifier[1].system = "http://hospital.mda.org"
-* identifier[1].value = "01113"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
+* identifier[mrn].system = "http://projectronin.com/id/mrn"
+* identifier[mrn].value = "01113"
 * name.family = "Acostal"
 * name.given[0] = "Vivaan"
 * name.given[1] = "B."
@@ -121,12 +115,10 @@ InstanceOf: OncologyPatient
 Description: "Ronin Test Patient 04 - PSJ"
 * id = "roninPatient04Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-patient"
-* identifier[1].use = #usual
-* identifier[1].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR "Medical Record Number"
-* identifier[1].system = "http://hospital.psj.org"
-* identifier[1].value = "20221"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "psj"
+* identifier[mrn].system = "http://projectronin.com/id/mrn"
+* identifier[mrn].value = "20221"
 * name.family = "Oud"
 * name.given[0] = "Wilmatar"
 * name.given[1] = "Z."
@@ -159,12 +151,10 @@ InstanceOf: OncologyPatient
 Description: "Ronin Test Patient 05 - PSJ"
 * id = "roninPatient05Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-patient"
-* identifier[1].use = #usual
-* identifier[1].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR "Medical Record Number"
-* identifier[1].system = "http://hospital.psj.org"
-* identifier[1].value = "20220"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "psj"
+* identifier[mrn].system = "http://projectronin.com/id/mrn"
+* identifier[mrn].value = "20220"
 * name.family = "Random"
 * name.given[0] = "Kane"
 * name.given[1] = "M."
@@ -195,8 +185,11 @@ Description: "Ronin Test Patient 05 - PSJ"
 Instance: roninMDAPractitioner01Test
 InstanceOf: OncologyPractitioner
 Description: "Ronin Practitioner 01 - MDA"
-* id = "roninPractitioner01Test"
+* id = "roninMDAPractitioner01Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-practitioner"
+* identifier[NPI].type.coding.system = IDTYPE
+* identifier[NPI].type.coding.code = IDTYPE#NPI
+* identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
 * identifier[NPI].value = "9988776655"
 * name.family = "Feest"
 * name.given = "Harvey"
@@ -209,8 +202,6 @@ Description: "Ronin Practitioner 01 - MDA"
 * address.postalCode = "12345"
 * address.country = "US"
 * qualification.code = http://terminology.hl7.org/CodeSystem/v2-0360|2.7#MD "Doctor of Medicine"
-* identifier.system = "http://projectronin.com/fhir/us/ronin"
-* identifier.value = "mdaoc-231"
 * qualification.issuer = Reference(roninMDAPartnerDepartmentTest)
 
 // Practitioner 2
@@ -219,6 +210,9 @@ InstanceOf: OncologyPractitioner
 Description: "Ronin Practitioner 02 - MDA"
 * id = "roninMDAPractitioner02Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-practitioner"
+* identifier[NPI].type.coding.system = IDTYPE
+* identifier[NPI].type.coding.code = IDTYPE#NPI
+* identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
 * identifier[NPI].value = "2281376654"
 * name.family = "Gray"
 * name.given = "Alfred"
@@ -231,8 +225,6 @@ Description: "Ronin Practitioner 02 - MDA"
 * address.postalCode = "192334"
 * address.country = "US"
 * qualification.code = http://terminology.hl7.org/CodeSystem/v2-0360|2.7#MD "Doctor of Medicine"
-* identifier.system = "http://projectronin.com/fhir/us/ronin"
-* identifier.value = "mdaoc-311"
 * qualification.issuer = Reference(roninMDAPartnerDepartmentTest)
 
 // Practitioner 3
@@ -241,6 +233,9 @@ InstanceOf: OncologyPractitioner
 Description: "Ronin Practitioner 03 - MDA"
 * id = "roninMDAPractitioner03Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-practitioner"
+* identifier[NPI].type.coding.system = IDTYPE
+* identifier[NPI].type.coding.code = IDTYPE#NPI
+* identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
 * identifier[NPI].value = "1098276451"
 * name.family = "Foster"
 * name.given = "Gabrielius"
@@ -253,8 +248,6 @@ Description: "Ronin Practitioner 03 - MDA"
 * address.postalCode = "042345"
 * address.country = "US"
 * qualification.code = http://terminology.hl7.org/CodeSystem/v2-0360|2.7#DO "Doctor of Osteopathy"
-* identifier.system = "http://projectronin.com/fhir/us/ronin"
-* identifier.value = "mda-45"
 * qualification.issuer = Reference(roninMDAPartnerDepartmentTest)
 
 // Practitioner 4
@@ -263,6 +256,9 @@ InstanceOf: OncologyPractitioner
 Description: "Ronin Practitioner 04 - PSJ"
 * id = "roninPSJPractitioner04Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-practitioner"
+* identifier[NPI].type.coding.system = IDTYPE
+* identifier[NPI].type.coding.code = IDTYPE#NPI
+* identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
 * identifier[NPI].value = "2333230098"
 * name.family = "Kebbe"
 * name.given = "Wendyline"
@@ -275,8 +271,6 @@ Description: "Ronin Practitioner 04 - PSJ"
 * address.postalCode = "17042"
 * address.country = "US"
 * qualification.code = http://terminology.hl7.org/CodeSystem/v2-0360|2.7#MD "Doctor of Medicine"
-* identifier.system = "http://projectronin.com/fhir/us/ronin"
-* identifier.value = "psj-62"
 * qualification.issuer = Reference(roninPSJPartnerDepartmentTest)
 
 // Practitioner 5
@@ -285,6 +279,9 @@ InstanceOf: OncologyPractitioner
 Description: "Ronin Practitioner 05 - PSJ"
 * id = "roninPSJPractitioner05Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-practitioner"
+* identifier[NPI].type.coding.system = IDTYPE
+* identifier[NPI].type.coding.code = IDTYPE#NPI
+* identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
 * identifier[NPI].value = "2312223033"
 * name.family = "Allergy"
 * name.given = "Brian"
@@ -297,8 +294,6 @@ Description: "Ronin Practitioner 05 - PSJ"
 * address.postalCode = "923346"
 * address.country = "US"
 * qualification.code = http://terminology.hl7.org/CodeSystem/v2-0360|2.7#DO "Doctor of Osteopathy"
-* identifier.system = "http://projectronin.com/fhir/us/ronin"
-* identifier.value = "psj-74"
 * qualification.issuer = Reference(roninPSJPartnerDepartmentTest)
 
 // Practitioner Role 1

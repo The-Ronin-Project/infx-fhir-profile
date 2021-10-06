@@ -20,9 +20,13 @@ Identifier.value = ssn with dashes removed per https://www.hl7.org/fhir/identifi
 * identifier ^slicing.rules = #open
 
 * identifier contains
-    tenantId 1..1
+    tenantId 1..1 and
+    mrn 1..1
 
-* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].system = RTID //"http://projectronin.com/id/tenantId"
+* identifier[mrn].type = IDTYPE#MR "Medical Record Number"
+* identifier[mrn].system = RMRN //"http://projectronin.com/id/mrn"
 
 * birthDate 1..1 MS
 * telecom 1..* MS
@@ -79,10 +83,11 @@ XPath: "f:given or f:family"
 Instance: ExamplePatient
 InstanceOf: OncologyPatient
 Description: "Example Oncology Patient"
-* identifier[0].system = "http://projectronin.com/fhir/us/ronin"
-* identifier[0].value = "12345"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "013"
+* identifier[mrn].system = "http://projectronin.com/id/mrn"
+* identifier[mrn].value = "12345"
+
 * name.family = "Pablo"
 * name.given = "Corwin"
 * telecom.system = #phone
