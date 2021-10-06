@@ -201,8 +201,9 @@ Description: "Ronin Practitioner 01 - MDA"
 * address.state = "MA"
 * address.postalCode = "12345"
 * address.country = "US"
-* qualification.code = http://terminology.hl7.org/CodeSystem/v2-0360|2.7#MD "Doctor of Medicine"
-* qualification.issuer = Reference(roninMDAPartnerDepartmentTest)
+// Commented to conform with Gold output
+// * qualification.code = http://terminology.hl7.org/CodeSystem/v2-0360|2.7#MD "Doctor of Medicine"
+// * qualification.issuer = Reference(roninMDAPartnerDepartmentTest)
 
 // Practitioner 2
 Instance: roninMDAPractitioner02Test
@@ -224,8 +225,9 @@ Description: "Ronin Practitioner 02 - MDA"
 * address.state = "TX"
 * address.postalCode = "192334"
 * address.country = "US"
-* qualification.code = http://terminology.hl7.org/CodeSystem/v2-0360|2.7#MD "Doctor of Medicine"
-* qualification.issuer = Reference(roninMDAPartnerDepartmentTest)
+// Commented to conform with Gold output
+// * qualification.code = http://terminology.hl7.org/CodeSystem/v2-0360|2.7#MD "Doctor of Medicine"
+// * qualification.issuer = Reference(roninMDAPartnerDepartmentTest)
 
 // Practitioner 3
 Instance: roninMDAPractitioner03Test
@@ -247,8 +249,9 @@ Description: "Ronin Practitioner 03 - MDA"
 * address.state = "CA"
 * address.postalCode = "042345"
 * address.country = "US"
-* qualification.code = http://terminology.hl7.org/CodeSystem/v2-0360|2.7#DO "Doctor of Osteopathy"
-* qualification.issuer = Reference(roninMDAPartnerDepartmentTest)
+// Commented to conform with Gold output
+// * qualification.code = http://terminology.hl7.org/CodeSystem/v2-0360|2.7#DO "Doctor of Osteopathy"
+// * qualification.issuer = Reference(roninMDAPartnerDepartmentTest)
 
 // Practitioner 4
 Instance: roninPSJPractitioner04Test
@@ -270,8 +273,9 @@ Description: "Ronin Practitioner 04 - PSJ"
 * address.state = "PA"
 * address.postalCode = "17042"
 * address.country = "US"
-* qualification.code = http://terminology.hl7.org/CodeSystem/v2-0360|2.7#MD "Doctor of Medicine"
-* qualification.issuer = Reference(roninPSJPartnerDepartmentTest)
+// Commented to conform with Gold output
+// * qualification.code = http://terminology.hl7.org/CodeSystem/v2-0360|2.7#MD "Doctor of Medicine"
+// * qualification.issuer = Reference(roninPSJPartnerDepartmentTest)
 
 // Practitioner 5
 Instance: roninPSJPractitioner05Test
@@ -293,8 +297,9 @@ Description: "Ronin Practitioner 05 - PSJ"
 * address.state = "TX"
 * address.postalCode = "923346"
 * address.country = "US"
-* qualification.code = http://terminology.hl7.org/CodeSystem/v2-0360|2.7#DO "Doctor of Osteopathy"
-* qualification.issuer = Reference(roninPSJPartnerDepartmentTest)
+// Commented to conform with Gold output
+// * qualification.code = http://terminology.hl7.org/CodeSystem/v2-0360|2.7#DO "Doctor of Osteopathy"
+// * qualification.issuer = Reference(roninPSJPartnerDepartmentTest)
 
 // Practitioner Role 1
 Instance: roninMDAPractitionerRole01Test
