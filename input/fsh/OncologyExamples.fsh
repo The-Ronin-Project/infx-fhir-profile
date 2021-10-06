@@ -39,12 +39,10 @@ InstanceOf: OncologyPatient
 Description: "Ronin Example for Patient"
 * id = "roninPatientExample01"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-patient"
-* identifier[1].use = #usual
-* identifier[1].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR "Medical Record Number"
-* identifier[1].system = "http://hospital.example.org"
-* identifier[1].value = "m123"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "013"
+* identifier[mrn].system = "http://projectronin.com/id/mrn"
+* identifier[mrn].value = "123"
 * name.family = "Anyperson"
 * name.given[0] = "John"
 * name.given[1] = "B."
@@ -75,6 +73,9 @@ InstanceOf: OncologyPractitioner
 Description: "Ronin Example for Practitioner"
 * id = "roninPractitionerExample01"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-practitioner"
+* identifier[NPI].type.coding.system = IDTYPE
+* identifier[NPI].type.coding.code = IDTYPE#NPI
+* identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
 * identifier[NPI].value = "9988776655"
 * name.family = "AnyDoctor"
 * name.given = "Frami"
@@ -87,8 +88,6 @@ Description: "Ronin Example for Practitioner"
 * address.postalCode = "12345"
 * address.country = "US"
 * qualification.code = http://terminology.hl7.org/CodeSystem/v2-0360|2.7#MD "Doctor of Medicine"
-* identifier.system = "http://projectronin.com/fhir/us/ronin"
-* identifier.value = "12345"
 * qualification.issuer = Reference(roninPartnerDepartmentExample01)
 
 
@@ -97,8 +96,8 @@ InstanceOf: OncologyEncounter
 Description: "Ronin Example for Encounter"
 * id = "roninEncounterExample01"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-encounter"
-* identifier[1].system = "http://projectronin.com/fhir/us/ronin"
-* identifier[1].value = "12345"
+// * identifier[1].system = "http://projectronin.com/fhir/us/ronin"
+// * identifier[1].value = "12345"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "013"
 * subject = Reference(roninPatientExample01)
@@ -114,14 +113,13 @@ Description: "Ronin Example for Encounter"
 * type.text = "Encounter for problem"
 
 
-
 Instance: roninDiagnosticReportNoteExample01
 InstanceOf: OncologyDiagnosticReportNote
 Description: "Ronin Example for Diagnostic Report Note"
 * id = "roninDiagnosticReportNoteExample01"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-diagnostic-report-note"
-* identifier[1].system = "http://projectronin.com/fhir/us/ronin"
-* identifier[1].value = "diag_report_12345"
+// * identifier[1].system = "http://projectronin.com/fhir/us/ronin"
+// * identifier[1].value = "diag_report_12345"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "013"
 * category.coding.display = "Imaging"
@@ -140,8 +138,8 @@ InstanceOf: OncologyDocumentReference
 Description: "Ronin Example for Oncology Document Reference"
 * id = "roninDocumentReferenceExample01"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-document-reference"
-* identifier[1].system = "http://projectronin.com/fhir/us/ronin"
-* identifier[1].value = "doc_ref_12345"
+// * identifier[1].system = "http://projectronin.com/fhir/us/ronin"
+// * identifier[1].value = "doc_ref_12345"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "013"
 * status = #current
@@ -161,8 +159,8 @@ InstanceOf: OncologyCarePlan
 Description: "Ronin Example for Oncology CarePlan"
 * id = "roninOncologyCarePlanExample01"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-care-plan"
-* identifier[1].system = "http://projectronin.com/fhir/us/ronin"
-* identifier[1].value = "plan_12345"
+// * identifier[1].system = "http://projectronin.com/fhir/us/ronin"
+// * identifier[1].value = "plan_12345"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "013"
 * status = #active
@@ -180,8 +178,8 @@ InstanceOf: OncologyAppointment
 Description: "Ronin Example for Oncology Patient Appointment"
 * id = "roninOncologyPatientAppointmentExample01"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-appointment"
-* identifier[1].system = "http://projectronin.com/fhir/us/ronin"
-* identifier[1].value = "appointment_12345"
+// * identifier[1].system = "http://projectronin.com/fhir/us/ronin"
+// * identifier[1].value = "appointment_12345"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "013"
 * minutesDuration = 60
