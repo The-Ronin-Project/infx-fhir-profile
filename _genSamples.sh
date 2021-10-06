@@ -20,10 +20,10 @@ fi
 
 while getopts d: flag
 do
-    case "${flag}" in
-        d) data=${OPTARG};;
-        *) usage ${OPTARG};;
-    esac
+  case "${flag}" in
+    d) data=${OPTARG};;
+    *) usage ${OPTARG};;
+  esac
 done
 
 if [ ${data} = "example" ]; then
