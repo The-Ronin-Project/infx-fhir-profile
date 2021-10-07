@@ -1,0 +1,24 @@
+{
+  "name": "dp-ronin-fhir-profile",
+  "version": "1.0.0",
+  "description": "The Ronin oncology FHIR profile assembles a core set of structured data elements for oncology based on FHIR 4.0.1 and mCODE™ standards.  While mCODE™ is a step towards capturing research-quality data from the treatment of all cancer patients, Ronin's profile modifies/extends mCODE™ to include partner-specific information necessary for Ronin's products.",
+  "main": "generate_bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/projectronin/dp-ronin-fhir-profile.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/projectronin/dp-ronin-fhir-profile/issues"
+  },
+  "homepage": "https://github.com/projectronin/dp-ronin-fhir-profile#readme",
+  "dependencies": {
+    "@zen-lang/hl7-fhir-r4-core": "^0.2.15",
+    "@zen-lang/hl7-fhir-us-core": "^0.2.15"
+  }
+}

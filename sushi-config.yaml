@@ -21,7 +21,7 @@ description: The Ronin oncology FHIR profile assembles a core set of structured 
 # FHIR 4.0.1 licenses http://hl7.org/fhir/R4/valueset-spdx-license.html
 license: not-open-source
 dependencies:
-  hl7.fhir.us.core: 3.1.0
+  hl7.fhir.us.core: 4.0.0
   hl7.fhir.us.mcode: 1.0.0
 parameters:
   show-inherited-invariants: true
