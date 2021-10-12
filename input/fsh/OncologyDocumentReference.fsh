@@ -37,7 +37,7 @@ Description: "A DocumentReference resource that is used to model note details fo
 * subject only Reference(OncologyPatient)
 // subject type/identifier can be replaced by subject.reference=type/identifier
 * subject.identifier MS //mrn and patientID.id
-* subject.type MS //patientID.type	
+* subject.type MS //patientID.type
 * custodian MS //contactID.id
 * custodian.type MS //contactID.type
 //* type MS
@@ -50,25 +50,25 @@ Description: "A DocumentReference resource that is used to model note details fo
 * type.text MS //type.title
 * type.coding.code MS
 * type.coding.system MS
-//type.value	
+//type.value
 // content MS is part of US Core
-* context.related MS //service.abbreviation service.title service.value	
+* context.related MS //service.abbreviation service.title service.value
 //* author MS
 
 // authorType.abbreviation	Create a new resource
 // authorType.title	author.reference
-// authorType.value	
-// author.id	
-// author.extId	
-// author.name	
-// author.displayName	
-// author.ini	
-// author.recordLastUpdatedOn	
+// authorType.value
+// author.id
+// author.extId
+// author.name
+// author.displayName
+// author.ini
+// author.recordLastUpdatedOn
 
-* extension contains 
+* extension contains
     DeletionStatus named isDeleted 0..1 MS and
     DeletionUser named deletionUser 0..1 MS and
-    DeletionDate named deletionDate 0..1 MS and
+    DeletionTime named deletionTime 0..1 MS and
     LastEditorId named lastEditorId 0..1 MS and
     LastEditorExtId named lastEditorExtId 0..1 MS and
     LastEditorName named lastEditorName 0..1 MS and
@@ -78,7 +78,7 @@ Description: "A DocumentReference resource that is used to model note details fo
     CosignRequirementAbbreviation named cosignRequirementAbbreviation 0..1 MS and
     CosignRequirementTitle named cosignRequirementTitle 0..1 MS and
     CosignRequirementName named cosignRequirementName 0..1 MS and
-    CosignerName named cosignerName 0..1 MS and
+    Cosigner named cosigner 0..1 MS and
     CosignDateTime named cosignDateTime 0..1 MS
 
 
@@ -92,13 +92,13 @@ Extension: DeletionUser
 Id: deletionUser
 Title: "User who deleted the document"
 Description: "Document Reference Deletion User"
-* value[x] only string
+* value[x] only Reference(OncologyPractitioner)
 
-Extension: DeletionDate
-Id: deletionDate
-Title: "Date of document deletion"
-Description: "Document Reference Deletion Date"
-* value[x] only date
+Extension: DeletionTime
+Id: deletionTime
+Title: "Time of document deletion"
+Description: "Document Reference Deletion Time"
+* value[x] only dateTime
 
 Extension: LastEditorId
 Id: lastEditorId
@@ -158,11 +158,11 @@ Title: "Cosign Requirement Name"
 Description: "Cosign Requirement Name"
 * value[x] only string
 
-Extension: CosignerName
-Id: cosignerName
-Title: "Cosigner Name"
-Description: "Cosign Requirement Cosigner Name"
-* value[x] only string
+Extension: Cosigner
+Id: cosigner
+Title: "Cosigner"
+Description: "Cosign Requirement Cosigner"
+* value[x] only Reference(OncologyPractitioner)
 
 Extension: CosignDateTime
 Id: cosignDateTime
@@ -189,9 +189,9 @@ Description: "Example Document Reference"
 * content.attachment.url = "http://example.com"
 * content.attachment.contentType = #json
 * extension[isDeleted].valueBoolean = true
-* extension[deletionUser].valueString = "Tony"
-* extension[deletionDate].valueDate = "2019-02-07"
-* extension[deletionUser].valueString = "Tony"
+* extension[deletionUser].valueReference = Reference(ExamplePractitioner)
+* extension[deletionTime].valueDateTime = "2019-02-07"
+* extension[deletionUser].valueReference = Reference(ExamplePractitioner)
 * extension[lastEditorId].valueString = "123"
 * extension[lastEditorExtId].valueString = "ABC"
 * extension[lastEditorName].valueString = "Tony"
@@ -202,5 +202,5 @@ Description: "Example Document Reference"
 * extension[cosignRequirementName].valueString = "ABC XYZ"
 * extension[cosignRequirementTitle].valueString = "Some title"
 * extension[cosignDateTime].valueDateTime = "2019-02-07T13:28:17.000Z"
-* extension[cosignerName].valueString = "Steve"
+* extension[cosigner].valueReference = Reference(ExamplePractitioner)
 
