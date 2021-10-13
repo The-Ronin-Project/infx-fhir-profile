@@ -30,13 +30,14 @@ while [ "$#" -gt 0 ]; do
     shift
 done
 
-echo "Checking internet connection"
-curl -sSf tx.fhir.org > /dev/null
-
-if [ $? -ne 0 ] ; then
-  echo "Offline (or the terminology server is down), unable to update.  Exiting"
-  exit 1
-fi
+# Commenting out - ping isn't allowed to use in Github Action
+#echo "Checking internet connection"
+#curl -sSf tx.fhir.org > /dev/null
+#
+#if [ $? -ne 0 ] ; then
+#  echo "Offline (or the terminology server is down), unable to update.  Exiting"
+#  exit 1
+#fi
 
 if [ ! -d "$input_cache_path" ] ; then
   if [ $FORCE != true ]; then
