@@ -73,6 +73,10 @@ InstanceOf: OncologyPractitioner
 Description: "Ronin Example for Practitioner"
 * id = "roninPractitionerExample01"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-practitioner"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "mdaoc"
+* identifier[SER].system = "http://projectronin.com/id/ser"
+* identifier[SER].value = "mdaoc-999999"
 * identifier[NPI].type.coding.system = IDTYPE
 * identifier[NPI].type.coding.code = IDTYPE#NPI
 * identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"

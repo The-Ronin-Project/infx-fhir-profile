@@ -187,6 +187,10 @@ InstanceOf: OncologyPractitioner
 Description: "Ronin Practitioner 01 - MDA"
 * id = "roninMDAPractitioner01Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-practitioner"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "mdaoc"
+* identifier[SER].system = "http://projectronin.com/id/ser"
+* identifier[SER].value = "mdaoc-22221"
 * identifier[NPI].type.coding.system = IDTYPE
 * identifier[NPI].type.coding.code = IDTYPE#NPI
 * identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
@@ -211,6 +215,10 @@ InstanceOf: OncologyPractitioner
 Description: "Ronin Practitioner 02 - MDA"
 * id = "roninMDAPractitioner02Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-practitioner"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "mdaoc"
+* identifier[SER].system = "http://projectronin.com/id/ser"
+* identifier[SER].value = "mdaoc-22222"
 * identifier[NPI].type.coding.system = IDTYPE
 * identifier[NPI].type.coding.code = IDTYPE#NPI
 * identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
@@ -235,6 +243,10 @@ InstanceOf: OncologyPractitioner
 Description: "Ronin Practitioner 03 - MDA"
 * id = "roninMDAPractitioner03Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-practitioner"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "mdaoc"
+* identifier[SER].system = "http://projectronin.com/id/ser"
+* identifier[SER].value = "mdaoc-22223"
 * identifier[NPI].type.coding.system = IDTYPE
 * identifier[NPI].type.coding.code = IDTYPE#NPI
 * identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
@@ -259,6 +271,10 @@ InstanceOf: OncologyPractitioner
 Description: "Ronin Practitioner 04 - PSJ"
 * id = "roninPSJPractitioner04Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-practitioner"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "psj"
+* identifier[SER].system = "http://projectronin.com/id/ser"
+* identifier[SER].value = "psj-11111"
 * identifier[NPI].type.coding.system = IDTYPE
 * identifier[NPI].type.coding.code = IDTYPE#NPI
 * identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
@@ -283,6 +299,10 @@ InstanceOf: OncologyPractitioner
 Description: "Ronin Practitioner 05 - PSJ"
 * id = "roninPSJPractitioner05Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-practitioner"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "psj"
+* identifier[SER].system = "http://projectronin.com/id/ser"
+* identifier[SER].value = "psj-11112"
 * identifier[NPI].type.coding.system = IDTYPE
 * identifier[NPI].type.coding.code = IDTYPE#NPI
 * identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
