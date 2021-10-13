@@ -17,7 +17,7 @@ Description: "An oncologist practitioner resource"
 
 * identifier contains
     tenantId 1..1 and
-    SER    1..1
+    SER    0..1
 
 * identifier[tenantId] ^patternIdentifier.type = RTID#TID "Ronin-specified Tenant Identifier"
 * identifier[tenantId] ^patternIdentifier.system = RTID //"http://projectronin.com/id/tenantId"
