@@ -1,6 +1,137 @@
 // OncologyTestData.fsh contains a set of 5 patients as initial examples for testing
 // Two tenants created: MDA and PSJ.
 
+// Five Appointments, 3 MDA, 2 PSJ
+Instance: roninOncologyPatientAppointment01Test
+InstanceOf: OncologyAppointment
+Description: "Ronin Example for Oncology Patient Appointment"
+* id = "roninOncologyPatientAppointment01Test"
+* meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-appointment"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "mdaoc"
+* minutesDuration = 60
+* comment = "Patient experiencing abdominal pain"
+* start = "2019-02-07T13:28:17.000Z"
+* end = "2019-02-07T14:28:17.000Z"
+* status = #checked-in
+* participant[0].actor = Reference(roninPatient01Test)
+* participant[0].actor.identifier.value = "01111"
+* participant[0].actor.display = "John B. Bass"
+* participant[0].actor.reference = "roninPatient01Test"
+* participant[0].status = #accepted
+* participant[1].actor = Reference(roninPractitioner01Test)
+* participant[1].actor.identifier.value = "9988776655"
+* participant[1].actor.display = "Dr. Harvey Feest"
+* participant[1].actor.reference = "roninPractitioner01Test"
+* participant[1].status = #accepted
+* appointmentType = AppmtType#CHECKUP "A routine check-up, such as an annual physical"
+* reasonReference = Reference(roninPrimaryOncologyCondition01Test)
+* extension[department][0].valueReference = Reference(roninMDAPartnerDepartmentTest)
+
+Instance: roninOncologyPatientAppointment02Test
+InstanceOf: OncologyAppointment
+Description: "Ronin Example for Oncology Patient Appointment"
+* id = "roninOncologyPatientAppointment02Test"
+* meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-appointment"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "mdaoc"
+* minutesDuration = 30
+* comment = "Patient noticing rashes"
+* start = "2020-06-03T17:23:17.000Z"
+* end = "2020-06-03T17:53:17.000Z"
+* status = #checked-in
+* participant[0].actor = Reference(roninPatient02Test)
+* participant[0].actor.identifier.value = "01112"
+* participant[0].actor.display = "Wyatt A. Chad"
+* participant[0].actor.reference = "roninPatient02Test"
+* participant[0].status = #accepted
+* participant[1].actor = Reference(roninPractitioner02Test)
+* participant[1].actor.identifier.value = "2281376654"
+* participant[1].actor.display = "Dr. Alfred Grey"
+* participant[1].actor.reference = "roninPractitioner02Test"
+* participant[1].status = #accepted
+* appointmentType = AppmtType#WALKIN "A previously unscheduled walk-in visit"
+* reasonReference = Reference(roninPrimaryOncologyCondition02Test)
+* extension[department][0].valueReference = Reference(roninMDAPartnerDepartmentTest)
+
+Instance: roninOncologyPatientAppointment03Test
+InstanceOf: OncologyAppointment
+Description: "Ronin Example for Oncology Patient Appointment"
+* id = "roninOncologyPatientAppointment03Test"
+* meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-appointment"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "mdaoc"
+* minutesDuration = 90
+* comment = "Patient having severe vomiting"
+* start = "2020-01-01T00:05:00.000Z"
+* end = "2020-01-01T01:35:00.000Z"
+* status = #checked-in
+* participant[0].actor = Reference(roninPatient03Test)
+* participant[0].actor.identifier.value = "01113"
+* participant[0].actor.display = "Vivaan B. Acostal"
+* participant[0].actor.reference = "roninPatient03Test"
+* participant[0].status = #accepted
+* participant[1].actor = Reference(roninPractitioner02Test)
+* participant[1].actor.identifier.value = "2281376654"
+* participant[1].actor.display = "Dr. Alfred Grey"
+* participant[1].actor.reference = "roninPractitioner02Test"
+* participant[1].status = #accepted
+* appointmentType = AppmtType#EMERGENCY "Emergency appointment"
+* reasonReference = Reference(roninPrimaryOncologyCondition03Test)
+* extension[department][0].valueReference = Reference(roninMDAPartnerDepartmentTest)
+
+Instance: roninOncologyPatientAppointment04Test
+InstanceOf: OncologyAppointment
+Description: "Ronin Example for Oncology Patient Appointment"
+* id = "roninOncologyPatientAppointment04Test"
+* meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-appointment"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "psj"
+* minutesDuration = 30
+* comment = "Patient having severe vomiting"
+* start = "2018-10-11T05:30:00.000Z"
+* end = "2018-10-11T06:00:00.000Z"
+* status = #checked-in
+* participant[0].actor = Reference(roninPatient04Test)
+* participant[0].actor.identifier.value = "01114"
+* participant[0].actor.display = "Wilmatar Z. Oud"
+* participant[0].actor.reference = "roninPatient04Test"
+* participant[0].status = #accepted
+* participant[1].actor = Reference(roninPractitioner04Test)
+* participant[1].actor.identifier.value = "2333230098"
+* participant[1].actor.display = "Dr. Wendyline Kebbe"
+* participant[1].actor.reference = "roninPractitioner04Test"
+* participant[1].status = #accepted
+* appointmentType = AppmtType#ROUTINE "Routine appointment - default if not valued"
+* reasonReference = Reference(roninPrimaryOncologyCondition04Test)
+* extension[department][0].valueReference = Reference(roninPSJPartnerDepartmentTest)
+
+Instance: roninOncologyPatientAppointment05Test
+InstanceOf: OncologyAppointment
+Description: "Ronin Example for Oncology Patient Appointment"
+* id = "roninOncologyPatientAppointment05Test"
+* meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-appointment"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "psj"
+* minutesDuration = 30
+* comment = "Patient having severe vomiting"
+* start = "2021-09-03T05:30:00.000Z"
+* end = "2021-09-03T06:00:00.000Z"
+* status = #checked-in
+* participant[0].actor = Reference(roninPatient05Test)
+* participant[0].actor.identifier.value = "20220"
+* participant[0].actor.display = "Kane M. Random"
+* participant[0].actor.reference = "roninPatient05Test"
+* participant[0].status = #accepted
+* participant[1].actor = Reference(roninPractitioner05Test)
+* participant[1].actor.identifier.value = "2312223033"
+* participant[1].actor.display = "Dr. Brian Allergy"
+* participant[1].actor.reference = "roninPractitioner05Test"
+* participant[1].status = #accepted
+* appointmentType = AppmtType#ROUTINE "Routine appointment - default if not valued"
+* reasonReference = Reference(roninPrimaryOncologyCondition05Test)
+* extension[department][0].valueReference = Reference(roninPSJPartnerDepartmentTest)
+
 // Five patients, 3 MDA, 2 PSJ
 Instance: roninPatient01Test
 InstanceOf: OncologyPatient
@@ -187,6 +318,8 @@ InstanceOf: OncologyPractitioner
 Description: "Ronin Practitioner 01 - MDA"
 * id = "roninMDAPractitioner01Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-practitioner"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "mdaoc"
 * identifier[NPI].type.coding.system = IDTYPE
 * identifier[NPI].type.coding.code = IDTYPE#NPI
 * identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
@@ -215,6 +348,8 @@ Description: "Ronin Practitioner 02 - MDA"
 * identifier[NPI].type.coding.code = IDTYPE#NPI
 * identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
 * identifier[NPI].value = "2281376654"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "mdaoc"
 * name.family = "Gray"
 * name.given = "Alfred"
 * name.prefix = "Dr."
@@ -239,6 +374,8 @@ Description: "Ronin Practitioner 03 - MDA"
 * identifier[NPI].type.coding.code = IDTYPE#NPI
 * identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
 * identifier[NPI].value = "1098276451"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "mdaoc"
 * name.family = "Foster"
 * name.given = "Gabrielius"
 * name.prefix = "Dr."
@@ -263,6 +400,8 @@ Description: "Ronin Practitioner 04 - PSJ"
 * identifier[NPI].type.coding.code = IDTYPE#NPI
 * identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
 * identifier[NPI].value = "2333230098"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "psj"
 * name.family = "Kebbe"
 * name.given = "Wendyline"
 * name.prefix = "Dr."
@@ -287,6 +426,8 @@ Description: "Ronin Practitioner 05 - PSJ"
 * identifier[NPI].type.coding.code = IDTYPE#NPI
 * identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
 * identifier[NPI].value = "2312223033"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "psj"
 * name.family = "Allergy"
 * name.given = "Brian"
 * name.prefix = "Dr."
