@@ -15,13 +15,13 @@ publisher:
   url: https://www.projectronin.com
   email: contact@projectronin.com
 jurisdiction: urn:iso:std:iso:3166#US "United States of America"
-description: The Ronin oncology FHIR profile assembles a core set of structured data elements 
+description: The Ronin oncology FHIR profile assembles a core set of structured data elements
   for oncology based on FHIR 4.0.1 and mCODE™ standards.
 # For now the license is set to not-open-source - legal needs to evaluate what's appropriate
 # FHIR 4.0.1 licenses http://hl7.org/fhir/R4/valueset-spdx-license.html
 license: not-open-source
 dependencies:
-  hl7.fhir.us.core: 4.0.0
+  hl7.fhir.us.core: 3.1.0
   hl7.fhir.us.mcode: 1.0.0
 parameters:
   show-inherited-invariants: true
