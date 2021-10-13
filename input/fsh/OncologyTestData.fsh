@@ -17,7 +17,7 @@ Description: "Ronin Example for Oncology Patient Appointment"
 * participant[0].actor = Reference(roninPatient01Test)
 * participant[0].actor.display = "John B. Bass"
 * participant[0].status = #accepted
-* participant[1].actor = Reference(roninPractitioner01Test)
+* participant[1].actor = Reference(roninMDAPractitioner01Test)
 * participant[1].actor.display = "Dr. Harvey Feest"
 * participant[1].status = #accepted
 * appointmentType = AppmtType#CHECKUP "A routine check-up, such as an annual physical"
@@ -39,7 +39,7 @@ Description: "Ronin Example for Oncology Patient Appointment"
 * participant[0].actor = Reference(roninPatient02Test)
 * participant[0].actor.display = "Wyatt A. Chad"
 * participant[0].status = #accepted
-* participant[1].actor = Reference(roninPractitioner02Test)
+* participant[1].actor = Reference(roninMDAPractitioner02Test)
 * participant[1].actor.display = "Dr. Alfred Grey"
 * participant[1].status = #accepted
 * appointmentType = AppmtType#WALKIN "A previously unscheduled walk-in visit"
@@ -61,7 +61,7 @@ Description: "Ronin Example for Oncology Patient Appointment"
 * participant[0].actor = Reference(roninPatient03Test)
 * participant[0].actor.display = "Vivaan B. Acostal"
 * participant[0].status = #accepted
-* participant[1].actor = Reference(roninPractitioner02Test)
+* participant[1].actor = Reference(roninMDAPractitioner02Test)
 * participant[1].actor.display = "Dr. Alfred Grey"
 * participant[1].status = #accepted
 * appointmentType = AppmtType#EMERGENCY "Emergency appointment"
@@ -83,7 +83,7 @@ Description: "Ronin Example for Oncology Patient Appointment"
 * participant[0].actor = Reference(roninPatient04Test)
 * participant[0].actor.display = "Wilmatar Z. Oud"
 * participant[0].status = #accepted
-* participant[1].actor = Reference(roninPractitioner04Test)
+* participant[1].actor = Reference(roninPSJPractitioner04Test)
 * participant[1].actor.display = "Dr. Wendyline Kebbe"
 * participant[1].status = #accepted
 * appointmentType = AppmtType#ROUTINE "Routine appointment - default if not valued"
@@ -105,7 +105,7 @@ Description: "Ronin Example for Oncology Patient Appointment"
 * participant[0].actor = Reference(roninPatient05Test)
 * participant[0].actor.display = "Kane M. Random"
 * participant[0].status = #accepted
-* participant[1].actor = Reference(roninPractitioner05Test)
+* participant[1].actor = Reference(roninPSJPractitioner05Test)
 * participant[1].actor.display = "Dr. Brian Allergy"
 * participant[1].status = #accepted
 * appointmentType = AppmtType#ROUTINE "Routine appointment - default if not valued"
