@@ -190,7 +190,7 @@ Description: "Ronin Practitioner 01 - MDA"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * identifier[SER].system = "http://projectronin.com/id/ser"
-* identifier[SER].value = "mdaoc-22221"
+* identifier[SER].value = "22221"
 * identifier[NPI].type.coding.system = IDTYPE
 * identifier[NPI].type.coding.code = IDTYPE#NPI
 * identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
@@ -218,7 +218,7 @@ Description: "Ronin Practitioner 02 - MDA"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * identifier[SER].system = "http://projectronin.com/id/ser"
-* identifier[SER].value = "mdaoc-22222"
+* identifier[SER].value = "22222"
 * identifier[NPI].type.coding.system = IDTYPE
 * identifier[NPI].type.coding.code = IDTYPE#NPI
 * identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
@@ -246,7 +246,7 @@ Description: "Ronin Practitioner 03 - MDA"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * identifier[SER].system = "http://projectronin.com/id/ser"
-* identifier[SER].value = "mdaoc-22223"
+* identifier[SER].value = "22223"
 * identifier[NPI].type.coding.system = IDTYPE
 * identifier[NPI].type.coding.code = IDTYPE#NPI
 * identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
@@ -274,7 +274,7 @@ Description: "Ronin Practitioner 04 - PSJ"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "psj"
 * identifier[SER].system = "http://projectronin.com/id/ser"
-* identifier[SER].value = "psj-11111"
+* identifier[SER].value = "11111"
 * identifier[NPI].type.coding.system = IDTYPE
 * identifier[NPI].type.coding.code = IDTYPE#NPI
 * identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
@@ -302,7 +302,7 @@ Description: "Ronin Practitioner 05 - PSJ"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "psj"
 * identifier[SER].system = "http://projectronin.com/id/ser"
-* identifier[SER].value = "psj-11112"
+* identifier[SER].value = "11112"
 * identifier[NPI].type.coding.system = IDTYPE
 * identifier[NPI].type.coding.code = IDTYPE#NPI
 * identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"

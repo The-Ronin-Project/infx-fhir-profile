@@ -41,7 +41,7 @@ Description: "Example Oncology Practitioner"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * identifier[SER].system = "http://projectronin.com/id/ser"
-* identifier[SER].value = "mdaoc-999991"
+* identifier[SER].value = "999991"
 * identifier[NPI].type.coding.system = IDTYPE
 * identifier[NPI].type.coding.code = IDTYPE#NPI
 * identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
