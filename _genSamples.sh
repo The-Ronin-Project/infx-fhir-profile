@@ -35,6 +35,11 @@ else
   usage
 fi
 
+if ! type jq > /dev/null; then
+  echo -e "${RED}ERROR: jq is not installed.  Please install jq.${NC}"
+  exit 1
+fi
+
 files=`ls ${PWD}/fsh-generated/resources/*${fname_end}.json 2>/dev/null`
 
 if [ -z "${files}" ]
