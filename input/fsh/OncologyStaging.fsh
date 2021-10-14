@@ -2,7 +2,7 @@
 OncologyStaging is a resource that models the cancer staging.
 */
 Profile: OncologyStaging
-Parent: CancerStageParent
+Parent: CancerStageGroup
 Id: oncology-staging
 Title: "Oncology Staging"
 Description: "A cancer stagings that uses mCODE to model TNM stagings for oncology patients"
@@ -75,14 +75,12 @@ Description: "Example Oncology Staging"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-staging"
 * status = #active
 //code must be LNC not SCT
-* code = LNC#21908-9 //"Stage group.clinical Cancer"
-* valueCodeableConcept = AJCC#cN3 "N3"
+* code = LNC#21914-7 "Stage group.other Cancer"
+* valueCodeableConcept = UMLS#C2698392 "Binet Stage A"
 * status = #final "final"
-* category = ObsCat#survey "Survey"
-* method = MTH#C146985 "AJCC Cancer Staging Manual 8th Edition"
+* method = UMLS#C4683625 "Binet Staging"
 * subject = Reference(ExamplePatient)
 * effectiveDateTime = "2019-04-01"
-* valueCodeableConcept = AJCC#3C "IIIC"
 * extension[classification].valueString = "Pathologic"
-* extension[diagnosisCode].valueCodeableConcept = AJCC#cN3 "N3"
+* extension[diagnosisCode].valueCodeableConcept = UMLS#C2698392 "Binet Stage A"
 * extension[diagnosisDate].valueDateTime = "2019-04-01"
