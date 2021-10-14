@@ -22,7 +22,7 @@ description: The Ronin oncology FHIR profile assembles a core set of structured 
 license: not-open-source
 dependencies:
   hl7.fhir.us.core: 3.1.0
-  hl7.fhir.us.mcode: 1.0.0
+  hl7.fhir.us.mcode: 1.16.0 
 parameters:
   show-inherited-invariants: true
   apply-contact: true
