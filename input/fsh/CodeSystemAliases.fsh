@@ -6,6 +6,7 @@ Alias:   MTH = http://ncimeta.nci.nih.gov
 Alias:   ICD10CM = http://hl7.org/fhir/sid/icd-10-cm
 Alias:   RXN = http://www.nlm.nih.gov/research/umls/rxnorm
 Alias:   CPT = http://www.ama-assn.org/go/cpt
+Alias:   UMLS = http://terminology.hl7.org/CodeSystem/umls
 Alias:   ICD10PCS = http://www.nlm.nih.gov/research/umls/icd10pcs
 Alias:   AJCC = http://cancerstaging.org
 Alias:   GTR = http://www.ncbi.nlm.nih.gov/gtr
