@@ -59,7 +59,7 @@ do
   then
     echo ',' >> ${data}.json
   fi
-  file_count+=1
+  ((file_count+=1))
   cat $i >> ${data}.json
 done
 echo ']' >> ${data}.json
