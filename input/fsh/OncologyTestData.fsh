@@ -21,7 +21,7 @@ Description: "Ronin Example for Oncology Patient Appointment"
 * participant[1].actor.display = "Dr. Harvey Feest"
 * participant[1].status = #accepted
 * appointmentType = AppmtType#CHECKUP "A routine check-up, such as an annual physical"
-* reasonReference = Reference(roninPrimaryOncologyCondition01Test)
+// * reasonReference = Reference(roninPrimaryOncologyCondition01Test)
 * extension[department][0].valueReference = Reference(roninMDAPartnerDepartmentTest)
 
 Instance: roninOncologyPatientAppointment02Test
@@ -43,7 +43,7 @@ Description: "Ronin Example for Oncology Patient Appointment"
 * participant[1].actor.display = "Dr. Alfred Grey"
 * participant[1].status = #accepted
 * appointmentType = AppmtType#WALKIN "A previously unscheduled walk-in visit"
-* reasonReference = Reference(roninPrimaryOncologyCondition02Test)
+// * reasonReference = Reference(roninPrimaryOncologyCondition02Test)
 * extension[department][0].valueReference = Reference(roninMDAPartnerDepartmentTest)
 
 Instance: roninOncologyPatientAppointment03Test
@@ -65,7 +65,7 @@ Description: "Ronin Example for Oncology Patient Appointment"
 * participant[1].actor.display = "Dr. Alfred Grey"
 * participant[1].status = #accepted
 * appointmentType = AppmtType#EMERGENCY "Emergency appointment"
-* reasonReference = Reference(roninPrimaryOncologyCondition03Test)
+// * reasonReference = Reference(roninPrimaryOncologyCondition03Test)
 * extension[department][0].valueReference = Reference(roninMDAPartnerDepartmentTest)
 
 Instance: roninOncologyPatientAppointment04Test
@@ -87,7 +87,7 @@ Description: "Ronin Example for Oncology Patient Appointment"
 * participant[1].actor.display = "Dr. Wendyline Kebbe"
 * participant[1].status = #accepted
 * appointmentType = AppmtType#ROUTINE "Routine appointment - default if not valued"
-* reasonReference = Reference(roninPrimaryOncologyCondition04Test)
+// * reasonReference = Reference(roninPrimaryOncologyCondition04Test)
 * extension[department][0].valueReference = Reference(roninPSJPartnerDepartmentTest)
 
 Instance: roninOncologyPatientAppointment05Test
@@ -109,7 +109,7 @@ Description: "Ronin Example for Oncology Patient Appointment"
 * participant[1].actor.display = "Dr. Brian Allergy"
 * participant[1].status = #accepted
 * appointmentType = AppmtType#ROUTINE "Routine appointment - default if not valued"
-* reasonReference = Reference(roninPrimaryOncologyCondition05Test)
+// * reasonReference = Reference(roninPrimaryOncologyCondition05Test)
 * extension[department][0].valueReference = Reference(roninPSJPartnerDepartmentTest)
 
 // Five patients, 3 MDA, 2 PSJ
