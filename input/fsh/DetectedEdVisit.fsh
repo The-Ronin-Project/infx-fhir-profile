@@ -18,6 +18,9 @@ Description: "A custom resource that is used for NLP detected emergency departme
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
+// Keep this comment for reference.
+// 'AssignmentRule' is not permitted for 'Logical'
+// that's why it is commented and left for reference.
 // * identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
 // * identifier[tenantId].system = RTID //"http://projectronin.com/id/tenantId"
 // * identifier[mrn].type = IDTYPE#MR "Medical Record Number"
@@ -26,10 +29,11 @@ Description: "A custom resource that is used for NLP detected emergency departme
 * startDate 0..1 SU date "ED visit date" "ED visit NLP detected date of service"
 * source 1..1 SU string "Sentence used by View Source" "Sentence detected to indicated ED Visit"
 * sourceEntityIndex 1..* SU EntityIndex "Indices of ED visit entities detected in source string"
-* isValid 0..1 SU boolean "User feedback" "User feedback to indicate if prediction is false"
+// User Feedback will be stored in Banken initially and this flag is deprecated until later notice
+//* isValid 0..1 SU boolean "User feedback" "User feedback to indicate if prediction is false"
 * context 1..1 SU Reference(OncologyDocumentReference) 
                     "Note used by View Note" "Reference to the clinical note from medical record"
-* subject 0..1 SU Reference(OncologyPatient) "ED visit patient"
+* subject 1..1 SU Reference(OncologyPatient) "ED visit patient"
 * location 0..1 SU string "Detected location of ED visit"
 
 Logical: EntityIndex
