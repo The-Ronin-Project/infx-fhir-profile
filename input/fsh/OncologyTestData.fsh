@@ -535,7 +535,7 @@ Description: "Ronin Example for Oncology Document Reference"
 * subject = Reference(roninPatient01Test)
 * content.id = "MDANote01"
 * content.attachment.data = "bm90ZV9tZGExLmh0bWwK"
-* content.attachment.contentType = #text/plain
+* content.attachment.contentType = #text/html
 * author = Reference(roninMDAPractitioner01Test)
 
 // DocumentReference Note 2.

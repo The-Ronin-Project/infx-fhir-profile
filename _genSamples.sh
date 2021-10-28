@@ -12,7 +12,7 @@ file_count=1
 usage () {
   echo -n "Usage: $0 -d {example|test} -v"
   echo ""
-  echo -n "use \"-v\" to include DetectedEdVisit tests."
+  echo -n "use \"-v\" to include DetectedEdVisit test data."
   echo ""
   exit 1
 }
