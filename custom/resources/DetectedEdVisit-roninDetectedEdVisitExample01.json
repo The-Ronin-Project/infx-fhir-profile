@@ -1,0 +1,41 @@
+{
+    "resourceType": "DetectedEdVisit",
+    "meta": {
+        "profile": [
+            "http://projectronin.com/fhir/us/ronin/StructureDefinition/DetectedEDVisit"
+        ]
+    },
+    "identifier": [
+        {
+            "value": "mdaoc",
+            "system": "http://projectronin.com/id/tenantId"
+        },
+        {
+            "value": "123",
+            "system": "http://projectronin.com/id/mrn"
+        }
+    ],
+    "id": "roninDetectedEDVisitExample01",
+    "startDate": "2020-10-02",
+    "source": "this is a 01-22-2020 ED visit",
+    "sourceEntityIndex": [
+        {
+            "end": 20,
+            "start": 10
+        },
+        {
+            "end": 23,
+            "start": 21
+        }
+    ],
+    "context": {
+        "reference": "DocumentReference/roninDocumentReferenceExample01",
+        "id": "roninDocumentReferenceExample01"
+    },
+    "location": "here and there",
+    "subject": {
+        "reference": "Patient/roninPatientExample01",
+        "id": "roninPatientExample01"
+    },
+    "modelVersion": "1"
+}
