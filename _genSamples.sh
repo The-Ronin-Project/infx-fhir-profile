@@ -78,7 +78,7 @@ if [ ${data} = "test" ]; then
   fi
 fi
 
-if [ ${with_edvisits} ]
+if [ ${with_edvisits} == true ]
 then
   echo -e "${GREEN}Copying ED Visit resources.${NC}"
   cp ${PWD}/custom/resources/*${fname_end}.json ${TEMP_DIR} 2>/dev/null
