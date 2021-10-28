@@ -62,18 +62,20 @@ TEMP_DIR="${PWD}/temp/stage"
 mkdir -p ${TEMP_DIR}
 cp ${PWD}/fsh-generated/resources/*${fname_end}.json ${TEMP_DIR}
 
-doc_ref=`ls ${TEMP_DIR}/*DocumentReference*${fname_end}.json 2>/dev/null`
-if [ ! -z "${doc_ref}" ]
-then
-  # Process DocumentReference content.attachment.data
-  for i in ${doc_ref}
-  do
-    dec_name=`cat ${i} | jq -r '.content[0].attachment.data' | base64 -d`
-    echo -e "${GREEN}Inserting ${dec_name} in ${i}.${NC}"
-    enc_file=`cat ${PWD}/custom/notes/${dec_name} | base64`
-    f=`jq '.content[0].attachment.data = $newVal' --arg newVal ${enc_file} <<< cat ${i}`
-    echo ${f} > ${i}
-  done
+if [ ${data} = "test" ]; then
+  doc_ref=`ls ${TEMP_DIR}/*DocumentReference*${fname_end}.json 2>/dev/null`
+  if [ ! -z "${doc_ref}" ]
+  then
+    # Process DocumentReference content.attachment.data
+    for i in ${doc_ref}
+    do
+      dec_name=`cat ${i} | jq -r '.content[0].attachment.data' | base64 -d`
+      echo -e "${GREEN}Inserting ${dec_name} in ${i}.${NC}"
+      enc_file=`cat ${PWD}/custom/notes/${dec_name} | base64`
+      f=`jq '.content[0].attachment.data = $newVal' --arg newVal ${enc_file} <<< cat ${i}`
+      echo ${f} > ${i}
+    done
+  fi
 fi
 
 if [ ${with_edvisits} ]
