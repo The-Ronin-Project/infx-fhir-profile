@@ -518,3 +518,98 @@ Description: "Ronin PSJ Partner"
 * name = "PSJ"
 * text.status = #generated
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">PSJ</div>"
+
+// DocumentReference Note 1.
+Instance:   roninDocumentReference01Test
+InstanceOf: OncologyDocumentReference
+Description: "Ronin Example for Oncology Document Reference"
+* id = "roninDocumentReference01Test"
+* meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-document-reference"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "mdaoc"
+* status = #current
+* date = "2019-02-07T13:28:17.239+02:00"
+* context.id = "exampleContextId"
+* type = LNC#28568-4 "Physician Emergency department Note"
+* category = DocCat#clinical-note "Clinical Note"
+* subject = Reference(roninPatient01Test)
+* content.id = "MDANote01"
+* content.attachment.data = "bm90ZV9tZGExLmh0bWwK"
+* content.attachment.contentType = #text/plain
+* author = Reference(roninMDAPractitioner01Test)
+
+// DocumentReference Note 2.
+Instance:   roninDocumentReference02Test
+InstanceOf: OncologyDocumentReference
+Description: "Ronin Example for Oncology Document Reference"
+* id = "roninDocumentReference02Test"
+* meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-document-reference"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "mdaoc"
+* status = #current
+* date = "2018-02-07T13:28:17.239+02:00"
+* context.id = "exampleContextId"
+* type = LNC#28568-4 "Physician Emergency department Note"
+* category = DocCat#clinical-note "Clinical Note"
+* subject = Reference(roninPatient02Test)
+* content.id = "MDANote02"
+* content.attachment.data = "bm90ZV9tZGEyLmh0bWwK"
+* content.attachment.contentType = #text/html
+* author = Reference(roninMDAPractitioner02Test)
+
+// DocumentReference Note 3.
+Instance:   roninDocumentReference03Test
+InstanceOf: OncologyDocumentReference
+Description: "Ronin Example for Oncology Document Reference"
+* id = "roninDocumentReference03Test"
+* meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-document-reference"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "mdaoc"
+* status = #current
+* date = "2017-02-07T13:28:17.239+02:00"
+* context.id = "exampleContextId"
+* type = LNC#28568-4 "Physician Emergency department Note"
+* category = DocCat#clinical-note "Clinical Note"
+* subject = Reference(roninPatient03Test)
+* content.id = "MDANote03"
+* content.attachment.data = "bm90ZV9tZGEzLmh0bWwK"
+* content.attachment.contentType = #text/html
+* author = Reference(roninMDAPractitioner03Test)
+
+// DocumentReference Note 4.
+Instance:   roninDocumentReference04Test
+InstanceOf: OncologyDocumentReference
+Description: "Ronin Example for Oncology Document Reference"
+* id = "roninDocumentReference04Test"
+* meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-document-reference"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "psj"
+* status = #current
+* date = "2021-02-07T13:28:17.239+02:00"
+* context.id = "exampleContextId"
+* type = LNC#28568-4 "Physician Emergency department Note"
+* category = DocCat#clinical-note "Clinical Note"
+* subject = Reference(roninPatient04Test)
+* content.id = "note_psj1.html"
+* content.attachment.data = "bm90ZV9wc2oxLmh0bWwK"
+* content.attachment.contentType = #text/html
+* author = Reference(roninPSJPractitioner04Test)
+
+// DocumentReference Note 5.
+Instance:   roninDocumentReference05Test
+InstanceOf: OncologyDocumentReference
+Description: "Ronin Example for Oncology Document Reference"
+* id = "roninDocumentReference05Test"
+* meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-document-reference"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "psj"
+* status = #current
+* date = "2020-02-07T13:28:17.239+02:00"
+* context.id = "exampleContextId"
+* type = LNC#28568-4 "Physician Emergency department Note"
+* category = DocCat#clinical-note "Clinical Note"
+* subject = Reference(roninPatient05Test)
+* content.id = "note_psj2.html"
+* content.attachment.data = "bm90ZV9wc2oyLmh0bWwK"
+* content.attachment.contentType = #text/html
+* author = Reference(roninPSJPractitioner05Test)
