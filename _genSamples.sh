@@ -21,6 +21,8 @@ if [ $# -eq 0 ]; then
   usage
 fi
 
+with_edvisits=false
+
 while getopts vd: flag
 do
   case "${flag}" in
@@ -76,6 +78,7 @@ fi
 
 if [ ${with_edvisits} ]
 then
+  echo -e "${GREEN}Copying ED Visit resources.${NC}"
   cp ${PWD}/custom/resources/*${fname_end}.json ${TEMP_DIR} 2>/dev/null
 fi
 
