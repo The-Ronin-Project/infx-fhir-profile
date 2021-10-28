@@ -533,7 +533,9 @@ Description: "Ronin Example for Oncology Document Reference"
 * type = LNC#28568-4 "Physician Emergency department Note"
 * category = DocCat#clinical-note "Clinical Note"
 * subject = Reference(roninPatient01Test)
-* content.id = "MDANote01"
+* content.id = "note_mda1.html"
+//Note that content.attachment.data must be base64Binary,
+//that's why the value is encoded and when decoded = content.id value in this example.
 * content.attachment.data = "bm90ZV9tZGExLmh0bWwK"
 * content.attachment.contentType = #text/html
 * author = Reference(roninMDAPractitioner01Test)
@@ -552,7 +554,9 @@ Description: "Ronin Example for Oncology Document Reference"
 * type = LNC#28568-4 "Physician Emergency department Note"
 * category = DocCat#clinical-note "Clinical Note"
 * subject = Reference(roninPatient02Test)
-* content.id = "MDANote02"
+* content.id = "note_mda2.html"
+//Note that content.attachment.data must be base64Binary,
+//that's why the value is encoded and when decoded = content.id value in this example.
 * content.attachment.data = "bm90ZV9tZGEyLmh0bWwK"
 * content.attachment.contentType = #text/html
 * author = Reference(roninMDAPractitioner02Test)
@@ -571,7 +575,9 @@ Description: "Ronin Example for Oncology Document Reference"
 * type = LNC#28568-4 "Physician Emergency department Note"
 * category = DocCat#clinical-note "Clinical Note"
 * subject = Reference(roninPatient03Test)
-* content.id = "MDANote03"
+* content.id = "note_mda3.html"
+//Note that content.attachment.data must be base64Binary,
+//that's why the value is encoded and when decoded = content.id value in this example.
 * content.attachment.data = "bm90ZV9tZGEzLmh0bWwK"
 * content.attachment.contentType = #text/html
 * author = Reference(roninMDAPractitioner03Test)
@@ -590,6 +596,8 @@ Description: "Ronin Example for Oncology Document Reference"
 * type = LNC#28568-4 "Physician Emergency department Note"
 * category = DocCat#clinical-note "Clinical Note"
 * subject = Reference(roninPatient04Test)
+//Note that content.attachment.data must be base64Binary,
+//that's why the value is encoded and when decoded = content.id value in this example.
 * content.id = "note_psj1.html"
 * content.attachment.data = "bm90ZV9wc2oxLmh0bWwK"
 * content.attachment.contentType = #text/html
@@ -610,6 +618,8 @@ Description: "Ronin Example for Oncology Document Reference"
 * category = DocCat#clinical-note "Clinical Note"
 * subject = Reference(roninPatient05Test)
 * content.id = "note_psj2.html"
+//Note that content.attachment.data must be base64Binary,
+//that's why the value is encoded and when decoded = content.id value in this example.
 * content.attachment.data = "bm90ZV9wc2oyLmh0bWwK"
 * content.attachment.contentType = #text/html
 * author = Reference(roninPSJPractitioner05Test)
