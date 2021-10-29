@@ -2,7 +2,7 @@
     "resourceType": "DetectedEdVisit",
     "meta": {
         "profile": [
-            "http://projectronin.com/fhir/us/ronin/StructureDefinition/DetectedEDVisit"
+            "http://projectronin.com/fhir/us/ronin/StructureDefinition/detected-ed-visit"
         ]
     },
     "identifier": [
@@ -37,5 +37,6 @@
         "reference": "Patient/roninPatient05Test",
         "display": "roninPatient05Test"
     },
-    "modelVersion": "1"
+    "modelVersion": "1",
+    "humanAnnotated": true
 }
