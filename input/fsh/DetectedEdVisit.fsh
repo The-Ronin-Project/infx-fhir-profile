@@ -3,7 +3,7 @@ DetectedEDVisit is a logical resource that models ED Visits extracted from notes
 */
 Logical: DetectedEDVisit
 Parent: Element
-Id: DetectedEDVisit
+Id: detected-ed-visit
 Title: "Detected ED Visit"
 Description: "A custom resource that is used for NLP detected emergency department visit"
 
@@ -26,6 +26,7 @@ Description: "A custom resource that is used for NLP detected emergency departme
 // * identifier[mrn].type = IDTYPE#MR "Medical Record Number"
 // * identifier[mrn].system = RMRN //"http://projectronin.com/id/mrn"
 * modelVersion 1..1 SU string "NLP model version that detected this ED visit"
+* humanAnnotated 1..1 SU boolean "Indicates whether the record is Human Annotated or not"
 * startDate 0..1 SU date "ED visit date" "ED visit NLP detected date of service"
 * source 1..1 SU string "Sentence used by View Source" "Sentence detected to indicated ED Visit"
 * sourceEntityIndex 1..* SU EntityIndex "Indices of ED visit entities detected in source string"
