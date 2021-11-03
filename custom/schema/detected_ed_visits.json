@@ -1,0 +1,68 @@
+{
+  "resourceType": "App",
+  "id": "DetectedEdVisit",
+  "apiVersion": 1,
+  "type": "app",
+  "entities": {
+    "EntityIndex": {
+      "attrs": {
+        "start": {
+          "type": "positiveInt",
+          "isRequired": true
+        },
+        "end": {
+          "type": "positiveInt",
+          "isRequired": true
+        }
+      }
+    },
+    "DetectedEdVisit": {
+      "attrs": {
+        "identifier": {
+          "type": "Identifier",
+          "isCollection": true,
+          "isRequired": true
+        },
+        "modelVersion": {
+          "type": "string",
+          "isRequired": true
+        },
+        "humanAnnotated": {
+          "type": "boolean",
+          "isRequired": true
+        },
+        "startDate": {
+          "type": "date",
+          "isRequired": false
+        },
+        "source": {
+          "type": "string",
+          "isRequired": true
+        },
+        "sourceEntityIndex": {
+          "type": "EntityIndex",
+          "isCollection": true,
+          "isRequired": true
+        },
+        "location": {
+          "type": "string",
+          "isRequired": false
+        },
+        "context": {
+          "type": "Reference",
+          "refers": [
+            "DocumentReference"
+          ],
+          "isRequired": true
+        },
+        "subject": {
+          "type": "Reference",
+          "refers": [
+            "Patient"
+          ],
+          "isRequired": true
+        }
+      }
+    }
+  }
+}
