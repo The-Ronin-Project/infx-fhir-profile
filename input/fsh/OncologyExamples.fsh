@@ -14,8 +14,6 @@ Instance: roninPrimaryOncologyConditionExample01
 InstanceOf: OncologyCondition
 Description: "Ronin Example for Primary Oncology Condition"
 * id = "roninPrimaryOncologyConditionExample01"
-* identifier[1].system = "http://projectronin.com/fhir/us/ronin"
-* identifier[1].value = "12345"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "013"
 * category.coding.display = "encounter-diagnosis"
@@ -202,3 +200,162 @@ Description: "Ronin Example for Oncology Patient Appointment"
 * appointmentType = AppmtType#CHECKUP "A routine check-up, such as an annual physical"
 * reasonReference = Reference(roninPrimaryOncologyConditionExample01)
 * extension[department][0].valueReference = Reference(roninPartnerDepartmentExample01)
+
+// Risk Assessments Example01 Instances
+Instance: roninEdVisitRiskAssessmentExample01
+InstanceOf: EDVisitRiskAssessment
+Description: "Example ED Visit Risk Assessment"
+* id = "roninEdVisitRiskAssessmentExample01"
+* meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/ed-visit-risk-assessment"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "013"
+* status = #final
+* subject = Reference(roninPatientExample01)
+* occurrenceDateTime = "2021-10-07"
+* prediction.probabilityDecimal = 0.43
+* basis = Reference(roninEdVisitRationaleExample01)
+* extension[sampleSize].valueInteger = 200
+* extension[cohortSize].valueInteger = 500
+
+
+Instance: roninEdVisitRationaleExample01
+InstanceOf: EDVisitRationale
+Description: "Rationale associated with roninEdVisitRiskAssessmentExample01"
+* id = "roninEdVisitRationaleExample01"
+* meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/ed-visit-rationale"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "013"
+* status = #final
+* code = SCT#4525004 "Emergency department patient visit"
+* focus = Reference(roninEdVisitRiskAssessmentExample01)
+* issued = "2021-10-07T13:28:17.000Z"
+
+// I added ID to this example but we don't have to use it
+// We can use code.coding.code in search.
+// NOTE that id has to be unique.
+* component[ageRisk].id = "AgeRiskDriver"
+* component[ageRisk].valueInteger = 110
+* component[ageRisk].interpretation = RDSRD#increase
+* component[ageRisk].referenceRange.low.value = 50
+* component[ageRisk].referenceRange.high.value = 120
+* component[ageRisk].referenceRange.text = "Age Range"
+* component[ageRisk].extension[category].valueString = "Socioeconomic / Demographics"
+
+* component[maritalStatusRisk].id = "maritalStatusRiskDriver"
+* component[maritalStatusRisk].valueQuantity.value = 0.1
+* component[maritalStatusRisk].interpretation = RDSRD#increase
+* component[maritalStatusRisk].referenceRange.low.value = 0.05
+* component[maritalStatusRisk].referenceRange.high.value = 0.2
+* component[maritalStatusRisk].referenceRange.text = "Marital Status Range"
+* component[maritalStatusRisk].extension[category].valueString = "Socioeconomic / Demographics"
+
+* component[immunotherapyRisk].id = "ImmunotherapyRiskDriver"
+* component[immunotherapyRisk].valueQuantity.value = 0.45
+* component[immunotherapyRisk].interpretation = RDSRD#increase
+* component[immunotherapyRisk].referenceRange.low.value = 0.05
+* component[immunotherapyRisk].referenceRange.high.value = 1.0
+* component[immunotherapyRisk].referenceRange.text = "Immunotherapy Range"
+* component[immunotherapyRisk].extension[category].valueString = "Treatment Specific"
+
+* component[TNMRisk].id = "TNMRiskDriver"
+* component[TNMRisk].valueQuantity.value = 0.08
+* component[TNMRisk].interpretation = RDSRD#decrease
+* component[TNMRisk].referenceRange.low.value = 0.05
+* component[TNMRisk].referenceRange.high.value = 0.1
+* component[TNMRisk].referenceRange.text = "TNM Range"
+* component[TNMRisk].extension[category].valueString = "Cancer Specific"
+
+* component[diabetesRisk].id = "DiabetesRiskDriver"
+* component[diabetesRisk].valueQuantity.value = 0.6
+* component[diabetesRisk].interpretation = RDSRD#increase
+* component[diabetesRisk].referenceRange.low.value = 0.2
+* component[diabetesRisk].referenceRange.high.value = 1.0
+* component[diabetesRisk].referenceRange.text = "Diabetes Range"
+* component[diabetesRisk].extension[category].valueString = "Comorbidities"
+
+* component[hypertensionRisk].id = "hypertensionRiskDriver"
+* component[hypertensionRisk].valueQuantity.value = 0.45
+* component[hypertensionRisk].interpretation = RDSRD#increase
+* component[hypertensionRisk].referenceRange.low.value = 0.2
+* component[hypertensionRisk].referenceRange.high.value = 1.0
+* component[hypertensionRisk].referenceRange.text = "Hypertension Range"
+* component[hypertensionRisk].extension[category].valueString = "Comorbidities"
+
+* component[rheumatoidArthritisRisk].id = "rheumatoidArthritisRiskDriver"
+* component[rheumatoidArthritisRisk].valueQuantity.value = 0.35
+* component[rheumatoidArthritisRisk].interpretation = RDSRD#increase
+* component[rheumatoidArthritisRisk].referenceRange.low.value = 0.1
+* component[rheumatoidArthritisRisk].referenceRange.high.value = 0.7
+* component[rheumatoidArthritisRisk].referenceRange.text = "Rheumatoid Arthritis Range"
+* component[rheumatoidArthritisRisk].extension[category].valueString = "Comorbidities"
+
+* component[serumCreatinineRisk].id = "serumCreatinineRiskDriver"
+* component[serumCreatinineRisk].valueQuantity.value = 0.08
+* component[serumCreatinineRisk].interpretation = RDSRD#increase
+* component[serumCreatinineRisk].referenceRange.low.value = 0.01
+* component[serumCreatinineRisk].referenceRange.high.value = 0.1
+* component[serumCreatinineRisk].referenceRange.text = "Serum Creatinine Range"
+* component[serumCreatinineRisk].extension[category].valueString = "Labs"
+
+* component[potassiumRisk].id = "potassiumRiskDriver"
+* component[potassiumRisk].valueQuantity.value = 0.07
+* component[potassiumRisk].interpretation = RDSRD#increase
+* component[potassiumRisk].referenceRange.low.value = 0.01
+* component[potassiumRisk].referenceRange.high.value = 0.1
+* component[potassiumRisk].referenceRange.text = "Potassium Range"
+* component[potassiumRisk].extension[category].valueString = "Labs"
+
+* component[ANCRisk].id = "ANCRiskDriver"
+* component[ANCRisk].valueQuantity.value = 0.03
+* component[ANCRisk].interpretation = RDSRD#increase
+* component[ANCRisk].referenceRange.low.value = 0.01
+* component[ANCRisk].referenceRange.high.value = 0.1
+* component[ANCRisk].referenceRange.text = "ANC Range"
+* component[ANCRisk].extension[category].valueString = "Labs"
+
+* component[ageComparison].id = "AgePatientComparison"
+* component[ageComparison].valueInteger = 190
+
+* component[overallMatchComparison].id = "overallMatchPatientComparison"
+* component[overallMatchComparison].valueInteger = 161
+
+* component[performanceStatusComparison].id = "performanceStatusPatientComparison"
+* component[performanceStatusComparison].valueInteger = 200
+
+* component[stageAndTNMComparison].id = "stageAndTNMPatientComparison"
+* component[stageAndTNMComparison].valueInteger = 160
+
+* component[priorOrCurrentTreatmentsComparison].id = "priorOrCurrentTreatmentsPatientComparison"
+* component[priorOrCurrentTreatmentsComparison].valueInteger = 160
+
+* component[CCIComparison].id = "CCIPatientComparison"
+* component[CCIComparison].valueInteger = 130
+
+* component[activeMedicationComparison].id = "activeMedicationPatientComparison"
+* component[activeMedicationComparison].valueInteger = 130
+
+* component[labs].id = "Labs"
+* component[labs].code.coding[0] = RDSLAB#31f8a5a3-19c5-4789-b46e-77d6a851a4cc "Amylase"
+* component[labs].code.coding[0].version = "1"
+
+* component[labs].code.coding[1] = RDSLAB#eca5e803-675c-4615-8992-4e03508a778f "INR"
+* component[labs].code.coding[1].version = "1"
+
+* component[labs].code.coding[2] = RDSLAB#dd0113d4-f448-478c-b8db-d84d4a36601f "CA15.3"
+* component[labs].code.coding[2].version = "2"
+
+* component[symptoms].id = "Symptoms"
+* component[symptoms].code.coding[0] = RDSSYMPTOM#Fever "Fever"
+* component[symptoms].code.coding[0].extension[eventDate].valueDate = "2021-10-31"
+
+* component[symptoms].code.coding[1] = RDSSYMPTOM#Nausea/vomiting "Nausea/Vomiting"
+* component[symptoms].code.coding[1].extension[eventDate].valueDate = "2021-11-20"
+
+* component[symptoms].code.coding[2] = RDSSYMPTOM#Diarrhea "Diarrhea"
+* component[symptoms].code.coding[2].extension[eventDate].valueDate = "2020-08-10"
+
+* component[symptoms].code.coding[3] = RDSSYMPTOM#ShortnessOfBreath "Shortness of breath"
+* component[symptoms].code.coding[3].extension[eventDate].valueDate = "2019-10-15"
+
+* component[symptoms].code.coding[4] = RDSSYMPTOM#Pain "Pain"
+* component[symptoms].code.coding[4].extension[eventDate].valueDate = "2018-08-12"
