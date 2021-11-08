@@ -241,7 +241,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessmentExample01"
 * component[ageRisk].referenceRange.text = "Age Range"
 * component[ageRisk].extension[category].valueString = "Socioeconomic / Demographics"
 
-* component[maritalStatusRisk].id = "maritalStatusRiskDriver"
+* component[maritalStatusRisk].id = "MaritalStatusRiskDriver"
 * component[maritalStatusRisk].valueQuantity.value = 0.1
 * component[maritalStatusRisk].interpretation = RDSRD#increase
 * component[maritalStatusRisk].referenceRange.low.value = 0.05
@@ -273,7 +273,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessmentExample01"
 * component[diabetesRisk].referenceRange.text = "Diabetes Range"
 * component[diabetesRisk].extension[category].valueString = "Comorbidities"
 
-* component[hypertensionRisk].id = "hypertensionRiskDriver"
+* component[hypertensionRisk].id = "HypertensionRiskDriver"
 * component[hypertensionRisk].valueQuantity.value = 0.45
 * component[hypertensionRisk].interpretation = RDSRD#increase
 * component[hypertensionRisk].referenceRange.low.value = 0.2
@@ -281,7 +281,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessmentExample01"
 * component[hypertensionRisk].referenceRange.text = "Hypertension Range"
 * component[hypertensionRisk].extension[category].valueString = "Comorbidities"
 
-* component[rheumatoidArthritisRisk].id = "rheumatoidArthritisRiskDriver"
+* component[rheumatoidArthritisRisk].id = "RheumatoidArthritisRiskDriver"
 * component[rheumatoidArthritisRisk].valueQuantity.value = 0.35
 * component[rheumatoidArthritisRisk].interpretation = RDSRD#increase
 * component[rheumatoidArthritisRisk].referenceRange.low.value = 0.1
@@ -289,7 +289,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessmentExample01"
 * component[rheumatoidArthritisRisk].referenceRange.text = "Rheumatoid Arthritis Range"
 * component[rheumatoidArthritisRisk].extension[category].valueString = "Comorbidities"
 
-* component[serumCreatinineRisk].id = "serumCreatinineRiskDriver"
+* component[serumCreatinineRisk].id = "SerumCreatinineRiskDriver"
 * component[serumCreatinineRisk].valueQuantity.value = 0.08
 * component[serumCreatinineRisk].interpretation = RDSRD#increase
 * component[serumCreatinineRisk].referenceRange.low.value = 0.01
@@ -297,7 +297,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessmentExample01"
 * component[serumCreatinineRisk].referenceRange.text = "Serum Creatinine Range"
 * component[serumCreatinineRisk].extension[category].valueString = "Labs"
 
-* component[potassiumRisk].id = "potassiumRiskDriver"
+* component[potassiumRisk].id = "PotassiumRiskDriver"
 * component[potassiumRisk].valueQuantity.value = 0.07
 * component[potassiumRisk].interpretation = RDSRD#increase
 * component[potassiumRisk].referenceRange.low.value = 0.01
@@ -316,22 +316,22 @@ Description: "Rationale associated with roninEdVisitRiskAssessmentExample01"
 * component[ageComparison].id = "AgePatientComparison"
 * component[ageComparison].valueInteger = 190
 
-* component[overallMatchComparison].id = "overallMatchPatientComparison"
+* component[overallMatchComparison].id = "OverallMatchPatientComparison"
 * component[overallMatchComparison].valueInteger = 161
 
-* component[performanceStatusComparison].id = "performanceStatusPatientComparison"
+* component[performanceStatusComparison].id = "PerformanceStatusPatientComparison"
 * component[performanceStatusComparison].valueInteger = 200
 
-* component[stageAndTNMComparison].id = "stageAndTNMPatientComparison"
+* component[stageAndTNMComparison].id = "StageAndTNMPatientComparison"
 * component[stageAndTNMComparison].valueInteger = 160
 
-* component[priorOrCurrentTreatmentsComparison].id = "priorOrCurrentTreatmentsPatientComparison"
+* component[priorOrCurrentTreatmentsComparison].id = "PriorOrCurrentTreatmentsPatientComparison"
 * component[priorOrCurrentTreatmentsComparison].valueInteger = 160
 
 * component[CCIComparison].id = "CCIPatientComparison"
 * component[CCIComparison].valueInteger = 130
 
-* component[activeMedicationComparison].id = "activeMedicationPatientComparison"
+* component[activeMedicationComparison].id = "ActiveMedicationPatientComparison"
 * component[activeMedicationComparison].valueInteger = 130
 
 * component[labs].id = "Labs"

@@ -205,7 +205,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment"
 * component[ageRisk].referenceRange.text = "Age Range"
 * component[ageRisk].extension[category].valueString = "Socioeconomic / Demographics"
 
-* component[maritalStatusRisk].id = "maritalStatusRiskDriver"
+* component[maritalStatusRisk].id = "MaritalStatusRiskDriver"
 * component[maritalStatusRisk].valueQuantity.value = 0.09
 * component[maritalStatusRisk].interpretation = RDSRD#increase
 * component[maritalStatusRisk].referenceRange.low.value = 0.05
@@ -217,7 +217,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment"
 * component[ageComparison].id = "AgePatientComparison"
 * component[ageComparison].valueInteger = 100
 
-* component[stageAndTNMComparison].id = "stageAndTNMPatientComparison"
+* component[stageAndTNMComparison].id = "StageAndTNMPatientComparison"
 * component[stageAndTNMComparison].valueInteger = 120
 
 //There is an informational message here that is suppressed
