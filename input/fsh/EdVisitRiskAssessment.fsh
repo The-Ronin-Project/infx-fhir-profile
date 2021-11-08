@@ -161,8 +161,8 @@ Description: "Observations to support ED Visit assessment, includes patient comp
 
 // Labs and Symptoms are different.  We don't use value[x] but we use a list of codes 
 // for a single Labs/Symptoms component and extend code with date for symptoms
-* insert CreateLabsComponent(labs, 0, *, "Patient Labs", "Patient significant labs")
-* insert CreateSymptomsComponent(symptoms, 0, *, "Patient Symptoms", "Patient reported symptoms")
+* insert CreateLabsComponent(labs, 0, 1, "Patient Labs", "Patient significant labs")
+* insert CreateSymptomsComponent(symptoms, 0, 1, "Patient Symptoms", "Patient reported symptoms")
 
 
 // Test Instances
