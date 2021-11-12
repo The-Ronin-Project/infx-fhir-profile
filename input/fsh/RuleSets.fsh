@@ -8,14 +8,16 @@ RuleSet: ObservationComponentSlicingRules
 * component ^slicing.rules = #open
 * component ^slicing.description = "Slice based on the component.code pattern"
 
-RuleSet: CreateRiskDriversComponent(sliceName, min, max, shortDescription, description, code, codeString)
+
+RuleSet: CreateRiskDriversComponent(sliceName, min, max, shortDescription, description)
 * component contains {sliceName} {min}..{max} MS
 * component[{sliceName}] ^short = {shortDescription}
 * component[{sliceName}] ^definition = {description}
 * component[{sliceName}].id MS
 * component[{sliceName}].code MS
-* component[{sliceName}].code = {code} {codeString}
+* component[{sliceName}].code from EDVisitRiskDriverCodesVS
 * component[{sliceName}].value[x] MS
+* component[{sliceName}].value[x] only Quantity
 * component[{sliceName}].interpretation MS
 * component[{sliceName}].referenceRange MS
 * component[{sliceName}].extension MS
@@ -24,14 +26,15 @@ RuleSet: CreateRiskDriversComponent(sliceName, min, max, shortDescription, descr
 * component[{sliceName}].extension[category] MS
 * insert NotUsed(dataAbsentReason)
 
-RuleSet: CreatePatientComparisonComponent(sliceName, min, max, shortDescription, description, code, codeString)  
+RuleSet: CreatePatientComparisonComponent(sliceName, min, max, shortDescription, description)
 * component contains {sliceName} {min}..{max} MS
 * component[{sliceName}] ^short = {shortDescription}
 * component[{sliceName}] ^definition = {description}
 * component[{sliceName}].id MS
 * component[{sliceName}].code MS
-* component[{sliceName}].code = {code} {codeString}
+* component[{sliceName}].code from EDVisitPatientComparisonCodesVS
 * component[{sliceName}].value[x] MS
+* component[{sliceName}].value[x] only Quantity
 * insert NotUsed(dataAbsentReason)
 * insert NotUsed(interpretation)
 * insert NotUsed(referenceRange)
