@@ -57,8 +57,6 @@ Description: "A Condition resource that is used for oncology patients"
 Instance: ExampleCondition
 InstanceOf: OncologyCondition
 Description: "Example condition"
-* identifier.system = "http://projectronin.com/fhir/us/ronin"
-* identifier.value = "12345"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "013"
 * category.coding.display = "encounter-diagnosis"

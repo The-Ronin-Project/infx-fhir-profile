@@ -21,6 +21,7 @@ Description: "A cancer stagings that uses mCODE to model TNM stagings for oncolo
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 
 * extension contains Classification named classification 0..1
+* extension contains DiagnosisCode named diagnosisCode 0..1
 * extension contains DiagnosisDate named diagnosisDate 0..1
 
 Extension: Classification
