@@ -15,7 +15,7 @@ InstanceOf: OncologyCondition
 Description: "Ronin Example for Primary Oncology Condition"
 * id = "roninPrimaryOncologyConditionExample01"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
-* identifier[tenantId].value = "013"
+* identifier[tenantId].value = "mdaoc"
 * category.coding.display = "encounter-diagnosis"
 * category.text = "Encounter Diagnosis"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-condition"
@@ -38,7 +38,7 @@ Description: "Ronin Example for Patient"
 * id = "roninPatientExample01"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-patient"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
-* identifier[tenantId].value = "013"
+* identifier[tenantId].value = "mdaoc"
 * identifier[mrn].system = "http://projectronin.com/id/mrn"
 * identifier[mrn].value = "123"
 * name.family = "Anyperson"
@@ -101,7 +101,7 @@ Description: "Ronin Example for Encounter"
 // * identifier[1].system = "http://projectronin.com/fhir/us/ronin"
 // * identifier[1].value = "12345"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
-* identifier[tenantId].value = "013"
+* identifier[tenantId].value = "mdaoc"
 * subject = Reference(roninPatientExample01)
 * subject.display = "John Anyperson"
 * participant.individual = Reference(roninPractitionerExample01)
@@ -123,7 +123,7 @@ Description: "Ronin Example for Diagnostic Report Note"
 // * identifier[1].system = "http://projectronin.com/fhir/us/ronin"
 // * identifier[1].value = "diag_report_12345"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
-* identifier[tenantId].value = "013"
+* identifier[tenantId].value = "mdaoc"
 * category.coding.display = "Imaging"
 * category.text = "Imaging"
 * code = LNC#10207-9
@@ -143,7 +143,7 @@ Description: "Ronin Example for Oncology Document Reference"
 // * identifier[1].system = "http://projectronin.com/fhir/us/ronin"
 // * identifier[1].value = "doc_ref_12345"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
-* identifier[tenantId].value = "013"
+* identifier[tenantId].value = "mdaoc"
 * status = #current
 * date = "2015-02-07T13:28:17.239+02:00"
 * context.id = "exampleContextId"
@@ -164,7 +164,7 @@ Description: "Ronin Example for Oncology CarePlan"
 // * identifier[1].system = "http://projectronin.com/fhir/us/ronin"
 // * identifier[1].value = "plan_12345"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
-* identifier[tenantId].value = "013"
+* identifier[tenantId].value = "mdaoc"
 * status = #active
 * intent = #proposal
 * subject = Reference(roninPatientExample01)
@@ -183,7 +183,7 @@ Description: "Ronin Example for Oncology Patient Appointment"
 // * identifier[1].system = "http://projectronin.com/fhir/us/ronin"
 // * identifier[1].value = "appointment_12345"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
-* identifier[tenantId].value = "013"
+* identifier[tenantId].value = "mdaoc"
 * minutesDuration = 60
 * comment = "Patient experiencing abdominal pain"
 * start = "2019-02-07T13:28:17.000Z"
@@ -208,9 +208,11 @@ Description: "Example ED Visit Risk Assessment"
 * id = "roninEdVisitRiskAssessmentExample01"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/ed-visit-risk-assessment"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
-* identifier[tenantId].value = "013"
+* identifier[tenantId].value = "mdaoc"
 * status = #final
-* subject = Reference(roninPatientExample01)
+* method = RDSML#sk-learn-random-forest-reg-model "Scikit-learn random forest regression model"
+* method.coding.version = "1"
+* subject = Reference(Patient/roninPatientExample01)
 * occurrenceDateTime = "2021-10-07"
 * prediction.probabilityDecimal = 0.43
 * basis = Reference(roninEdVisitRationaleExample01)
@@ -224,7 +226,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessmentExample01"
 * id = "roninEdVisitRationaleExample01"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/ed-visit-rationale"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
-* identifier[tenantId].value = "013"
+* identifier[tenantId].value = "mdaoc"
 * status = #final
 * code = SCT#4525004 "Emergency department patient visit"
 * focus = Reference(roninEdVisitRiskAssessmentExample01)
@@ -233,106 +235,119 @@ Description: "Rationale associated with roninEdVisitRiskAssessmentExample01"
 // I added ID to this example but we don't have to use it
 // We can use code.coding.code in search.
 // NOTE that id has to be unique.
-* component[ageRisk].id = "AgeRiskDriver"
-* component[ageRisk].valueInteger = 110
-* component[ageRisk].interpretation = RDSRD#increase
-* component[ageRisk].referenceRange.low.value = 50
-* component[ageRisk].referenceRange.high.value = 120
-* component[ageRisk].referenceRange.text = "Age Range"
-* component[ageRisk].extension[category].valueString = "Socioeconomic / Demographics"
+* component[riskDrivers][0].id = "AgeRiskDriver"
+* component[riskDrivers][0].valueQuantity.value = 0.8
+* component[riskDrivers][0].code = RDSRD#Age  "Age"
+* component[riskDrivers][0].interpretation = RDSRD#increase
+* component[riskDrivers][0].referenceRange.low.value = 0.0
+* component[riskDrivers][0].referenceRange.high.value = 1.0
+* component[riskDrivers][0].referenceRange.text = "Age Range"
+* component[riskDrivers][0].extension[category].valueCodeableConcept = RDSRDC#Demographics "Demographics"
 
-* component[maritalStatusRisk].id = "MaritalStatusRiskDriver"
-* component[maritalStatusRisk].valueQuantity.value = 0.1
-* component[maritalStatusRisk].interpretation = RDSRD#increase
-* component[maritalStatusRisk].referenceRange.low.value = 0.05
-* component[maritalStatusRisk].referenceRange.high.value = 0.2
-* component[maritalStatusRisk].referenceRange.text = "Marital Status Range"
-* component[maritalStatusRisk].extension[category].valueString = "Socioeconomic / Demographics"
+* component[riskDrivers][1].id = "MaritalStatusRiskDriver"
+* component[riskDrivers][1].valueQuantity.value = 0.1
+* component[riskDrivers][1].code = RDSRD#MS-Without-SS  "Marital Status - Without Spousal Support"
+* component[riskDrivers][1].interpretation = RDSRD#increase
+* component[riskDrivers][1].referenceRange.low.value = 0.0
+* component[riskDrivers][1].referenceRange.high.value = 1.0
+* component[riskDrivers][1].referenceRange.text = "Marital Status Range"
+* component[riskDrivers][1].extension[category].valueCodeableConcept = RDSRDC#Demographics "Demographics"
 
-* component[immunotherapyRisk].id = "ImmunotherapyRiskDriver"
-* component[immunotherapyRisk].valueQuantity.value = 0.45
-* component[immunotherapyRisk].interpretation = RDSRD#increase
-* component[immunotherapyRisk].referenceRange.low.value = 0.05
-* component[immunotherapyRisk].referenceRange.high.value = 1.0
-* component[immunotherapyRisk].referenceRange.text = "Immunotherapy Range"
-* component[immunotherapyRisk].extension[category].valueString = "Treatment Specific"
+* component[riskDrivers][2].id = "ImmunosuppressantRiskDriver"
+* component[riskDrivers][2].valueQuantity.value = 0.45
+* component[riskDrivers][2].code = RDSRD#ISP  "Immunosuppressants"
+* component[riskDrivers][2].interpretation = RDSRD#increase
+* component[riskDrivers][2].referenceRange.low.value = 0.0
+* component[riskDrivers][2].referenceRange.high.value = 1.0
+* component[riskDrivers][2].referenceRange.text = "Immunosuppressants Range"
+* component[riskDrivers][2].extension[category].valueCodeableConcept = RDSRDC#AM "Active Medications"
 
-* component[TNMRisk].id = "TNMRiskDriver"
-* component[TNMRisk].valueQuantity.value = 0.08
-* component[TNMRisk].interpretation = RDSRD#decrease
-* component[TNMRisk].referenceRange.low.value = 0.05
-* component[TNMRisk].referenceRange.high.value = 0.1
-* component[TNMRisk].referenceRange.text = "TNM Range"
-* component[TNMRisk].extension[category].valueString = "Cancer Specific"
+* component[riskDrivers][3].id = "TSP-1RiskDriver"
+* component[riskDrivers][3].valueQuantity.value = 0.1
+* component[riskDrivers][3].code = RDSRD#TSP-1  "T Stage 1 (Pathologic)"
+* component[riskDrivers][3].interpretation = RDSRD#decrease
+* component[riskDrivers][3].referenceRange.low.value = 0.0
+* component[riskDrivers][3].referenceRange.high.value = 1.0
+* component[riskDrivers][3].referenceRange.text = "T Stage 1 (Pathologic) Range"
+* component[riskDrivers][3].extension[category].valueCodeableConcept = RDSRDC#DSRF "Disease-specific Risk Factors"
 
-* component[diabetesRisk].id = "DiabetesRiskDriver"
-* component[diabetesRisk].valueQuantity.value = 0.6
-* component[diabetesRisk].interpretation = RDSRD#increase
-* component[diabetesRisk].referenceRange.low.value = 0.2
-* component[diabetesRisk].referenceRange.high.value = 1.0
-* component[diabetesRisk].referenceRange.text = "Diabetes Range"
-* component[diabetesRisk].extension[category].valueString = "Comorbidities"
+* component[riskDrivers][4].id = "DiabetesRiskDriver"
+* component[riskDrivers][4].valueQuantity.value = 0.6
+* component[riskDrivers][4].code = RDSRD#DC "Diabetes (Complicated)"
+* component[riskDrivers][4].interpretation = RDSRD#increase
+* component[riskDrivers][4].referenceRange.low.value = 0.0
+* component[riskDrivers][4].referenceRange.high.value = 1.0
+* component[riskDrivers][4].referenceRange.text = "Diabetes (Complicated) Range"
+* component[riskDrivers][4].extension[category].valueCodeableConcept = RDSRDC#CAP "Comorbidities and Acute Problems"
 
-* component[hypertensionRisk].id = "HypertensionRiskDriver"
-* component[hypertensionRisk].valueQuantity.value = 0.45
-* component[hypertensionRisk].interpretation = RDSRD#increase
-* component[hypertensionRisk].referenceRange.low.value = 0.2
-* component[hypertensionRisk].referenceRange.high.value = 1.0
-* component[hypertensionRisk].referenceRange.text = "Hypertension Range"
-* component[hypertensionRisk].extension[category].valueString = "Comorbidities"
+* component[riskDrivers][5].id = "HypertensionRiskDriver"
+* component[riskDrivers][5].valueQuantity.value = 0.45
+* component[riskDrivers][5].code = RDSRD#Hypertension "Hypertension"
+* component[riskDrivers][5].interpretation = RDSRD#increase
+* component[riskDrivers][5].referenceRange.low.value = 0.0
+* component[riskDrivers][5].referenceRange.high.value = 1.0
+* component[riskDrivers][5].referenceRange.text = "Hypertension Range"
+* component[riskDrivers][5].extension[category].valueCodeableConcept = RDSRDC#CAP "Comorbidities and Acute Problems"
 
-* component[rheumatoidArthritisRisk].id = "RheumatoidArthritisRiskDriver"
-* component[rheumatoidArthritisRisk].valueQuantity.value = 0.35
-* component[rheumatoidArthritisRisk].interpretation = RDSRD#increase
-* component[rheumatoidArthritisRisk].referenceRange.low.value = 0.1
-* component[rheumatoidArthritisRisk].referenceRange.high.value = 0.7
-* component[rheumatoidArthritisRisk].referenceRange.text = "Rheumatoid Arthritis Range"
-* component[rheumatoidArthritisRisk].extension[category].valueString = "Comorbidities"
+* component[riskDrivers][6].id = "RheumatoidArthritisRiskDriver"
+* component[riskDrivers][6].valueQuantity.value = 0.35
+* component[riskDrivers][6].code = RDSRD#RA "Rheumatoid Arthritis"
+* component[riskDrivers][6].interpretation = RDSRD#increase
+* component[riskDrivers][6].referenceRange.low.value = 0.1
+* component[riskDrivers][6].referenceRange.high.value = 0.7
+* component[riskDrivers][6].referenceRange.text = "Rheumatoid Arthritis Range"
+* component[riskDrivers][6].extension[category].valueCodeableConcept = RDSRDC#CAP "Comorbidities and Acute Problems"
 
-* component[serumCreatinineRisk].id = "SerumCreatinineRiskDriver"
-* component[serumCreatinineRisk].valueQuantity.value = 0.08
-* component[serumCreatinineRisk].interpretation = RDSRD#increase
-* component[serumCreatinineRisk].referenceRange.low.value = 0.01
-* component[serumCreatinineRisk].referenceRange.high.value = 0.1
-* component[serumCreatinineRisk].referenceRange.text = "Serum Creatinine Range"
-* component[serumCreatinineRisk].extension[category].valueString = "Labs"
+* component[riskDrivers][7].id = "CreatinineRiskDriver"
+* component[riskDrivers][7].valueQuantity.value = 0.08
+* component[riskDrivers][7].code = RDSRD#Creatinine  "Creatinine"
+* component[riskDrivers][7].interpretation = RDSRD#increase
+* component[riskDrivers][7].referenceRange.low.value = 0.0
+* component[riskDrivers][7].referenceRange.high.value = 0.1
+* component[riskDrivers][7].referenceRange.text = "Creatinine Range"
+* component[riskDrivers][7].extension[category].valueCodeableConcept = RDSRDC#DSRF "Disease-specific Risk Factors"
 
-* component[potassiumRisk].id = "PotassiumRiskDriver"
-* component[potassiumRisk].valueQuantity.value = 0.07
-* component[potassiumRisk].interpretation = RDSRD#increase
-* component[potassiumRisk].referenceRange.low.value = 0.01
-* component[potassiumRisk].referenceRange.high.value = 0.1
-* component[potassiumRisk].referenceRange.text = "Potassium Range"
-* component[potassiumRisk].extension[category].valueString = "Labs"
+* component[riskDrivers][8].id = "PotassiumRiskDriver"
+* component[riskDrivers][8].valueQuantity.value = 0.7
+* component[riskDrivers][8].code = RDSRD#Potassium "Potassium"
+* component[riskDrivers][8].interpretation = RDSRD#increase
+* component[riskDrivers][8].referenceRange.low.value = 0
+* component[riskDrivers][8].referenceRange.high.value = 1
+* component[riskDrivers][8].referenceRange.text = "Potassium Range"
+* component[riskDrivers][8].extension[category].valueCodeableConcept = RDSRDC#DSRF "Disease-specific Risk Factors"
 
-* component[ANCRisk].id = "ANCRiskDriver"
-* component[ANCRisk].valueQuantity.value = 0.03
-* component[ANCRisk].interpretation = RDSRD#increase
-* component[ANCRisk].referenceRange.low.value = 0.01
-* component[ANCRisk].referenceRange.high.value = 0.1
-* component[ANCRisk].referenceRange.text = "ANC Range"
-* component[ANCRisk].extension[category].valueString = "Labs"
+* component[riskDrivers][9].id = "ANCRiskDriver"
+* component[riskDrivers][9].valueQuantity.value = 0.03
+* component[riskDrivers][9].code = RDSRD#ANC  "Absolute Neutrophil Count (ANC)"
+* component[riskDrivers][9].interpretation = RDSRD#increase
+* component[riskDrivers][9].referenceRange.low.value = 0.01
+* component[riskDrivers][9].referenceRange.high.value = 0.1
+* component[riskDrivers][9].referenceRange.text = "ANC Range"
+* component[riskDrivers][9].extension[category].valueCodeableConcept = RDSRDC#DSRF "Disease-specific Risk Factors"
 
-* component[ageComparison].id = "AgePatientComparison"
-* component[ageComparison].valueInteger = 190
+* component[patientComparisons][0].id = "AgePatientComparison"
+* component[patientComparisons][0].code = RDSPC#AgeComparison "Age Comparison"
+* component[patientComparisons][0].valueQuantity.value = 90
 
-* component[overallMatchComparison].id = "OverallMatchPatientComparison"
-* component[overallMatchComparison].valueInteger = 161
+* component[patientComparisons][1].id = "PerformanceStatusPatientComparison"
+* component[patientComparisons][1].code = RDSPC#PerformanceStatusComparison "Performance Status Comparison"
+* component[patientComparisons][1].valueQuantity.value = 60
 
-* component[performanceStatusComparison].id = "PerformanceStatusPatientComparison"
-* component[performanceStatusComparison].valueInteger = 200
+* component[patientComparisons][2].id = "StageAndTNMPatientComparison"
+* component[patientComparisons][2].code = RDSPC#StageAndTNMComparison "Stage and TNM Comparison"
+* component[patientComparisons][2].valueQuantity.value = 20
 
-* component[stageAndTNMComparison].id = "StageAndTNMPatientComparison"
-* component[stageAndTNMComparison].valueInteger = 160
+* component[patientComparisons][3].id = "PriorOrCurrentTreatmentsPatientComparison"
+* component[patientComparisons][3].code = RDSPC#PriorOrCurrentTreatmentsComparison "Prior or Current Treatments Comparison"
+* component[patientComparisons][3].valueQuantity.value = 70
 
-* component[priorOrCurrentTreatmentsComparison].id = "PriorOrCurrentTreatmentsPatientComparison"
-* component[priorOrCurrentTreatmentsComparison].valueInteger = 160
+* component[patientComparisons][4].id = "ActiveMedicationPatientComparison"
+* component[patientComparisons][4].code = RDSPC#ActiveMedicationComparison "Active Medication Comparison"
+* component[patientComparisons][4].valueQuantity.value = 50
 
-* component[CCIComparison].id = "CCIPatientComparison"
-* component[CCIComparison].valueInteger = 130
-
-* component[activeMedicationComparison].id = "ActiveMedicationPatientComparison"
-* component[activeMedicationComparison].valueInteger = 130
+* component[patientComparisons][5].id = "CCIPatientComparison"
+* component[patientComparisons][5].code = RDSPC#CCIComparison "Comorbidity Charlson Index Comparison"
+* component[patientComparisons][5].valueQuantity.value = 10
 
 * component[labs].id = "Labs"
 * component[labs].code.coding[0] = RDSLAB#31f8a5a3-19c5-4789-b46e-77d6a851a4cc "Amylase"
@@ -348,7 +363,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessmentExample01"
 * component[symptoms].code.coding[0] = RDSSYMPTOM#Fever "Fever"
 * component[symptoms].code.coding[0].extension[eventDate].valueDate = "2021-10-31"
 
-* component[symptoms].code.coding[1] = RDSSYMPTOM#Nausea/vomiting "Nausea/Vomiting"
+* component[symptoms].code.coding[1] = RDSSYMPTOM#Nausea-vomiting "Nausea/Vomiting"
 * component[symptoms].code.coding[1].extension[eventDate].valueDate = "2021-11-20"
 
 * component[symptoms].code.coding[2] = RDSSYMPTOM#Diarrhea "Diarrhea"
