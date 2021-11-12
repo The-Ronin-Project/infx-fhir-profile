@@ -56,6 +56,7 @@ Extension: RiskDriverCategoryType
 Id: category
 Title:  "Category for Risk Drivers"
 Description: "An extension for representing a specific category corresponding to risk drivers of an assessment."
-* value[x] only string
-* value[x] ^short = "String category for risk driver"
+* value[x] only CodeableConcept
+* value[x] from EDVisitRiskDriverCategoryCodesVS
+* value[x] ^short = "Category code for risk driver"
 * value[x] 1..1
