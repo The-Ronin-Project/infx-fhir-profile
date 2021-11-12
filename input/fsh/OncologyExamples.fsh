@@ -260,7 +260,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessmentExample01"
 * component[riskDrivers][2].referenceRange.low.value = 0.0
 * component[riskDrivers][2].referenceRange.high.value = 1.0
 * component[riskDrivers][2].referenceRange.text = "Immunosuppressants Range"
-* component[riskDrivers][2].extension[category].valueCodeableConcept = RDSRDC#AM "Active Medications"
+* component[riskDrivers][2].extension[category].valueCodeableConcept = RDSRDC#Medications "Medications"
 
 * component[riskDrivers][3].id = "TSP-1RiskDriver"
 * component[riskDrivers][3].valueQuantity.value = 0.1

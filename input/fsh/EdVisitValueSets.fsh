@@ -71,7 +71,8 @@ Description: "Contains the values related to the ED visit risk drivers categorie
 * RDSRDC#PHU            "Prior Healthcare Utilization"
 * RDSRDC#CAP            "Comorbidities and Acute Problems"
 * RDSRDC#CT             "Cancer Type"
-* RDSRDC#AM             "Active Medications"
+* RDSRDC#Medictions     "Medications"
+* RDSRDC#TC             "Treatment Cycle"
 * RDSRDC#Symptoms       "Symptoms"
 * RDSRDC#LR             "Lab Results"
 
