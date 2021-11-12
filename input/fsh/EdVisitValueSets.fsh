@@ -163,37 +163,37 @@ Description: "Contains the values related to the ED visit risk drivers"
 * RDSRD#ENHL                "Ethnicity - Not Hispanic or Latino"
 * RDSRD#E-M                 "Ethnicity - Missing"
 * RDSRD#EH                  "Ethnicity - Hispanic"
-* RDSRD#PD-Density          "Population Demographics" //Density
-* RDSRD#PD-LandArea         "Population Demographics"  //Land Area
-* RDSRD#PD-PNC              "Population Demographics" //Percent Non-Citizen
+* RDSRD#PD-Density          "Population Location Demographics" //Density
+* RDSRD#PD-LandArea         "Population Location Demographics"  //Land Area
+* RDSRD#PD-PNC              "Population Citizenship Demographics" //Percent Non-Citizen
 * RDSRD#PVS-PV              "Population Veteran Status" //Percent Veteran
 * RDSRD#PVS-P2001GWV        "Population Veteran Status" //Percent 2001 Gulf War Veteran
 * RDSRD#PVSS-P1990GWV       "Population Veteran Status" //Percent 1990 Gulf War Veteran
-* RDSRD#PHA-NSEAA           "Population Healthcare Access" //Does not Speak English At All
-* RDSRD#PHA-NSEW            "Population Healthcare Access" ////Does not Speak English Well
-* RDSRD#PO-Unemployed       "Population Occupation" //Unemployed
-* RDSRD#PF-MHHI             "Population Finances" //Median Household Income
-* RDSRD#PF-PIPL1            "Population Finances" //Percent Income-to-Poverty < 1.00
-* RDSRD#PF-PIPG2            "Population Finances" //Percent Income-to-Poverty > 2.00
-* RDSRD#PE-LHS              "Population Education" //Less than High School
-* RDSRD#PE-HS               "Population Education" //High School
-* RDSRD#PE-SCA              "Population Education" //Some College or Associates
-* RDSRD#PE-BD               "Population Education" //Bachelor Degree
-* RDSRD#PE-GD               "Population Education" //Graduate Degree
-* RDSRD#PFA-FS              "Population Food Access" // Food Stamp
+* RDSRD#PHA-NSEAA           "Population Language Barrier" //Does not Speak English At All
+* RDSRD#PHA-NSEW            "Population Language Barrier" ////Does not Speak English Well
+* RDSRD#PO-Unemployed       "Population Occupation Status" //Unemployed
+* RDSRD#PF-MHHI             "Population Income" //Median Household Income
+* RDSRD#PF-PIPL1            "Population Income" //Percent Income-to-Poverty < 1.00
+* RDSRD#PF-PIPG2            "Population Income" //Percent Income-to-Poverty > 2.00
+* RDSRD#PE-LHS              "Population Highest Education Level" //Less than High School
+* RDSRD#PE-HS               "Population Highest Education Level" //High School
+* RDSRD#PE-SCA              "Population Highest Education Level" //Some College or Associates
+* RDSRD#PE-BD               "Population Highest Education Level" //Bachelor Degree
+* RDSRD#PE-GD               "Population Highest Education Level" //Graduate Degree
+* RDSRD#PFA-FS              "Population Food Insecurity" // Food Stamp
 * RDSRD#PO-A                "Population Occupation" // Agriculture 
 * RDSRD#PO-C                "Population Occupation" //Construction
 * RDSRD#PO-M                "Population Occupation" //Manufactoring
 * RDSRD#PO-W                "Population Occupation" //Wholesale
 * RDSRD#PO-R                "Population Occupation" //Retail
 * RDSRD#PO-T                "Population Occupation" //Transportation
-* RDSRD#PHA-NV              "Population Healthcare Access" //No Vehicle
-* RDSRD#PHA-NC              "Population Healthcare Access" //No Computer
-* RDSRD#PHA-60MC            "Population Healthcare Access" //At least 60-minute commute
-* RDSRD#PHC-PUPI            "Population Healthcare Coverage" //Percent Public Insurance
-* RDSRD#PHC-PMOI            "Population Healthcare Coverage" //Percent Medicare Only Insurance
-* RDSRD#PHC-PRPI            "Population Healthcare Coverage" //Percent Private Insurance
-* RDSRD#PHC-PU              "Population Healthcare Coverage" //Percent Uninsured
+* RDSRD#PHA-NV              "Population Transportation Access" //No Vehicle
+* RDSRD#PHA-NC              "Population Technology Access" //No Computer
+* RDSRD#PHA-60MC            "Population Transportation Access" //At least 60-minute commute
+* RDSRD#PHC-PUPI            "Population Health Insurance Coverage" //Percent Public Insurance
+* RDSRD#PHC-PMOI            "Population Health Insurance Coverage" //Percent Medicare Only Insurance
+* RDSRD#PHC-PRPI            "Population HeaHealth Insurancelthcare Coverage" //Percent Private Insurance
+* RDSRD#PHC-PU              "Population Health Insurance Coverage" //Percent Uninsured
 * RDSRD#DSLV                "Days since last visit"
 * RDSRD#NPV                 "Number of previous visits"
 * RDSRD#NPEDV               "Number of previous ED visits"
