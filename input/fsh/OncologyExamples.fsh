@@ -305,7 +305,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessmentExample01"
 * component[riskDrivers][7].referenceRange.low.value = 0.0
 * component[riskDrivers][7].referenceRange.high.value = 0.1
 * component[riskDrivers][7].referenceRange.text = "Creatinine Range"
-* component[riskDrivers][7].extension[category].valueCodeableConcept = RDSRDC#DSRF "Disease-specific Risk Factors"
+* component[riskDrivers][7].extension[category].valueCodeableConcept = RDSRDC#LR "Lab Results"
 
 * component[riskDrivers][8].id = "PotassiumRiskDriver"
 * component[riskDrivers][8].valueQuantity.value = 0.7
@@ -314,7 +314,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessmentExample01"
 * component[riskDrivers][8].referenceRange.low.value = 0
 * component[riskDrivers][8].referenceRange.high.value = 1
 * component[riskDrivers][8].referenceRange.text = "Potassium Range"
-* component[riskDrivers][8].extension[category].valueCodeableConcept = RDSRDC#DSRF "Disease-specific Risk Factors"
+* component[riskDrivers][8].extension[category].valueCodeableConcept = RDSRDC#LR "Lab Results"
 
 * component[riskDrivers][9].id = "ANCRiskDriver"
 * component[riskDrivers][9].valueQuantity.value = 0.03
@@ -323,7 +323,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessmentExample01"
 * component[riskDrivers][9].referenceRange.low.value = 0.01
 * component[riskDrivers][9].referenceRange.high.value = 0.1
 * component[riskDrivers][9].referenceRange.text = "ANC Range"
-* component[riskDrivers][9].extension[category].valueCodeableConcept = RDSRDC#DSRF "Disease-specific Risk Factors"
+* component[riskDrivers][9].extension[category].valueCodeableConcept = RDSRDC#LR "Lab Results"
 
 * component[patientComparisons][0].id = "AgePatientComparison"
 * component[patientComparisons][0].code = RDSPC#AgeComparison "Age Comparison"
