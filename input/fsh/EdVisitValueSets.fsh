@@ -73,6 +73,7 @@ Description: "Contains the values related to the ED visit risk drivers categorie
 * RDSRDC#CT             "Cancer Type"
 * RDSRDC#AM             "Active Medications"
 * RDSRDC#Symptoms       "Symptoms"
+* RDSRDC#LR             "Lab Results"
 
 
 //Refer to https://docs.google.com/spreadsheets/d/1Bkz5-6PhERfvwya7DPTXPZzW4BY6v5MmhVnJNB5o3xo/edit#gid=1837739289
