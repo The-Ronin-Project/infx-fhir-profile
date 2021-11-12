@@ -32,7 +32,6 @@ Description: "An assessment of the likely outcome(s) for a patient to visit ED a
 * insert NotUsed(basedOn)
 * insert NotUsed(parent)
 * insert NotUsed(modifierExtension)
-* insert NotUsed(method)
 * insert NotUsed(encounter)
 * insert NotUsed(condition)
 * insert NotUsed(performer)
@@ -40,7 +39,9 @@ Description: "An assessment of the likely outcome(s) for a patient to visit ED a
 * insert NotUsed(reasonReference)
 * insert NotUsed(mitigation)
 * insert NotUsed(note)
-
+* method MS
+* method ^definition = "The algorithm, process or mechanism used to evaluate the risk. 
+                         Contains the MLFlow model name (code) and version that created this RiskAssessment."
 * status MS
 * code MS
 * subject 1..1 MS
@@ -81,18 +82,13 @@ Description: "Observations to support ED Visit assessment, includes patient comp
 * identifier[mrn].type = IDTYPE#MR "Medical Record Number"
 * identifier[mrn].system = RMRN //"http://projectronin.com/id/mrn"
 
-* status MS
-* code MS
 * insert(NotUsed(basedOn))
 * insert(NotUsed(partOf))
 * insert(NotUsed(category))
 * insert(NotUsed(code))
 * insert(NotUsed(subject))
-* focus 1..1 MS
-* focus only Reference(EDVisitRiskAssessment)
 * insert(NotUsed(encounter))
 * insert(NotUser(effective[x]))
-* issued MS
 * insert(NotUsed(performer))
 * insert(NotUsed(value[x]))
 * insert(NotUsed(dataAbsentReason))
@@ -104,67 +100,26 @@ Description: "Observations to support ED Visit assessment, includes patient comp
 * insert(NotUsed(referenceRange))
 * insert(NotUsed(hasMember))
 * insert(NotUsed(derivedFrom))
+
+* status MS
+* code MS
+* focus 1..1 MS
+* focus only Reference(EDVisitRiskAssessment)
+* issued MS
 * insert ObservationComponentSlicingRules
 
-* insert CreateRiskDriversComponent(ageRisk, 0, 1, "Age Risk Driver", 
-            "The risk driver based on age", RDSRD#ageRisk , "Age Risk")
+// Risk Drivers and Patient Comparison have a cardinality 0..* and differentiated
+// by code from EDVisitRiskDriverCodesVS and EDVisitPatientComparisonCodesVS
+* insert CreateRiskDriversComponent(riskDrivers, 0, *, "Risk Driver slice", 
+              "The risk drivers produced by the ML model")
 
-* insert CreateRiskDriversComponent(maritalStatusRisk, 0, 1, "Marital Status Risk Driver", 
-            "The risk driver based on marital status", RDSRD#maritalStatusRisk , "Marital Status Risk")
-
-* insert CreateRiskDriversComponent(immunotherapyRisk, 0, 1, "Immunotherapy Risk Driver",
-            "The risk driver based on immunotherapy", RDSRD#immunotherapyRisk , "Immunotherapy Risk")
-
-* insert CreateRiskDriversComponent(TNMRisk, 0, 1, "TNM Risk Driver",
-            "The risk driver based on TNM", RDSRD#TNMRisk , "TNM Risk")
-
-* insert CreateRiskDriversComponent(diabetesRisk, 0, 1, "Diabetes Risk Driver",
-            "The risk driver based on diabetes", RDSRD#diabetesRisk , "Diabetes Risk" )
-
-* insert CreateRiskDriversComponent(hypertensionRisk, 0, 1, "Hypertension Risk Driver",
-            "The risk driver based on hypertension", RDSRD#hypertensionRisk , "Hypertension Risk")
-
-* insert CreateRiskDriversComponent(rheumatoidArthritisRisk, 0, 1, "Rheumatoid Arthritis Risk Driver",
-            "The risk driver based on rheumatoid arthritis", RDSRD#rheumatoidArthritisRisk , "Rheumatoid Arthritis Risk")
-
-* insert CreateRiskDriversComponent(serumCreatinineRisk, 0, 1, "Serum Creatinine Risk Driver",
-            "The risk driver based on serum creatinine", RDSRD#serumCreatinineRisk , "Serum Creatinine Risk")
-
-* insert CreateRiskDriversComponent(potassiumRisk, 0, 1, "Potassium Risk Driver",
-            "The risk driver based on potassium", RDSRD#potassiumRisk , "Potassium Risk")
-
-* insert CreateRiskDriversComponent(ANCRisk, 0, 1, "ANC Risk Driver",
-            "The risk driver based on ANC", RDSRD#ANCRisk , "ANC Risk")
-
-* insert CreatePatientComparisonComponent(overallMatchComparison, 0, 1, "Patient Overall Match Comparison",
-            "Patient comparison overall match", RDSPC#overallMatchComparison , "Overall Match Comparison")
-
-* insert CreatePatientComparisonComponent(performanceStatusComparison, 0, 1, "Patient Performance Status Comparison",
-            "Patient comparison performance status", RDSPC#performanceStatusComparison , "Age Comparison")
-
-* insert CreatePatientComparisonComponent(ageComparison, 0, 1, "Patient Age Comparison",
-            "Patient comparison age attribute", RDSPC#ageComparison , "Age Comparison")
-
-* insert CreatePatientComparisonComponent(stageAndTNMComparison, 0, 1, "Patient Stage and TNM Comparison",
-            "Patient comparison stage and TNM attribute", RDSPC#stageAndTNMComparison , "Stage and TNM Comparison")
-
-* insert CreatePatientComparisonComponent(priorOrCurrentTreatmentsComparison, 0, 1, 
-            "Patient Prior or Current Treatments Comparison",
-            "Patient prior or current treatments attribute",
-            RDSPC#priorOrCurrentTreatmentsComparison , "Prior or Current Treatments Comparison")
-
-* insert CreatePatientComparisonComponent(CCIComparison, 0, 1, 
-            "Patient Comorbidity Charlson Index Comparison", 
-            "Patient comparison Comorbidity Charlson Index attribute",
-            RDSPC#CCIComparison , "Comorbidity Charlson Index Comparison")
-
-* insert CreatePatientComparisonComponent(activeMedicationComparison, 0, 1, 
-            "Patient Active Medication Comparison",
-            "Patient comparison active medication attribute",
-            RDSPC#activeMedicationComparison , "Active Medication Comparison")
+* insert CreatePatientComparisonComponent(patientComparisons, 0, *, "Patient Comparison",
+            "The patient comparisons produced by the ML model")
 
 // Labs and Symptoms are different.  We don't use value[x] but we use a list of codes 
 // for a single Labs/Symptoms component and extend code with date for symptoms
+// Lab codes EDVisitRationaleLabCodesVS
+// Symptoms codes EDVisitRationaleSymptomCodesVS
 * insert CreateLabsComponent(labs, 0, 1, "Patient Labs", "Patient significant labs")
 * insert CreateSymptomsComponent(symptoms, 0, 1, "Patient Symptoms", "Patient reported symptoms")
 
@@ -179,6 +134,8 @@ Description: "Example ED Visit Risk Assessment"
 * identifier[tenantId].value = "013"
 * status = #final
 * subject = Reference(ExamplePatient)
+* method = RDSML#sk-learn-random-forest-reg-model "Scikit-learn random forest regression model"
+* method.coding.version = "1"
 * occurrenceDateTime = "2019-12-07"
 * prediction.probabilityDecimal = 0.32
 * prediction.outcome = SCT#4525004 "Emergency department patient visit"
@@ -201,28 +158,33 @@ Description: "Rationale associated with roninEdVisitRiskAssessment"
 
 // I added ID to this example but we don't have to use it
 // We can use code.coding.code in search.
-* component[ageRisk].id = "AgeRiskDriver"
-* component[ageRisk].valueInteger = 70
-* component[ageRisk].interpretation = RDSRD#decrease
-* component[ageRisk].referenceRange.low.value = 50
-* component[ageRisk].referenceRange.high.value = 120
-* component[ageRisk].referenceRange.text = "Age Range"
-* component[ageRisk].extension[category].valueString = "Socioeconomic / Demographics"
+* component[riskDrivers][0].id = "AgeRiskDriver"
+* component[riskDrivers][0].valueQuantity.value = 0.7
+* component[riskDrivers][0].code = RDSRD#Age  "Age"
+* component[riskDrivers][0].interpretation = RDSRD#decrease
+* component[riskDrivers][0].referenceRange.low.value = 0
+* component[riskDrivers][0].referenceRange.high.value = 1
+* component[riskDrivers][0].referenceRange.text = "Age Range"
+* component[riskDrivers][0].extension[category].valueCodeableConcept = RDSRDC#Demographics   "Demographics"
 
-* component[maritalStatusRisk].id = "MaritalStatusRiskDriver"
-* component[maritalStatusRisk].valueQuantity.value = 0.09
-* component[maritalStatusRisk].interpretation = RDSRD#increase
-* component[maritalStatusRisk].referenceRange.low.value = 0.05
-* component[maritalStatusRisk].referenceRange.high.value = 0.2
-* component[maritalStatusRisk].referenceRange.text = "Marital Status Range"
-* component[maritalStatusRisk].extension[category].valueString = "Socioeconomic / Demographics"
+
+* component[riskDrivers][1].id = "MaritalStatusRiskDriver"
+* component[riskDrivers][1].valueQuantity.value = 0.9
+* component[riskDrivers][1].code = RDSRD#MS-Without-SS   "Marital Status - Without Spousal Support"
+* component[riskDrivers][1].interpretation = RDSRD#increase
+* component[riskDrivers][1].referenceRange.low.value = 0
+* component[riskDrivers][1].referenceRange.high.value = 1
+* component[riskDrivers][1].referenceRange.text = "Marital Status Range"
+* component[riskDrivers][1].extension[category].valueCodeableConcept = RDSRDC#Demographics   "Demographics"
 
 // A more complete example is in OncologyExamples.fsh
-* component[ageComparison].id = "AgePatientComparison"
-* component[ageComparison].valueInteger = 100
+* component[patientComparisons][0].id = "AgePatientComparison"
+* component[patientComparisons][0].code = RDSPC#AgeComparison "Age Comparison"
+* component[patientComparisons][0].valueQuantity.value = 65.3
 
-* component[stageAndTNMComparison].id = "StageAndTNMPatientComparison"
-* component[stageAndTNMComparison].valueInteger = 120
+* component[patientComparisons][1].id = "StageAndTNMPatientComparison"
+* component[patientComparisons][1].code = RDSPC#StageAndTNMComparison "Stage and TNM Comparison"
+* component[patientComparisons][1].valueQuantity.value = 54.6
 
 //There is an informational message here that is suppressed
 //It's because we create a single slice for each labs/symptoms while the code is
