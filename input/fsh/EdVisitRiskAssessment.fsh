@@ -64,6 +64,7 @@ Description: "An assessment of the likely outcome(s) for a patient to visit ED a
 Profile: EDVisitRationale
 Parent: Observation
 Id: ed-visit-rationale
+Title: "ED Visit Rationale"
 Description: "Observations to support ED Visit assessment, includes patient comparison and risk drivers"
 * ^status = #draft
 * ^experimental = true
