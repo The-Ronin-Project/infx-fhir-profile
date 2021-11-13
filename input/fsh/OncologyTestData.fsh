@@ -675,7 +675,7 @@ Description: "Example ED Visit Risk Assessment"
 * subject = Reference(Patient/roninPatient03Test)
 * occurrenceDateTime = "2021-07-07"
 * prediction.probabilityDecimal = 0.25
-* basis = Reference(roninEdVisitRationale01Test)
+* basis = Reference(roninEdVisitRationale03Test)
 * extension[sampleSize].valueInteger = 250
 * extension[cohortSize].valueInteger = 455
 
@@ -693,7 +693,7 @@ Description: "Example ED Visit Risk Assessment"
 * subject = Reference(Patient/roninPatient04Test)
 * occurrenceDateTime = "2021-05-01"
 * prediction.probabilityDecimal = 0.63
-* basis = Reference(roninEdVisitRationale01Test)
+* basis = Reference(roninEdVisitRationale04Test)
 * extension[sampleSize].valueInteger = 325
 * extension[cohortSize].valueInteger = 600
 
@@ -711,7 +711,7 @@ Description: "Example ED Visit Risk Assessment"
 * subject = Reference(Patient/roninPatient05Test)
 * occurrenceDateTime = "2021-10-10"
 * prediction.probabilityDecimal = 0.9
-* basis = Reference(roninEdVisitRationale01Test)
+* basis = Reference(roninEdVisitRationale05Test)
 * extension[sampleSize].valueInteger = 425
 * extension[cohortSize].valueInteger = 500
 
