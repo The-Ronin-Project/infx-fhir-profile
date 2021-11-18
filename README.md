@@ -33,6 +33,15 @@ $ ./_genExample01.sh
 
 The resultant example01.ndjson.gz can be uploaded to Aidbox for testing.
 
+# Custom Resources
+Ronin defines some custom resources that must be registered with Aidbox before being able to access it via the Aidbox APIs or Notebooks
+The cutom resources' schemas (json files) are defined in the custom/schema folder.
+
+To register custom resources, import this Notebook into your local Aidbox dashboard:
+https://aidbox.app/ExportedNotebook/628b9c37-95fb-41c4-abdc-c7e8da0ad2b4
+
+Follow the Notebook instructions to register the custom resource before use.
+
 # Example Profile Instances
 The diagram below is a bundle image of the generated instances from OncologyExamples.fsh file.
 The visualization was done with [Bundle Visualizer](http://clinfhir.com/bundleVisualizer.html) by replacing *ronin* with *xyz* and *MDA* with *abc*
