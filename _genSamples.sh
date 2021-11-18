@@ -63,6 +63,8 @@ mkdir -p ${TEMP_DIR}
 cp ${PWD}/fsh-generated/resources/*${fname_end}.json ${TEMP_DIR}
 
 if [ ${data} = "test" ]; then
+  echo -e "${GREEN}Copying ValueSet resources.${NC}"
+  cp ${PWD}/fsh-generated/resources/ValueSet-*.json ${TEMP_DIR}
   doc_ref=`ls ${TEMP_DIR}/*DocumentReference*${fname_end}.json 2>/dev/null`
   if [ ! -z "${doc_ref}" ]
   then
@@ -78,13 +80,14 @@ if [ ${data} = "test" ]; then
   fi
 fi
 
+# This is only for DetectedEdVisits.
 if [ ${with_edvisits} == true ]
 then
   echo -e "${GREEN}Copying ED Visit resources.${NC}"
-  cp ${PWD}/custom/resources/*${fname_end}.json ${TEMP_DIR} 2>/dev/null
+  cp ${PWD}/custom/resources/*${fname_end}.json ${TEMP_DIR}
 fi
 
-files=`ls ${TEMP_DIR}/*${fname_end}.json 2>/dev/null`
+files=`ls ${TEMP_DIR}/*.json 2>/dev/null`
 
 if [ -z "${files}" ]
 then
