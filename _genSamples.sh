@@ -58,6 +58,7 @@ then
   exit 1
 fi
 
+PROJ_VERSION=`grep "version: " ${PWD}/sushi-config.yaml | cut -d' ' -f2 2>/dev/null`
 TEMP_DIR="${PWD}/temp/stage"
 mkdir -p ${TEMP_DIR}
 cp ${PWD}/fsh-generated/resources/*${fname_end}.json ${TEMP_DIR}
@@ -65,6 +66,9 @@ cp ${PWD}/fsh-generated/resources/*${fname_end}.json ${TEMP_DIR}
 if [ ${data} = "test" ]; then
   echo -e "${GREEN}Copying ValueSet resources.${NC}"
   cp ${PWD}/fsh-generated/resources/ValueSet-*.json ${TEMP_DIR}
+  # ValueSets inherit the project version - we need to replace it with v1.0 to match EdVisitRationale instances"
+  sed -i '' "s/${PROJ_VERSION}/v1.0/" ${TEMP_DIR}/ValueSet-*.json
+
   doc_ref=`ls ${TEMP_DIR}/*DocumentReference*${fname_end}.json 2>/dev/null`
   if [ ! -z "${doc_ref}" ]
   then
