@@ -28,4 +28,5 @@ Alias:   LanguageCodesWithLanguageAndOptionallyARegionModifier = http://hl7.org/
 Alias:   PatientReligion = http://hl7.org/fhir/StructureDefinition/patient-religion
 Alias:   PatientSSN = http://hl7.org/fhir/sid/us-ssn
 Alias:   AppmtType = http://terminology.hl7.org/CodeSystem/v2-0276
+Alias:   RefMeaning = http://terminology.hl7.org/CodeSystem/referencerange-meaning
 //Alias:   ProcessPriority = urn:oid:2.16.840.1.113883.4.642.4.1155 //http://terminology.hl7.org/CodeSystem/processpriority

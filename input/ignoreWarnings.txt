@@ -12,6 +12,7 @@ Error from server: Unable to provide support for code system http://projectronin
 Error from server: Unable to provide support for code system http://projectronin.com/ds/symptom
 Error from server: Unable to provide support for code system http://projectronin.com/ds/ml
 Error from server: Unable to provide support for code system http://projectronin.com/ds/patientComparison
+Error from server: Unable to provide support for code system http://loinc.org
 
 # WARNINGS 
 #Unknown System specified, so Concepts and Filters can''t be checked
