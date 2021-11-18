@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/projectronin/dp-ronin-fhir-profile#readme",
   "dependencies": {
-    "@zen-lang/hl7-fhir-r4-core": "^0.2.15",
-    "@zen-lang/hl7-fhir-us-core": "^0.2.15"
+    "@zen-lang/hl7-fhir-r4-core": "^0.2.24",
+    "@zen-lang/hl7-fhir-us-core": "^0.2.24"
   }
 }
