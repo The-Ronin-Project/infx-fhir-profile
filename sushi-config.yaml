@@ -6,7 +6,7 @@ id: projectronin.fhir
 canonical: http://projectronin.com/fhir/us/ronin
 name: RoninOncologyFHIRProfile
 status: draft
-version: 0.3.0
+version: 0.4.0
 fhirVersion: 4.0.1
 copyrightYear: 2021+
 releaseLabel: ci-build
