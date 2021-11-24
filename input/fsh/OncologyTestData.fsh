@@ -7,6 +7,8 @@ InstanceOf: OncologyAppointment
 Description: "Ronin Example for Oncology Patient Appointment"
 * id = "roninOncologyPatientAppointment01Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-appointment"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * minutesDuration = 60
@@ -29,6 +31,8 @@ InstanceOf: OncologyAppointment
 Description: "Ronin Example for Oncology Patient Appointment"
 * id = "roninOncologyPatientAppointment02Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-appointment"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * minutesDuration = 30
@@ -51,6 +55,8 @@ InstanceOf: OncologyAppointment
 Description: "Ronin Example for Oncology Patient Appointment"
 * id = "roninOncologyPatientAppointment03Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-appointment"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * minutesDuration = 90
@@ -73,6 +79,8 @@ InstanceOf: OncologyAppointment
 Description: "Ronin Example for Oncology Patient Appointment"
 * id = "roninOncologyPatientAppointment04Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-appointment"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "psj"
 * minutesDuration = 30
@@ -95,6 +103,8 @@ InstanceOf: OncologyAppointment
 Description: "Ronin Example for Oncology Patient Appointment"
 * id = "roninOncologyPatientAppointment05Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-appointment"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "psj"
 * minutesDuration = 30
@@ -338,12 +348,16 @@ InstanceOf: OncologyPractitioner
 Description: "Ronin Practitioner 01 - MDA"
 * id = "roninMDAPractitioner01Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-practitioner"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
+* identifier[SER].type = RSERID#SER "Provider SER Identifier"
+* identifier[SER].type.text = "Provider SER Identifier"
 * identifier[SER].system = "http://projectronin.com/id/ser"
 * identifier[SER].value = "22221"
-* identifier[NPI].type.coding.system = IDTYPE
-* identifier[NPI].type.coding.code = IDTYPE#NPI
+* identifier[NPI].type = IDTYPE#NPI "National provider identifier"
+* identifier[NPI].type.text = "National provider identifier"
 * identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
 * identifier[NPI].value = "9988776655"
 * name.family = "Feest"
@@ -366,12 +380,16 @@ InstanceOf: OncologyPractitioner
 Description: "Ronin Practitioner 02 - MDA"
 * id = "roninMDAPractitioner02Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-practitioner"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
+* identifier[SER].type = RSERID#SER "Provider SER Identifier"
+* identifier[SER].type.text = "Provider SER Identifier"
 * identifier[SER].system = "http://projectronin.com/id/ser"
 * identifier[SER].value = "22222"
-* identifier[NPI].type.coding.system = IDTYPE
-* identifier[NPI].type.coding.code = IDTYPE#NPI
+* identifier[NPI].type = IDTYPE#NPI "National provider identifier"
+* identifier[NPI].type.text = "National provider identifier"
 * identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
 * identifier[NPI].value = "2281376654"
 * name.family = "Gray"
@@ -394,12 +412,16 @@ InstanceOf: OncologyPractitioner
 Description: "Ronin Practitioner 03 - MDA"
 * id = "roninMDAPractitioner03Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-practitioner"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
+* identifier[SER].type = RSERID#SER "Provider SER Identifier"
+* identifier[SER].type.text = "Provider SER Identifier"
 * identifier[SER].system = "http://projectronin.com/id/ser"
 * identifier[SER].value = "22223"
-* identifier[NPI].type.coding.system = IDTYPE
-* identifier[NPI].type.coding.code = IDTYPE#NPI
+* identifier[NPI].type = IDTYPE#NPI "National provider identifier"
+* identifier[NPI].type.text = "National provider identifier"
 * identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
 * identifier[NPI].value = "1098276451"
 * name.family = "Foster"
@@ -422,12 +444,16 @@ InstanceOf: OncologyPractitioner
 Description: "Ronin Practitioner 04 - PSJ"
 * id = "roninPSJPractitioner04Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-practitioner"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "psj"
+* identifier[SER].type = RSERID#SER "Provider SER Identifier"
+* identifier[SER].type.text = "Provider SER Identifier"
 * identifier[SER].system = "http://projectronin.com/id/ser"
 * identifier[SER].value = "11111"
-* identifier[NPI].type.coding.system = IDTYPE
-* identifier[NPI].type.coding.code = IDTYPE#NPI
+* identifier[NPI].type = IDTYPE#NPI "National provider identifier"
+* identifier[NPI].type.text = "National provider identifier"
 * identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
 * identifier[NPI].value = "2333230098"
 * name.family = "Kebbe"
@@ -450,12 +476,16 @@ InstanceOf: OncologyPractitioner
 Description: "Ronin Practitioner 05 - PSJ"
 * id = "roninPSJPractitioner05Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-practitioner"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "psj"
+* identifier[SER].type = RSERID#SER "Provider SER Identifier"
+* identifier[SER].type.text = "Provider SER Identifier"
 * identifier[SER].system = "http://projectronin.com/id/ser"
 * identifier[SER].value = "11112"
-* identifier[NPI].type.coding.system = IDTYPE
-* identifier[NPI].type.coding.code = IDTYPE#NPI
+* identifier[NPI].type = IDTYPE#NPI "National provider identifier"
+* identifier[NPI].type.text = "National provider identifier"
 * identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
 * identifier[NPI].value = "2312223033"
 * name.family = "Allergy"
@@ -565,6 +595,8 @@ InstanceOf: OncologyDocumentReference
 Description: "Ronin Example for Oncology Document Reference"
 * id = "roninDocumentReference01Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-document-reference"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * status = #current
@@ -586,6 +618,8 @@ InstanceOf: OncologyDocumentReference
 Description: "Ronin Example for Oncology Document Reference"
 * id = "roninDocumentReference02Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-document-reference"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * status = #current
@@ -607,6 +641,8 @@ InstanceOf: OncologyDocumentReference
 Description: "Ronin Example for Oncology Document Reference"
 * id = "roninDocumentReference03Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-document-reference"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * status = #current
@@ -628,6 +664,8 @@ InstanceOf: OncologyDocumentReference
 Description: "Ronin Example for Oncology Document Reference"
 * id = "roninDocumentReference04Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-document-reference"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "psj"
 * status = #current
@@ -649,6 +687,8 @@ InstanceOf: OncologyDocumentReference
 Description: "Ronin Example for Oncology Document Reference"
 * id = "roninDocumentReference05Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-document-reference"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "psj"
 * status = #current
@@ -671,6 +711,8 @@ InstanceOf: EDVisitRiskAssessment
 Description: "Example ED Visit Risk Assessment"
 * id = "roninEdVisitRiskAssessment01Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/ed-visit-risk-assessment"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * status = #final
@@ -689,6 +731,8 @@ InstanceOf: EDVisitRiskAssessment
 Description: "Example ED Visit Risk Assessment"
 * id = "roninEdVisitRiskAssessment02Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/ed-visit-risk-assessment"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * status = #final
@@ -707,6 +751,8 @@ InstanceOf: EDVisitRiskAssessment
 Description: "Example ED Visit Risk Assessment"
 * id = "roninEdVisitRiskAssessment03Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/ed-visit-risk-assessment"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * status = #final
@@ -725,6 +771,8 @@ InstanceOf: EDVisitRiskAssessment
 Description: "Example ED Visit Risk Assessment"
 * id = "roninEdVisitRiskAssessment04Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/ed-visit-risk-assessment"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "psj"
 * status = #final
@@ -743,6 +791,8 @@ InstanceOf: EDVisitRiskAssessment
 Description: "Example ED Visit Risk Assessment"
 * id = "roninEdVisitRiskAssessment05Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/ed-visit-risk-assessment"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "psj"
 * status = #final
@@ -761,6 +811,8 @@ InstanceOf: EDVisitRationale
 Description: "Rationale associated with roninEdVisitRiskAssessment01Test"
 * id = "roninEdVisitRationale01Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/ed-visit-rationale"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * status = #final
@@ -929,6 +981,8 @@ InstanceOf: EDVisitRationale
 Description: "Rationale associated with roninEdVisitRiskAssessment01Test"
 * id = "roninEdVisitRationale02Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/ed-visit-rationale"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * status = #final
@@ -1077,6 +1131,8 @@ InstanceOf: EDVisitRationale
 Description: "Rationale associated with roninEdVisitRiskAssessment03Test"
 * id = "roninEdVisitRationale03Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/ed-visit-rationale"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * status = #final
@@ -1270,6 +1326,8 @@ InstanceOf: EDVisitRationale
 Description: "Rationale associated with roninEdVisitRiskAssessment04Test"
 * id = "roninEdVisitRationale04Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/ed-visit-rationale"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * status = #final
@@ -1447,6 +1505,8 @@ InstanceOf: EDVisitRationale
 Description: "Rationale associated with roninEdVisitRiskAssessment05Test"
 * id = "roninEdVisitRationale05Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/ed-visit-rationale"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "psj"
 * status = #final
@@ -1750,6 +1810,8 @@ Instance: OncologyObservation01Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 01 Test WBC (Bld) [#/Vol]"
 * id = "OncologyObservation01Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -1769,6 +1831,8 @@ Instance: OncologyObservation02Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 02 Test WBC Auto (Bld) [#/Vol]"
 * id = "OncologyObservation02Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -1788,6 +1852,8 @@ Instance: OncologyObservation03Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 03 Test WBC Estimate (Bld) [#/Vol]"
 * id = "OncologyObservation03Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -1807,6 +1873,8 @@ Instance: OncologyObservation04Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 03 Test WBC Manual cnt (Bld) [#/Vol]"
 * id = "OncologyObservation04Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -1826,6 +1894,8 @@ Instance: OncologyObservation05Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 05 Test Sodium (Bld) [Moles/Vol]"
 * id = "OncologyObservation05Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -1848,6 +1918,8 @@ Instance: OncologyObservation06Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 06 Test Sodium (Bld) [Moles/Vol] High"
 * id = "OncologyObservation06Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -1870,6 +1942,8 @@ Instance: OncologyObservation07Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 07 Test Cancer Ag 15-3 High"
 * id = "OncologyObservation07Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -1893,6 +1967,8 @@ Instance: OncologyObservation08Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 08 Test Amylase High"
 * id = "OncologyObservation08Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -1915,6 +1991,8 @@ Instance: OncologyObservation09Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 08 Test Amylase Normal"
 * id = "OncologyObservation09Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -1937,6 +2015,8 @@ Instance: OncologyObservation10Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 10 Test Amylase Low"
 * id = "OncologyObservation10Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -1959,6 +2039,8 @@ Instance: OncologyObservation11Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 11 Test Amylase High"
 * id = "OncologyObservation11Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -1981,6 +2063,8 @@ Instance: OncologyObservation12Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 12 Test Amylase Low"
 * id = "OncologyObservation12Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -2003,6 +2087,8 @@ Instance: OncologyObservation13Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 13 Test Amylase Normal"
 * id = "OncologyObservation13Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -2025,6 +2111,8 @@ Instance: OncologyObservation14Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 14 Test Amylase High"
 * id = "OncologyObservation14Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -2047,6 +2135,8 @@ Instance: OncologyObservation15Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 15 Test Amylase Normal"
 * id = "OncologyObservation15Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -2069,6 +2159,8 @@ Instance: OncologyObservation16Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 16 Test Amylase High"
 * id = "OncologyObservation16Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -2091,6 +2183,8 @@ Instance: OncologyObservation17Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 17 Test Amylase High"
 * id = "OncologyObservation17Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -2113,6 +2207,8 @@ Instance: OncologyObservation18Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 18 Test Amylase Low"
 * id = "OncologyObservation18Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -2135,6 +2231,8 @@ Instance: OncologyObservation19Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 19 Test Amylase Low"
 * id = "OncologyObservation19Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -2157,6 +2255,8 @@ Instance: OncologyObservation20Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 20 Test Amylase Normal"
 * id = "OncologyObservation20Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -2179,6 +2279,8 @@ Instance: OncologyObservation21Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 21 Test Amylase High"
 * id = "OncologyObservation21Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -2201,6 +2303,8 @@ Instance: OncologyObservation22Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 22 Test Amylase Normal"
 * id = "OncologyObservation22Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -2223,6 +2327,8 @@ Instance: OncologyObservation23Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 23 Test Amylase Normal"
 * id = "OncologyObservation23Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -2245,6 +2351,8 @@ Instance: OncologyObservation24Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 24 Test Amylase High"
 * id = "OncologyObservation24Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -2267,6 +2375,8 @@ Instance: OncologyObservation25Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 25 Test Amylase Normal"
 * id = "OncologyObservation25Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -2289,6 +2399,8 @@ Instance: OncologyObservation26Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 26 Test Amylase High"
 * id = "OncologyObservation26Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -2311,6 +2423,8 @@ Instance: OncologyObservation27Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 27 Test Amylase Low"
 * id = "OncologyObservation27Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -2333,6 +2447,8 @@ Instance: OncologyObservation28Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 28 Test Amylase High"
 * id = "OncologyObservation28Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -2355,6 +2471,8 @@ Instance: OncologyObservation29Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 29 Test Amylase Normal"
 * id = "OncologyObservation29Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -2377,6 +2495,8 @@ Instance: OncologyObservation30Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 30 Test Amylase High"
 * id = "OncologyObservation30Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -2399,6 +2519,8 @@ Instance: OncologyObservation31Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 31 Test Amylase Low"
 * id = "OncologyObservation31Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -2421,6 +2543,8 @@ Instance: OncologyObservation32Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 32 Test Amylase High"
 * id = "OncologyObservation32Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -2443,6 +2567,8 @@ Instance: OncologyObservation33Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 33 Test Amylase Normal"
 * id = "OncologyObservation33Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -2465,6 +2591,8 @@ Instance: OncologyObservation34Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 34 Test Amylase High"
 * id = "OncologyObservation34Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
@@ -2487,6 +2615,8 @@ Instance: OncologyObservation35Test
 InstanceOf: OncologyObservation
 Description: "Oncology Observation 35 Test Amylase Low"
 * id = "OncologyObservation35Test"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "mdaoc"
 * subject = Reference(Patient/roninPatient01Test)
