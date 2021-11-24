@@ -35,4 +35,5 @@ Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the c
 Code System URI 'http://projectronin.com/id/tenantId' is unknown so the code cannot be validated
 Code System URI 'http://projectronin.com/id/ser' is unknown so the code cannot be validated
 Code System URI 'http://cancerstaging.org' is unknown so the code cannot be validated
+Code System URI 'http://projectronin.com/id/fhir' is unknown so the code cannot be validated
 This element does not match any known slice defined in the profile http://projectronin.com/fhir/us/ronin/StructureDefinition/ed-visit-rationale

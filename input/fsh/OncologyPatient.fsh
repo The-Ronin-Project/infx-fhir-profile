@@ -21,12 +21,16 @@ Identifier.value = ssn with dashes removed per https://www.hl7.org/fhir/identifi
 
 * identifier contains
     tenantId 1..1 and
-    mrn 1..1
+    mrn 1..1 and
+    fhir_stu3_id 1..1
 
 * identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
 * identifier[tenantId].system = RTID //"http://projectronin.com/id/tenantId"
 * identifier[mrn].type = IDTYPE#MR "Medical Record Number"
 * identifier[mrn].system = RMRN //"http://projectronin.com/id/mrn"
+* identifier[fhir_stu3_id].type = RFHIRID#STU3 "FHIR STU3 ID"
+* identifier[fhir_stu3_id].type.text = "FHIR STU3"
+* identifier[fhir_stu3_id].system = RFHIRID //"http://projectronin.com/id/fhir"
 
 * birthDate 1..1 MS
 * telecom 1..* MS
@@ -83,11 +87,18 @@ XPath: "f:given or f:family"
 Instance: ExamplePatient
 InstanceOf: OncologyPatient
 Description: "Example Oncology Patient"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
 * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 * identifier[tenantId].value = "013"
+* identifier[mrn].type = IDTYPE#MR "Medical Record Number"
+* identifier[mrn].type.text = "MRN"
 * identifier[mrn].system = "http://projectronin.com/id/mrn"
 * identifier[mrn].value = "12345"
-
+* identifier[fhir_stu3_id].type = RFHIRID#STU3 "FHIR STU3 ID"
+* identifier[fhir_stu3_id].type.text = "FHIR STU3"
+* identifier[fhir_stu3_id].system = "http://projectronin.com/id/fhir"
+* identifier[fhir_stu3_id].value = "abc12345"
 * name.family = "Pablo"
 * name.given = "Corwin"
 * telecom.system = #phone

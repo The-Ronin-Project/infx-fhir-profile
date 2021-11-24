@@ -1,6 +1,7 @@
 //Ronin Aliases
 Alias:  RTID = http://projectronin.com/id/tenantId
 Alias:  RMRN = http://projectronin.com/id/mrn
+Alias:  RFHIRID = http://projectronin.com/id/fhir
 Alias:  RSERID = http://projectronin.com/id/ser
 Alias:  RDSRD = http://projectronin.com/ds/riskDriver
 Alias:  RDSRDC = http://projectronin.com/ds/riskDriver/category
