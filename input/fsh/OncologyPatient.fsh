@@ -93,8 +93,6 @@ Description: "Example Oncology Patient"
 * identifier[fhir_stu3_id].type = RFHIRID#STU3 "FHIR STU3 ID"
 * identifier[fhir_stu3_id].system = "http://projectronin.com/id/fhir"
 * identifier[fhir_stu3_id].value = "abc12345"
-
-
 * name.family = "Pablo"
 * name.given = "Corwin"
 * telecom.system = #phone
