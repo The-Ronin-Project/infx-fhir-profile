@@ -508,6 +508,10 @@ InstanceOf: OncologyPractitionerRole
 Description: "Ronin PractitionerRole 01 - MDA"
 * id = "roninMDAPractitionerRole01Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-practitionerrole"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "mdaoc"
 * code = http://terminology.hl7.org/CodeSystem/practitioner-role#doctor "Doctor"
 * organization = Reference(roninMDAPartnerDepartmentTest)
 * practitioner = Reference(roninMDAPractitioner01Test)
@@ -521,6 +525,10 @@ InstanceOf: OncologyPractitionerRole
 Description: "Ronin PractitionerRole 02 - MDA"
 * id = "roninMDAPractitionerRole02Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-practitionerrole"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "mdaoc"
 * code = SCT#62247001 "Family medicine specialist"
 * organization = Reference(roninMDAPartnerDepartmentTest)
 * practitioner = Reference(roninMDAPractitioner02Test)
@@ -534,6 +542,10 @@ InstanceOf: OncologyPractitionerRole
 Description: "Ronin PractitionerRole 03 - MDA"
 * id = "roninMDAPractitionerRole03Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-practitionerrole"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "mdaoc"
 * code = http://terminology.hl7.org/CodeSystem/practitioner-role#doctor "Doctor"
 * organization = Reference(roninMDAPartnerDepartmentTest)
 * practitioner = Reference(roninMDAPractitioner03Test)
@@ -547,6 +559,10 @@ InstanceOf: OncologyPractitionerRole
 Description: "Ronin PractitionerRole 04 - PSJ"
 * id = "roninPSJPractitionerRole04Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-practitionerrole"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "psj"
 * code = http://terminology.hl7.org/CodeSystem/practitioner-role#doctor "Doctor"
 * organization = Reference(roninPSJPartnerDepartmentTest)
 * practitioner = Reference(roninPSJPractitioner04Test)
@@ -560,6 +576,10 @@ InstanceOf: OncologyPractitionerRole
 Description: "Ronin PractitionerRole 05 - PSJ"
 * id = "roninPSJPractitionerRole05Test"
 * meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-practitionerrole"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "psj"
 * code = SCT#112247003 "Medical doctor"
 * organization = Reference(roninPSJPartnerDepartmentTest)
 * practitioner = Reference(roninPSJPractitioner05Test)
