@@ -18,7 +18,8 @@ Description: "An Appointment resource that is used for oncology patients and pro
 * identifier contains
     tenantId 1..1
 
-* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].system = RTID //"http://projectronin.com/id/tenantId"
 
 * created MS
 * minutesDuration MS

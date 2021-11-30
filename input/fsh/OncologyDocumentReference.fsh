@@ -20,7 +20,8 @@ Description: "A DocumentReference resource that is used to model note details fo
 * identifier contains
     tenantId 1..1
 
-* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].system = RTID //"http://projectronin.com/id/tenantId"
 
 * status MS
 //lastEditTime	N/A

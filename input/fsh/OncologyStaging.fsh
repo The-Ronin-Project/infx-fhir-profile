@@ -18,7 +18,8 @@ Description: "A cancer stagings that uses mCODE to model TNM stagings for oncolo
 * identifier contains
     tenantId 1..1
 
-* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].system = RTID //"http://projectronin.com/id/tenantId"
 
 * extension contains Classification named classification 0..1
 * extension contains DiagnosisCode named diagnosisCode 0..1

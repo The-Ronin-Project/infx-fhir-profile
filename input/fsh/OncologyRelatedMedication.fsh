@@ -18,7 +18,8 @@ Description: "A Medication resource that is used for oncology patients"
 * identifier contains
     tenantId 1..1
 
-* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].system = RTID //"http://projectronin.com/id/tenantId"
 
 * extension contains
     MedicationBrandType named isBrand 0..1 MS and

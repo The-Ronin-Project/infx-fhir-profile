@@ -18,7 +18,9 @@ Description: "A DiagnosticReport resource that is used for oncology patients"
 * identifier contains
     tenantId 1..1
 
-* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].system = RTID //"http://projectronin.com/id/tenantId"
+
 
 * specimen MS
 // performer.reference (Practitioner) default
