@@ -67,7 +67,7 @@ Description: "Ronin Example for Oncology Patient Appointment"
 * participant[0].actor = Reference(roninPatient03Test)
 * participant[0].actor.display = "Vivaan B. Acostal"
 * participant[0].status = #accepted
-* participant[1].actor = Reference(roninMDAPractitioner02Test)
+* participant[1].actor = Reference(roninMDAPractitioner03Test)
 * participant[1].actor.display = "Dr. Alfred Grey"
 * participant[1].status = #accepted
 * appointmentType = AppmtType#EMERGENCY "Emergency appointment"
@@ -2654,3 +2654,112 @@ Description: "Oncology Observation 35 Test Amylase Low"
 * referenceRange.text = "30 - 110.0 U/L"
 * interpretation = ObsInt#L "Low"
 * interpretation.text = "Low"
+
+Instance: roninEncounter01Test
+InstanceOf: OncologyEncounter
+Description: "Ronin Encounter Test 01"
+* id = "roninEncounter01Test"
+* meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-encounter"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "mdaoc"
+* subject = Reference(roninPatient01Test)
+* subject.display = "John B. Bass"
+* reasonReference = Reference(OncologyObservation01Test)
+* participant.individual = Reference(roninMDAPractitioner01Test)
+* participant.period.start = "2019-02-07T13:28:17.000Z"
+* participant.period.end = "2019-02-07T14:20:10.000Z"
+* status = #arrived
+* class.code = #EMER
+* class.display = "emergency"
+* class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+* type = SCT#4525004
+* type.text = "Emergency department patient visit"
+
+Instance: roninEncounter02Test
+InstanceOf: OncologyEncounter
+Description: "Ronin Encounter Test 02"
+* id = "roninEncounter02Test"
+* meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-encounter"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "mdaoc"
+* subject = Reference(roninPatient02Test)
+* subject.display = "Wyatt A. Chad"
+* participant.individual = Reference(roninMDAPractitioner02Test)
+* participant.period.start = "2019-02-07T13:28:17.000Z"
+* participant.period.end = "2019-02-07T14:20:10.000Z"
+* status = #finished
+* class.code = #ONC
+* class.display = "Oncology"
+* class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+* type = SCT#24882007
+* type.text = "Medical consultation on hospital inpatient"
+
+Instance: roninEncounter03Test
+InstanceOf: OncologyEncounter
+Description: "Ronin Encounter Test 03"
+* id = "roninEncounter03Test"
+* meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-encounter"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "mdaoc"
+* appointment = Reference(roninOncologyPatientAppointment03Test)
+* subject = Reference(roninPatient03Test)
+* subject.display = "Vivaan B. Acostal"
+* participant.individual = Reference(roninMDAPractitioner03Test)
+* participant.period.start = "2020-01-01T00:05:00.000Z"
+* participant.period.end = "2020-01-01T01:35:00.000Z"
+* status = #in-progress
+* class.code = #EMER
+* class.display = "emergency"
+* class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+* type = SCT#4525004
+* type.text = "Emergency department patient visit"
+
+Instance: roninEncounter04Test
+InstanceOf: OncologyEncounter
+Description: "Ronin Encounter Test 04"
+* id = "roninEncounter04Test"
+* meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-encounter"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "psj"
+* appointment = Reference(roninOncologyPatientAppointment04Test)
+* subject = Reference(roninPatient04Test)
+* subject.display = "Wilmatar Z. Oud"
+* participant.individual = Reference(roninPSJPractitioner04Test)
+* participant.period.start = "2018-10-11T05:30:00.000Z"
+* participant.period.end = "2018-10-11T06:00:00.000Z"
+* status = #arrived
+* class.code = #ONC
+* class.display = "oncology"
+* class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+* type = SCT#185349003
+* type.text = "Encounter for check up (procedure)"
+
+Instance: roninEncounter05Test
+InstanceOf: OncologyEncounter
+Description: "Ronin Encounter Test 05"
+* id = "roninEncounter05Test"
+* meta.profile = "http://projectronin.com/fhir/us/ronin/StructureDefinition/oncology-encounter"
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].type.text = "Tenant ID"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "psj"
+* appointment = Reference(roninOncologyPatientAppointment05Test)
+* subject = Reference(roninPatient05Test)
+* subject.display = "Kane M. Random"
+* participant.individual = Reference(roninPSJPractitioner05Test)
+* participant.period.start = "2021-09-03T05:30:00.000Z"
+* participant.period.end = "2021-09-03T06:00:00.000Z"
+* status = #finished
+* class.code = #MED
+* class.display = "Medical"
+* class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+* type = SCT#185348006
+* type.text = "Encounter for fear"
