@@ -60,3 +60,11 @@ Description: "An extension for representing a specific category corresponding to
 * value[x] from EDVisitRiskDriverCategoryCodesVS
 * value[x] ^short = "Category code for risk driver"
 * value[x] 1..1
+
+Extension: LabRankType
+Id: rank
+Title: "Risk driver contribution rank"
+Description: "Ranks this lab's contribution to the Risk driver."
+* value[x] only Quantity
+* value[x] ^short = "Risk driver contribution rank"
+* value[x] 1..1

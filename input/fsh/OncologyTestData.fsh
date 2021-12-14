@@ -969,15 +969,19 @@ Description: "Rationale associated with roninEdVisitRiskAssessment01Test"
 * component[labs].id = "Labs"
 * component[labs].code.coding[0] = RDSLAB#65c86cb9-7ff6-486a-81f3-823779b73f4b "WBC"
 * component[labs].code.coding[0].version = "v1.0"
+* component[labs].code.coding[0].extension[rank].valueQuantity.value = 0.34
 
 * component[labs].code.coding[1] = RDSLAB#c1c45bf7-e61b-4fed-a007-a0d2185a9ca9 "Sodium"
 * component[labs].code.coding[1].version = "v1.0"
+* component[labs].code.coding[1].extension[rank].valueQuantity.value = 0.67
 
 * component[labs].code.coding[2] = RDSLAB#dd0113d4-f448-478c-b8db-d84d4a36601f "CA15.3"
 * component[labs].code.coding[2].version = "v1.0"
+* component[labs].code.coding[2].extension[rank].valueQuantity.value = 0.60
 
 * component[labs].code.coding[3] = RDSLAB#31f8a5a3-19c5-4789-b46e-77d6a851a4cc "Amylase"
 * component[labs].code.coding[3].version = "v1.0"
+* component[labs].code.coding[3].extension[rank].valueQuantity.value = 0.90
 
 * component[symptoms].id = "Symptoms"
 * component[symptoms].code.coding[0] = RDSSYMPTOM#Fever "Fever"
@@ -1130,12 +1134,15 @@ Description: "Rationale associated with roninEdVisitRiskAssessment01Test"
 * component[labs].id = "Labs"
 * component[labs].code.coding[0] = RDSLAB#e6af1c3c-69a4-48cb-92be-56ee6e99450f  "HGB"
 * component[labs].code.coding[0].version = "v1.0"
+* component[labs].code.coding[0].extension[rank].valueQuantity.value = 0.90
 
 * component[labs].code.coding[1] = RDSLAB#c725d530-9de3-4c17-92ac-697c1f68f4f2  "Direct Bilirubin"
 * component[labs].code.coding[1].version = "v1.0"
+* component[labs].code.coding[1].extension[rank].valueQuantity.value = 0.60
 
 * component[labs].code.coding[2] = RDSLAB#7fda0337-fef1-4a5a-a7e7-124d2da2f4b8  "Glucose"
 * component[labs].code.coding[2].version = "v1.0"
+* component[labs].code.coding[2].extension[rank].valueQuantity.value = 0.30
 
 * component[symptoms].id = "Symptoms"
 * component[symptoms].code.coding[0] = RDSSYMPTOM#ShortnessOfBreath "Shortness of breath"
@@ -1317,15 +1324,19 @@ Description: "Rationale associated with roninEdVisitRiskAssessment03Test"
 * component[labs].id = "Labs"
 * component[labs].code.coding[0] = RDSLAB#fbce9f7b-2455-4ae0-9829-e22fc7ebd4e1  "LDH"
 * component[labs].code.coding[0].version = "v1.0"
+* component[labs].code.coding[0].extension[rank].valueQuantity.value = 0.20
 
 * component[labs].code.coding[1] = RDSLAB#ad691140-8ef7-4712-ac02-f8994f85c97a  "CA27.29"
 * component[labs].code.coding[1].version = "v1.0"
+* component[labs].code.coding[1].extension[rank].valueQuantity.value = 0.30
 
 * component[labs].code.coding[2] = RDSLAB#9db71342-e580-4330-aba9-d4aa770ef904  "Beta HCG"
 * component[labs].code.coding[2].version = "v1.0"
+* component[labs].code.coding[2].extension[rank].valueQuantity.value = 0.50
 
 * component[labs].code.coding[3] = RDSLAB#7dfd4847-5a45-42c1-9c08-c17de4a24b0b  "BUN"
 * component[labs].code.coding[3].version = "v1.0"
+* component[labs].code.coding[3].extension[rank].valueQuantity.value = 0.45
 
 * component[symptoms].id = "Symptoms"
 * component[symptoms].code.coding[0] = RDSSYMPTOM#Fever "Fever"
@@ -1502,15 +1513,19 @@ Description: "Rationale associated with roninEdVisitRiskAssessment04Test"
 * component[labs].id = "Labs"
 * component[labs].code.coding[0] = RDSLAB#c1c45bf7-e61b-4fed-a007-a0d2185a9ca9  "Sodium"
 * component[labs].code.coding[0].version = "v1.0"
+* component[labs].code.coding[0].extension[rank].valueQuantity.value = 0.50
 
 * component[labs].code.coding[1] = RDSLAB#272438f6-fc56-498f-8791-8509a04925b8  "AFP"
 * component[labs].code.coding[1].version = "v1.0"
+* component[labs].code.coding[1].extension[rank].valueQuantity.value = 0.70
 
 * component[labs].code.coding[2] = RDSLAB#e50db242-3d3a-47a0-af20-00b1e0b3b46c  "Alkaline Phosphatase"
 * component[labs].code.coding[2].version = "v1.0"
+* component[labs].code.coding[2].extension[rank].valueQuantity.value = 0.30
 
 * component[labs].code.coding[3] = RDSLAB#4cf9dcf2-8bb1-4952-90c8-4179b9ab2de9  "Potassium"
 * component[labs].code.coding[3].version = "v1.0"
+* component[labs].code.coding[3].extension[rank].valueQuantity.value = 0.90
 
 * component[symptoms].id = "Symptoms"
 * component[symptoms].code.coding[0] = RDSSYMPTOM#Diarrhea "Diarrhea"
@@ -1597,9 +1612,11 @@ Description: "Rationale associated with roninEdVisitRiskAssessment05Test"
 * component[labs].id = "Labs"
 * component[labs].code.coding[0] = RDSLAB#31f8a5a3-19c5-4789-b46e-77d6a851a4cc "Amylase"
 * component[labs].code.coding[0].version = "v1.0"
+* component[labs].code.coding[0].extension[rank].valueQuantity.value = 0.90
 
 * component[labs].code.coding[1] = RDSLAB#dd0113d4-f448-478c-b8db-d84d4a36601f "CA15.3"
 * component[labs].code.coding[1].version = "v1.0"
+* component[labs].code.coding[1].extension[rank].valueQuantity.value = 0.30
 
 * component[symptoms].id = "Symptoms"
 * component[symptoms].code.coding[0] = RDSSYMPTOM#Fever "Fever"

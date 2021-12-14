@@ -46,6 +46,9 @@ RuleSet: CreateLabsComponent(sliceName, min, max, shortDescription, description)
 * component[{sliceName}].id MS
 * component[{sliceName}].code MS
 * component[{sliceName}].code from EDVisitRationaleLabCodesVS
+* component[{sliceName}].code.coding.extension contains
+    LabRankType named rank 0..1 MS
+* component[{sliceName}].code.coding.extension[rank] MS
 * insert NotUsed(value[x])
 * insert NotUsed(dataAbsentReason)
 * insert NotUsed(interpretation)
