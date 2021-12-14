@@ -370,12 +370,15 @@ Description: "Rationale associated with roninEdVisitRiskAssessmentExample01"
 * component[labs].id = "Labs"
 * component[labs].code.coding[0] = RDSLAB#31f8a5a3-19c5-4789-b46e-77d6a851a4cc "Amylase"
 * component[labs].code.coding[0].version = "1"
+* component[labs].code.coding[0].extension[rank].valueQuantity.value = 0.80
 
 * component[labs].code.coding[1] = RDSLAB#eca5e803-675c-4615-8992-4e03508a778f "INR"
 * component[labs].code.coding[1].version = "1"
+* component[labs].code.coding[1].extension[rank].valueQuantity.value = 0.60
 
 * component[labs].code.coding[2] = RDSLAB#dd0113d4-f448-478c-b8db-d84d4a36601f "CA15.3"
 * component[labs].code.coding[2].version = "2"
+* component[labs].code.coding[2].extension[rank].valueQuantity.value = 0.40
 
 * component[symptoms].id = "Symptoms"
 * component[symptoms].code.coding[0] = RDSSYMPTOM#Fever "Fever"
