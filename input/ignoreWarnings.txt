@@ -15,7 +15,7 @@ Error from server: Unable to provide support for code system http://projectronin
 Error from server: Unable to provide support for code system http://projectronin.com/ds/riskDriver/interpretation
 Error from server: Unable to provide support for code system http://loinc.org
 
-# WARNINGS 
+# WARNINGS
 #Unknown System specified, so Concepts and Filters can''t be checked
 WARNING: ValueSet/ed-visit-rationale-lab-codes-vs: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
 WARNING: ValueSet/ed-visit-rationale-symptom-codes-vs: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
@@ -24,6 +24,7 @@ WARNING: ValueSet/ed-visit-risk-driver-category-codes-vs: ValueSet.compose[0].in
 WARNING: ValueSet/ed-visit-patient-comparison-codes-vs: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
 eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 [Unable to determine whether the provided codes are in the value set http://projectronin.com/fhir/us/ronin/ValueSet/ed-visit-risk-driver-category-codes-vs because the value set or a code system it depends on is not known to the validator, Code System URI 'http://projectronin.com/ds/riskDriver/category' is unknown so the code cannot be validated]
+/Detected the following non-conformant Resource definitions.*/
 
 # INFORMATIONAL
 Code System URI 'http://projectronin.com/ds/riskDriver' is unknown so the code cannot be validated
