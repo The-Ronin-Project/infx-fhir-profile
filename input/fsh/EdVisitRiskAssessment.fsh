@@ -86,7 +86,6 @@ Description: "Observations to support ED Visit assessment, includes patient comp
 * insert(NotUsed(basedOn))
 * insert(NotUsed(partOf))
 * insert(NotUsed(category))
-* insert(NotUsed(code))
 * insert(NotUsed(subject))
 * insert(NotUsed(encounter))
 * insert(NotUser(effective[x]))
@@ -162,7 +161,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment"
 * component[riskDrivers][0].id = "AgeRiskDriver"
 * component[riskDrivers][0].valueQuantity.value = 0.7
 * component[riskDrivers][0].code = RDSRD#Age  "Age"
-* component[riskDrivers][0].interpretation = RDSRD#decrease
+* component[riskDrivers][0].interpretation = RDSRDI#decrease
 * component[riskDrivers][0].referenceRange.low.value = 0
 * component[riskDrivers][0].referenceRange.high.value = 1
 * component[riskDrivers][0].referenceRange.text = "Age Range"
@@ -172,7 +171,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment"
 * component[riskDrivers][1].id = "MaritalStatusRiskDriver"
 * component[riskDrivers][1].valueQuantity.value = 0.9
 * component[riskDrivers][1].code = RDSRD#MS-Without-SS   "Marital Status - Without Spousal Support"
-* component[riskDrivers][1].interpretation = RDSRD#increase
+* component[riskDrivers][1].interpretation = RDSRDI#increase
 * component[riskDrivers][1].referenceRange.low.value = 0
 * component[riskDrivers][1].referenceRange.high.value = 1
 * component[riskDrivers][1].referenceRange.text = "Marital Status Range"

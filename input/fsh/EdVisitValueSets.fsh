@@ -76,6 +76,12 @@ Description: "Contains the values related to the ED visit risk drivers categorie
 * RDSRDC#Symptoms       "Symptoms"
 * RDSRDC#LR             "Lab Results"
 
+ValueSet: EDVisitRiskDriverInterpretationCodesVS
+Id: ed-visit-risk-driver-codes-interpretation-vs
+Title: "ED Visit Risk Driver Codes Value Set"
+Description: "Contains the values related to ED Visit risk drivers interpretation"
+* RDSRDI#increase       "Increase"
+* RDSRDI#decrease       "Decrease"
 
 //Refer to https://docs.google.com/spreadsheets/d/1Bkz5-6PhERfvwya7DPTXPZzW4BY6v5MmhVnJNB5o3xo/edit#gid=1837739289
 //For all the fields
