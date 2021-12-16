@@ -28,6 +28,12 @@ parameters:
   apply-contact: true
   apply-jurisdiction: true
   apply-publisher: true
+resources:
+  StructureDefinition/DetectedEDVisit:
+    name: Detected ED Visit
+  StructureDefinition/EntityIndex:
+    name: Detected ED Visit Entity Index
+
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
