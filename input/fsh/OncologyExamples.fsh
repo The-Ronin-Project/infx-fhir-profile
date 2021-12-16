@@ -232,7 +232,7 @@ Description: "Example ED Visit Risk Assessment"
 * occurrenceDateTime = "2021-10-07"
 * prediction.probabilityDecimal = 0.43
 * basis = Reference(roninEdVisitRationaleExample01)
-* extension[sampleSize].valueInteger = 200
+* extension[sampleSize].valueInteger = 2000
 * extension[cohortSize].valueInteger = 500
 
 
@@ -256,7 +256,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessmentExample01"
 * component[riskDrivers][0].id = "AgeRiskDriver"
 * component[riskDrivers][0].valueQuantity.value = 0.8
 * component[riskDrivers][0].code = RDSRD#Age  "Age"
-* component[riskDrivers][0].interpretation = RDSRD#increase
+* component[riskDrivers][0].interpretation = RDSRDI#increase
 * component[riskDrivers][0].referenceRange.low.value = 0.0
 * component[riskDrivers][0].referenceRange.high.value = 1.0
 * component[riskDrivers][0].referenceRange.text = "Age Range"
@@ -265,7 +265,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessmentExample01"
 * component[riskDrivers][1].id = "MaritalStatusRiskDriver"
 * component[riskDrivers][1].valueQuantity.value = 0.1
 * component[riskDrivers][1].code = RDSRD#MS-Without-SS  "Marital Status - Without Spousal Support"
-* component[riskDrivers][1].interpretation = RDSRD#increase
+* component[riskDrivers][1].interpretation = RDSRDI#increase
 * component[riskDrivers][1].referenceRange.low.value = 0.0
 * component[riskDrivers][1].referenceRange.high.value = 1.0
 * component[riskDrivers][1].referenceRange.text = "Marital Status Range"
@@ -274,7 +274,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessmentExample01"
 * component[riskDrivers][2].id = "ImmunosuppressantRiskDriver"
 * component[riskDrivers][2].valueQuantity.value = 0.45
 * component[riskDrivers][2].code = RDSRD#ISP  "Immunosuppressants"
-* component[riskDrivers][2].interpretation = RDSRD#increase
+* component[riskDrivers][2].interpretation = RDSRDI#increase
 * component[riskDrivers][2].referenceRange.low.value = 0.0
 * component[riskDrivers][2].referenceRange.high.value = 1.0
 * component[riskDrivers][2].referenceRange.text = "Immunosuppressants Range"
@@ -283,7 +283,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessmentExample01"
 * component[riskDrivers][3].id = "TSP-1RiskDriver"
 * component[riskDrivers][3].valueQuantity.value = 0.1
 * component[riskDrivers][3].code = RDSRD#TSP-1  "T Stage 1 (Pathologic)"
-* component[riskDrivers][3].interpretation = RDSRD#decrease
+* component[riskDrivers][3].interpretation = RDSRDI#decrease
 * component[riskDrivers][3].referenceRange.low.value = 0.0
 * component[riskDrivers][3].referenceRange.high.value = 1.0
 * component[riskDrivers][3].referenceRange.text = "T Stage 1 (Pathologic) Range"
@@ -292,7 +292,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessmentExample01"
 * component[riskDrivers][4].id = "DiabetesRiskDriver"
 * component[riskDrivers][4].valueQuantity.value = 0.6
 * component[riskDrivers][4].code = RDSRD#DC "Diabetes (Complicated)"
-* component[riskDrivers][4].interpretation = RDSRD#increase
+* component[riskDrivers][4].interpretation = RDSRDI#increase
 * component[riskDrivers][4].referenceRange.low.value = 0.0
 * component[riskDrivers][4].referenceRange.high.value = 1.0
 * component[riskDrivers][4].referenceRange.text = "Diabetes (Complicated) Range"
@@ -301,7 +301,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessmentExample01"
 * component[riskDrivers][5].id = "HypertensionRiskDriver"
 * component[riskDrivers][5].valueQuantity.value = 0.45
 * component[riskDrivers][5].code = RDSRD#Hypertension "Hypertension"
-* component[riskDrivers][5].interpretation = RDSRD#increase
+* component[riskDrivers][5].interpretation = RDSRDI#increase
 * component[riskDrivers][5].referenceRange.low.value = 0.0
 * component[riskDrivers][5].referenceRange.high.value = 1.0
 * component[riskDrivers][5].referenceRange.text = "Hypertension Range"
@@ -310,7 +310,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessmentExample01"
 * component[riskDrivers][6].id = "RheumatoidArthritisRiskDriver"
 * component[riskDrivers][6].valueQuantity.value = 0.35
 * component[riskDrivers][6].code = RDSRD#RA "Rheumatoid Arthritis"
-* component[riskDrivers][6].interpretation = RDSRD#increase
+* component[riskDrivers][6].interpretation = RDSRDI#increase
 * component[riskDrivers][6].referenceRange.low.value = 0.1
 * component[riskDrivers][6].referenceRange.high.value = 0.7
 * component[riskDrivers][6].referenceRange.text = "Rheumatoid Arthritis Range"
@@ -319,7 +319,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessmentExample01"
 * component[riskDrivers][7].id = "CreatinineRiskDriver"
 * component[riskDrivers][7].valueQuantity.value = 0.08
 * component[riskDrivers][7].code = RDSRD#Creatinine  "Creatinine"
-* component[riskDrivers][7].interpretation = RDSRD#increase
+* component[riskDrivers][7].interpretation = RDSRDI#increase
 * component[riskDrivers][7].referenceRange.low.value = 0.0
 * component[riskDrivers][7].referenceRange.high.value = 0.1
 * component[riskDrivers][7].referenceRange.text = "Creatinine Range"
@@ -328,7 +328,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessmentExample01"
 * component[riskDrivers][8].id = "PotassiumRiskDriver"
 * component[riskDrivers][8].valueQuantity.value = 0.7
 * component[riskDrivers][8].code = RDSRD#Potassium "Potassium"
-* component[riskDrivers][8].interpretation = RDSRD#increase
+* component[riskDrivers][8].interpretation = RDSRDI#increase
 * component[riskDrivers][8].referenceRange.low.value = 0
 * component[riskDrivers][8].referenceRange.high.value = 1
 * component[riskDrivers][8].referenceRange.text = "Potassium Range"
@@ -337,7 +337,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessmentExample01"
 * component[riskDrivers][9].id = "ANCRiskDriver"
 * component[riskDrivers][9].valueQuantity.value = 0.03
 * component[riskDrivers][9].code = RDSRD#ANC  "Absolute Neutrophil Count (ANC)"
-* component[riskDrivers][9].interpretation = RDSRD#increase
+* component[riskDrivers][9].interpretation = RDSRDI#increase
 * component[riskDrivers][9].referenceRange.low.value = 0.01
 * component[riskDrivers][9].referenceRange.high.value = 0.1
 * component[riskDrivers][9].referenceRange.text = "ANC Range"
