@@ -6,7 +6,7 @@ id: projectronin.fhir
 canonical: http://projectronin.com/fhir/us/ronin
 name: RoninOncologyFHIRProfile
 status: draft
-version: 0.6.0
+version: 0.6.1
 fhirVersion: 4.0.1
 copyrightYear: 2021+
 releaseLabel: ci-build
@@ -29,10 +29,10 @@ parameters:
   apply-jurisdiction: true
   apply-publisher: true
 resources:
-  StructureDefinition/DetectedEDVisit:
-    name: Detected ED Visit
   StructureDefinition/EntityIndex:
     name: Detected ED Visit Entity Index
+  StructureDefinition/DetectedEDVisit:
+    name: Detected ED Visit
 
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
