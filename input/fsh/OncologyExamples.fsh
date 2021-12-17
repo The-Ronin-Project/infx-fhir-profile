@@ -255,7 +255,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessmentExample01"
 // NOTE that id has to be unique.
 * component[riskDrivers][0].id = "AgeRiskDriver"
 * component[riskDrivers][0].valueQuantity.value = 0.8
-* component[riskDrivers][0].code = RDSRD#Age  "Age"
+* component[riskDrivers][0].code = RDSRD#AGE  "Age"
 * component[riskDrivers][0].interpretation = RDSRDI#increase
 * component[riskDrivers][0].referenceRange.low.value = 0.0
 * component[riskDrivers][0].referenceRange.high.value = 1.0
@@ -264,7 +264,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessmentExample01"
 
 * component[riskDrivers][1].id = "MaritalStatusRiskDriver"
 * component[riskDrivers][1].valueQuantity.value = 0.1
-* component[riskDrivers][1].code = RDSRD#MS-Without-SS  "Marital Status - Without Spousal Support"
+* component[riskDrivers][1].code = RDSRD#MS  "Marital Status"
 * component[riskDrivers][1].interpretation = RDSRDI#increase
 * component[riskDrivers][1].referenceRange.low.value = 0.0
 * component[riskDrivers][1].referenceRange.high.value = 1.0
@@ -280,18 +280,18 @@ Description: "Rationale associated with roninEdVisitRiskAssessmentExample01"
 * component[riskDrivers][2].referenceRange.text = "Immunosuppressants Range"
 * component[riskDrivers][2].extension[category].valueCodeableConcept = RDSRDC#Medications "Medications"
 
-* component[riskDrivers][3].id = "TSP-1RiskDriver"
+* component[riskDrivers][3].id = "TSPRiskDriver"
 * component[riskDrivers][3].valueQuantity.value = 0.1
-* component[riskDrivers][3].code = RDSRD#TSP-1  "T Stage 1 (Pathologic)"
+* component[riskDrivers][3].code = RDSRD#TSP  "T Stage (Pathologic)"
 * component[riskDrivers][3].interpretation = RDSRDI#decrease
 * component[riskDrivers][3].referenceRange.low.value = 0.0
 * component[riskDrivers][3].referenceRange.high.value = 1.0
-* component[riskDrivers][3].referenceRange.text = "T Stage 1 (Pathologic) Range"
+* component[riskDrivers][3].referenceRange.text = "T Stage (Pathologic) Range"
 * component[riskDrivers][3].extension[category].valueCodeableConcept = RDSRDC#DSRF "Disease-specific Risk Factors"
 
 * component[riskDrivers][4].id = "DiabetesRiskDriver"
 * component[riskDrivers][4].valueQuantity.value = 0.6
-* component[riskDrivers][4].code = RDSRD#DC "Diabetes (Complicated)"
+* component[riskDrivers][4].code = RDSRD#DIA-C "Diabetes (Complicated)"
 * component[riskDrivers][4].interpretation = RDSRDI#increase
 * component[riskDrivers][4].referenceRange.low.value = 0.0
 * component[riskDrivers][4].referenceRange.high.value = 1.0
@@ -300,7 +300,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessmentExample01"
 
 * component[riskDrivers][5].id = "HypertensionRiskDriver"
 * component[riskDrivers][5].valueQuantity.value = 0.45
-* component[riskDrivers][5].code = RDSRD#Hypertension "Hypertension"
+* component[riskDrivers][5].code = RDSRD#HYP "Hypertension"
 * component[riskDrivers][5].interpretation = RDSRDI#increase
 * component[riskDrivers][5].referenceRange.low.value = 0.0
 * component[riskDrivers][5].referenceRange.high.value = 1.0
@@ -318,7 +318,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessmentExample01"
 
 * component[riskDrivers][7].id = "CreatinineRiskDriver"
 * component[riskDrivers][7].valueQuantity.value = 0.08
-* component[riskDrivers][7].code = RDSRD#Creatinine  "Creatinine"
+* component[riskDrivers][7].code = RDSRD#CRE  "Creatinine"
 * component[riskDrivers][7].interpretation = RDSRDI#increase
 * component[riskDrivers][7].referenceRange.low.value = 0.0
 * component[riskDrivers][7].referenceRange.high.value = 0.1
@@ -327,7 +327,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessmentExample01"
 
 * component[riskDrivers][8].id = "PotassiumRiskDriver"
 * component[riskDrivers][8].valueQuantity.value = 0.7
-* component[riskDrivers][8].code = RDSRD#Potassium "Potassium"
+* component[riskDrivers][8].code = RDSRD#K  "Potassium"
 * component[riskDrivers][8].interpretation = RDSRDI#increase
 * component[riskDrivers][8].referenceRange.low.value = 0
 * component[riskDrivers][8].referenceRange.high.value = 1
