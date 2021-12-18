@@ -118,6 +118,5 @@ cat ${data}.json | jq -c '.[]' > ${data}.ndjson
 gzip -9 ${data}.ndjson
 rm ${data}.json
 echo -e "${GREEN}Created ${PWD}/${data}.ndjson.gz that can be uploaded to devbox${NC}"
-echo -e ${TEMP_DIR}
 node ${PWD}/generate_bundle.js ${TEMP_DIR}
 rm -rf ${TEMP_DIR}
