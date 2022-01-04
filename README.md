@@ -20,8 +20,8 @@ $ npm install -g fsh-sushi
 $ git clone git@github.com:projectronin/dp-ronin-fhir-profile.git
 $ cd dp-ronin-fhir-profile
 $ ./_updatePublisher.sh
-$ sushi .
-$ ./_genonce.sh
+$ sushi -s .
+$ ./_genonce.sh -no-sushi
 $ open ./output/index.html
 ```
 All profiles will be in `fsh-generated` directory and implementation guide in `output` directory.
