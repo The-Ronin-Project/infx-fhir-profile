@@ -29,11 +29,21 @@ parameters:
   apply-jurisdiction: true
   apply-publisher: true
 resources:
-  StructureDefinition/EntityIndex:
-    name: Detected ED Visit Entity Index
   StructureDefinition/DetectedEDVisit:
     name: Detected ED Visit
-
+groups:
+  DetectedEDVisit:
+    name: Detected ED Visit
+    description: Resources for Detected ED Visit
+    resources:
+      - StructureDefinition/DetectedEDVisit
+      - StructureDefinition/oncology-detected-ed-visit
+  RiskAssessment:
+    name: ED Visit Risk Assessment
+    description: Resources for ED Visit Risk Assessment
+    resources:
+      - StructureDefinition/ed-visit-risk-assessment
+      - StructureDefinition/ed-visit-rationale
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
