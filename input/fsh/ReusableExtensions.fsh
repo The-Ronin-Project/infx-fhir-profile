@@ -68,3 +68,12 @@ Description: "Ranks this lab's contribution to the Risk driver."
 * value[x] only Quantity
 * value[x] ^short = "Risk driver contribution rank"
 * value[x] 1..1
+
+Extension: EDVisitComponentType
+Id: componentType
+Title: "Component type"
+Description: "Used to differentiate between observation component types"
+* value[x] only CodeableConcept
+* value[x] from EDVisitComponentTypeCodesVS
+* value[x] ^short = "Component type codes for ED Visit"
+* value[x] 1..1

@@ -862,6 +862,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment01Test"
 * component[riskDrivers][0].referenceRange.high.value = 1.0
 * component[riskDrivers][0].referenceRange.text = "Age Range"
 * component[riskDrivers][0].extension[category].valueCodeableConcept = RDSRDC#Demographics "Demographics"
+* component[riskDrivers][0].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][1].id = "MaritalStatusRiskDriver"
 * component[riskDrivers][1].valueQuantity.value = 0.1
@@ -871,6 +872,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment01Test"
 * component[riskDrivers][1].referenceRange.high.value = 1.0
 * component[riskDrivers][1].referenceRange.text = "Marital Status Range"
 * component[riskDrivers][1].extension[category].valueCodeableConcept = RDSRDC#Demographics "Demographics"
+* component[riskDrivers][1].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][2].id = "ImmunosuppressantRiskDriver"
 * component[riskDrivers][2].valueQuantity.value = 0.45
@@ -880,6 +882,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment01Test"
 * component[riskDrivers][2].referenceRange.high.value = 1.0
 * component[riskDrivers][2].referenceRange.text = "Immunosuppressants Range"
 * component[riskDrivers][2].extension[category].valueCodeableConcept = RDSRDC#Medications "Medications"
+* component[riskDrivers][2].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][3].id = "TSPRiskDriver"
 * component[riskDrivers][3].valueQuantity.value = 0.1
@@ -889,6 +892,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment01Test"
 * component[riskDrivers][3].referenceRange.high.value = 1.0
 * component[riskDrivers][3].referenceRange.text = "T Stage (Pathologic) Range"
 * component[riskDrivers][3].extension[category].valueCodeableConcept = RDSRDC#DSRF "Disease-specific Risk Factors"
+* component[riskDrivers][3].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][4].id = "DiabetesRiskDriver"
 * component[riskDrivers][4].valueQuantity.value = 0.6
@@ -898,6 +902,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment01Test"
 * component[riskDrivers][4].referenceRange.high.value = 1.0
 * component[riskDrivers][4].referenceRange.text = "Diabetes (Complicated) Range"
 * component[riskDrivers][4].extension[category].valueCodeableConcept = RDSRDC#CAP "Comorbidities and Acute Problems"
+* component[riskDrivers][4].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][5].id = "HypertensionRiskDriver"
 * component[riskDrivers][5].valueQuantity.value = 0.45
@@ -907,6 +912,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment01Test"
 * component[riskDrivers][5].referenceRange.high.value = 1.0
 * component[riskDrivers][5].referenceRange.text = "Hypertension Range"
 * component[riskDrivers][5].extension[category].valueCodeableConcept = RDSRDC#CAP "Comorbidities and Acute Problems"
+* component[riskDrivers][5].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][6].id = "RheumatoidArthritisRiskDriver"
 * component[riskDrivers][6].valueQuantity.value = 0.35
@@ -916,6 +922,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment01Test"
 * component[riskDrivers][6].referenceRange.high.value = 1.0
 * component[riskDrivers][6].referenceRange.text = "Rheumatoid Arthritis Range"
 * component[riskDrivers][6].extension[category].valueCodeableConcept = RDSRDC#CAP "Comorbidities and Acute Problems"
+* component[riskDrivers][6].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][7].id = "CreatinineRiskDriver"
 * component[riskDrivers][7].valueQuantity.value = 0.08
@@ -925,6 +932,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment01Test"
 * component[riskDrivers][7].referenceRange.high.value = 1
 * component[riskDrivers][7].referenceRange.text = "Creatinine Range"
 * component[riskDrivers][7].extension[category].valueCodeableConcept = RDSRDC#LR "Lab Results"
+* component[riskDrivers][7].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][8].id = "PotassiumRiskDriver"
 * component[riskDrivers][8].valueQuantity.value = 0.7
@@ -934,6 +942,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment01Test"
 * component[riskDrivers][8].referenceRange.high.value = 1
 * component[riskDrivers][8].referenceRange.text = "Potassium Range"
 * component[riskDrivers][8].extension[category].valueCodeableConcept = RDSRDC#LR "Lab Results"
+* component[riskDrivers][8].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][9].id = "ANCRiskDriver"
 * component[riskDrivers][9].valueQuantity.value = 0.03
@@ -943,6 +952,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment01Test"
 * component[riskDrivers][9].referenceRange.high.value = 1
 * component[riskDrivers][9].referenceRange.text = "ANC Range"
 * component[riskDrivers][9].extension[category].valueCodeableConcept = RDSRDC#LR "Lab Results"
+* component[riskDrivers][9].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][10].id = "SodiumRiskDriver"
 * component[riskDrivers][10].valueQuantity.value = 0.9
@@ -952,32 +962,40 @@ Description: "Rationale associated with roninEdVisitRiskAssessment01Test"
 * component[riskDrivers][10].referenceRange.high.value = 1
 * component[riskDrivers][10].referenceRange.text = "Sodium Range"
 * component[riskDrivers][10].extension[category].valueCodeableConcept = RDSRDC#LR "Lab Results"
+* component[riskDrivers][10].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[patientComparisons][0].id = "AgePatientComparison"
-* component[patientComparisons][0].code = RDSPC#AgeComparison "Age Comparison"
+* component[patientComparisons][0].code = RDSRD#AGE  "Age"
 * component[patientComparisons][0].valueQuantity.value = 90
+* component[patientComparisons][0].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
 * component[patientComparisons][1].id = "PerformanceStatusPatientComparison"
-* component[patientComparisons][1].code = RDSPC#PerformanceStatusComparison "Performance Status Comparison"
+* component[patientComparisons][1].code = RDSRD#PVSS-P1990GWV "Population Veteran Status"
 * component[patientComparisons][1].valueQuantity.value = 60
+* component[patientComparisons][1].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
 * component[patientComparisons][2].id = "StageAndTNMPatientComparison"
-* component[patientComparisons][2].code = RDSPC#StageAndTNMComparison "Stage and TNM Comparison"
+* component[patientComparisons][2].code = RDSRD#TSP "T Stage (Pathologic)"
 * component[patientComparisons][2].valueQuantity.value = 20
+* component[patientComparisons][2].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
 * component[patientComparisons][3].id = "PriorOrCurrentTreatmentsPatientComparison"
-* component[patientComparisons][3].code = RDSPC#PriorOrCurrentTreatmentsComparison "Prior or Current Treatments Comparison"
+* component[patientComparisons][3].code = RDSRD#MTC "Medication Treatment Cycle"
 * component[patientComparisons][3].valueQuantity.value = 70
+* component[patientComparisons][3].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
 * component[patientComparisons][4].id = "ActiveMedicationPatientComparison"
-* component[patientComparisons][4].code = RDSPC#ActiveMedicationComparison "Active Medication Comparison"
+* component[patientComparisons][4].code = RDSRD#NAMI "No Active Medication Identified"
 * component[patientComparisons][4].valueQuantity.value = 50
+* component[patientComparisons][4].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
 * component[patientComparisons][5].id = "CCIPatientComparison"
-* component[patientComparisons][5].code = RDSPC#CCIComparison "Comorbidity Charlson Index Comparison"
+* component[patientComparisons][5].code = RDSRD#PD "Pepticular Disease"
 * component[patientComparisons][5].valueQuantity.value = 10
+* component[patientComparisons][5].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
 * component[labs].id = "Labs"
+* component[labs].extension[componentType].valueCodeableConcept = ROBSCT#Labs  "Labs Component"
 * component[labs].code.coding[0] = RDSLAB#65c86cb9-7ff6-486a-81f3-823779b73f4b "WBC"
 * component[labs].code.coding[0].version = "v1.0"
 * component[labs].code.coding[0].extension[rank].valueQuantity.value = 0.34
@@ -995,6 +1013,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment01Test"
 * component[labs].code.coding[3].extension[rank].valueQuantity.value = 0.90
 
 * component[symptoms].id = "Symptoms"
+* component[symptoms].extension[componentType].valueCodeableConcept = ROBSCT#Symptoms  "Symptoms Component"
 * component[symptoms].code.coding[0] = RDSSYMPTOM#Fever "Fever"
 * component[symptoms].code.coding[0].extension[eventDate].valueDate = "2021-10-31"
 
@@ -1036,6 +1055,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment01Test"
 * component[riskDrivers][0].referenceRange.high.value = 1.0
 * component[riskDrivers][0].referenceRange.text = "Age Range"
 * component[riskDrivers][0].extension[category].valueCodeableConcept = RDSRDC#Demographics "Demographics"
+* component[riskDrivers][0].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][1].id = "MaritalStatusRiskDriver"
 * component[riskDrivers][1].valueQuantity.value = 0.8
@@ -1045,6 +1065,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment01Test"
 * component[riskDrivers][1].referenceRange.high.value = 1.0
 * component[riskDrivers][1].referenceRange.text = "Marital Status Range"
 * component[riskDrivers][1].extension[category].valueCodeableConcept = RDSRDC#Demographics "Demographics"
+* component[riskDrivers][1].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][2].id = "ImmunosuppressantRiskDriver"
 * component[riskDrivers][2].valueQuantity.value = 0.65
@@ -1054,6 +1075,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment01Test"
 * component[riskDrivers][2].referenceRange.high.value = 1.0
 * component[riskDrivers][2].referenceRange.text = "Immunosuppressants Range"
 * component[riskDrivers][2].extension[category].valueCodeableConcept = RDSRDC#Medications "Medications"
+* component[riskDrivers][2].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][3].id = "TSPRiskDriver"
 * component[riskDrivers][3].valueQuantity.value = 0.24
@@ -1063,6 +1085,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment01Test"
 * component[riskDrivers][3].referenceRange.high.value = 1.0
 * component[riskDrivers][3].referenceRange.text = "T Stage (Pathologic) Range"
 * component[riskDrivers][3].extension[category].valueCodeableConcept = RDSRDC#DSRF "Disease-specific Risk Factors"
+* component[riskDrivers][3].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][4].id = "DiabetesRiskDriver"
 * component[riskDrivers][4].valueQuantity.value = 0.6
@@ -1072,6 +1095,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment01Test"
 * component[riskDrivers][4].referenceRange.high.value = 1.0
 * component[riskDrivers][4].referenceRange.text = "Diabetes (Complicated) Range"
 * component[riskDrivers][4].extension[category].valueCodeableConcept = RDSRDC#CAP "Comorbidities and Acute Problems"
+* component[riskDrivers][4].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][5].id = "HypertensionRiskDriver"
 * component[riskDrivers][5].valueQuantity.value = 0.77
@@ -1081,6 +1105,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment01Test"
 * component[riskDrivers][5].referenceRange.high.value = 1.0
 * component[riskDrivers][5].referenceRange.text = "Hypertension Range"
 * component[riskDrivers][5].extension[category].valueCodeableConcept = RDSRDC#CAP "Comorbidities and Acute Problems"
+* component[riskDrivers][5].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][6].id = "RheumatoidArthritisRiskDriver"
 * component[riskDrivers][6].valueQuantity.value = 0.88
@@ -1090,6 +1115,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment01Test"
 * component[riskDrivers][6].referenceRange.high.value = 1.0
 * component[riskDrivers][6].referenceRange.text = "Rheumatoid Arthritis Range"
 * component[riskDrivers][6].extension[category].valueCodeableConcept = RDSRDC#CAP "Comorbidities and Acute Problems"
+* component[riskDrivers][6].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][7].id = "CreatinineRiskDriver"
 * component[riskDrivers][7].valueQuantity.value = 0.9
@@ -1099,6 +1125,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment01Test"
 * component[riskDrivers][7].referenceRange.high.value = 1.0
 * component[riskDrivers][7].referenceRange.text = "Creatinine Range"
 * component[riskDrivers][7].extension[category].valueCodeableConcept = RDSRDC#LR "Lab Results"
+* component[riskDrivers][7].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][8].id = "PotassiumRiskDriver"
 * component[riskDrivers][8].valueQuantity.value = 0.1
@@ -1108,6 +1135,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment01Test"
 * component[riskDrivers][8].referenceRange.high.value = 1
 * component[riskDrivers][8].referenceRange.text = "Potassium Range"
 * component[riskDrivers][8].extension[category].valueCodeableConcept = RDSRDC#LR "Lab Results"
+* component[riskDrivers][8].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][9].id = "ANCRiskDriver"
 * component[riskDrivers][9].valueQuantity.value = 0.7
@@ -1117,32 +1145,40 @@ Description: "Rationale associated with roninEdVisitRiskAssessment01Test"
 * component[riskDrivers][9].referenceRange.high.value = 1.0
 * component[riskDrivers][9].referenceRange.text = "ANC Range"
 * component[riskDrivers][9].extension[category].valueCodeableConcept = RDSRDC#LR "Lab Results"
+* component[riskDrivers][9].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[patientComparisons][0].id = "AgePatientComparison"
-* component[patientComparisons][0].code = RDSPC#AgeComparison "Age Comparison"
+* component[patientComparisons][0].code = RDSRD#AGE  "Age"
 * component[patientComparisons][0].valueQuantity.value = 45
+* component[patientComparisons][0].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
 * component[patientComparisons][1].id = "PerformanceStatusPatientComparison"
-* component[patientComparisons][1].code = RDSPC#PerformanceStatusComparison "Performance Status Comparison"
+* component[patientComparisons][1].code = RDSRD#WL "Weight Loss"
 * component[patientComparisons][1].valueQuantity.value = 10
+* component[patientComparisons][1].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
 * component[patientComparisons][2].id = "StageAndTNMPatientComparison"
-* component[patientComparisons][2].code = RDSPC#StageAndTNMComparison "Stage and TNM Comparison"
+* component[patientComparisons][2].code = RDSRD#TSP "T Stage (Pathologic)"
 * component[patientComparisons][2].valueQuantity.value = 40
+* component[patientComparisons][2].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
 * component[patientComparisons][3].id = "PriorOrCurrentTreatmentsPatientComparison"
-* component[patientComparisons][3].code = RDSPC#PriorOrCurrentTreatmentsComparison "Prior or Current Treatments Comparison"
+* component[patientComparisons][3].code = RDSRD#ET "Endocrine Therapy"
 * component[patientComparisons][3].valueQuantity.value = 20
+* component[patientComparisons][3].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
 * component[patientComparisons][4].id = "ActiveMedicationPatientComparison"
-* component[patientComparisons][4].code = RDSPC#ActiveMedicationComparison "Active Medication Comparison"
+* component[patientComparisons][4].code = RDSRD#MTC "Medication Treatment Cycle"
 * component[patientComparisons][4].valueQuantity.value = 90
+* component[patientComparisons][4].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
 * component[patientComparisons][5].id = "CCIPatientComparison"
-* component[patientComparisons][5].code = RDSPC#CCIComparison "Comorbidity Charlson Index Comparison"
+* component[patientComparisons][5].code = RDSRD#LD "Liver Disease"
 * component[patientComparisons][5].valueQuantity.value = 15
+* component[patientComparisons][5].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
 * component[labs].id = "Labs"
+* component[labs].extension[componentType].valueCodeableConcept = ROBSCT#Labs  "Labs Component"
 * component[labs].code.coding[0] = RDSLAB#e6af1c3c-69a4-48cb-92be-56ee6e99450f  "HGB"
 * component[labs].code.coding[0].version = "v1.0"
 * component[labs].code.coding[0].extension[rank].valueQuantity.value = 0.90
@@ -1156,6 +1192,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment01Test"
 * component[labs].code.coding[2].extension[rank].valueQuantity.value = 0.30
 
 * component[symptoms].id = "Symptoms"
+* component[symptoms].extension[componentType].valueCodeableConcept = ROBSCT#Symptoms  "Symptoms Component"
 * component[symptoms].code.coding[0] = RDSSYMPTOM#ShortnessOfBreath "Shortness of breath"
 * component[symptoms].code.coding[0].extension[eventDate].valueDate = "2019-10-15"
 
@@ -1189,6 +1226,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment03Test"
 * component[riskDrivers][0].referenceRange.high.value = 1.0
 * component[riskDrivers][0].referenceRange.text = "Age Range"
 * component[riskDrivers][0].extension[category].valueCodeableConcept = RDSRDC#Demographics "Demographics"
+* component[riskDrivers][0].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][1].id = "MaritalStatusRiskDriver"
 * component[riskDrivers][1].valueQuantity.value = 0.19
@@ -1198,6 +1236,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment03Test"
 * component[riskDrivers][1].referenceRange.high.value = 1.0
 * component[riskDrivers][1].referenceRange.text = "Marital Status Range"
 * component[riskDrivers][1].extension[category].valueCodeableConcept = RDSRDC#Demographics "Demographics"
+* component[riskDrivers][1].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][2].id = "ImmunosuppressantRiskDriver"
 * component[riskDrivers][2].valueQuantity.value = 0.42
@@ -1207,6 +1246,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment03Test"
 * component[riskDrivers][2].referenceRange.high.value = 1.0
 * component[riskDrivers][2].referenceRange.text = "Immunosuppressants Range"
 * component[riskDrivers][2].extension[category].valueCodeableConcept = RDSRDC#Medications "Medications"
+* component[riskDrivers][2].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][3].id = "TSPRiskDriver"
 * component[riskDrivers][3].valueQuantity.value = 0.14
@@ -1216,6 +1256,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment03Test"
 * component[riskDrivers][3].referenceRange.high.value = 1.0
 * component[riskDrivers][3].referenceRange.text = "T Stage (Pathologic) Range"
 * component[riskDrivers][3].extension[category].valueCodeableConcept = RDSRDC#DSRF "Disease-specific Risk Factors"
+* component[riskDrivers][3].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][4].id = "DiabetesRiskDriver"
 * component[riskDrivers][4].valueQuantity.value = 0.69
@@ -1225,6 +1266,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment03Test"
 * component[riskDrivers][4].referenceRange.high.value = 1.0
 * component[riskDrivers][4].referenceRange.text = "Diabetes (Complicated) Range"
 * component[riskDrivers][4].extension[category].valueCodeableConcept = RDSRDC#CAP "Comorbidities and Acute Problems"
+* component[riskDrivers][4].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][5].id = "HypertensionRiskDriver"
 * component[riskDrivers][5].valueQuantity.value = 0.4
@@ -1234,6 +1276,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment03Test"
 * component[riskDrivers][5].referenceRange.high.value = 1.0
 * component[riskDrivers][5].referenceRange.text = "Hypertension Range"
 * component[riskDrivers][5].extension[category].valueCodeableConcept = RDSRDC#CAP "Comorbidities and Acute Problems"
+* component[riskDrivers][5].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][6].id = "RheumatoidArthritisRiskDriver"
 * component[riskDrivers][6].valueQuantity.value = 0.9
@@ -1243,6 +1286,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment03Test"
 * component[riskDrivers][6].referenceRange.high.value = 1.0
 * component[riskDrivers][6].referenceRange.text = "Rheumatoid Arthritis Range"
 * component[riskDrivers][6].extension[category].valueCodeableConcept = RDSRDC#CAP "Comorbidities and Acute Problems"
+* component[riskDrivers][6].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][7].id = "CreatinineRiskDriver"
 * component[riskDrivers][7].valueQuantity.value = 0.4
@@ -1252,6 +1296,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment03Test"
 * component[riskDrivers][7].referenceRange.high.value = 1
 * component[riskDrivers][7].referenceRange.text = "Creatinine Range"
 * component[riskDrivers][7].extension[category].valueCodeableConcept = RDSRDC#LR "Lab Results"
+* component[riskDrivers][7].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][8].id = "PotassiumRiskDriver"
 * component[riskDrivers][8].valueQuantity.value = 0.2
@@ -1261,6 +1306,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment03Test"
 * component[riskDrivers][8].referenceRange.high.value = 1
 * component[riskDrivers][8].referenceRange.text = "Potassium Range"
 * component[riskDrivers][8].extension[category].valueCodeableConcept = RDSRDC#LR "Lab Results"
+* component[riskDrivers][8].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][9].id = "ANCRiskDriver"
 * component[riskDrivers][9].valueQuantity.value = 0.5
@@ -1270,6 +1316,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment03Test"
 * component[riskDrivers][9].referenceRange.high.value = 1.0
 * component[riskDrivers][9].referenceRange.text = "ANC Range"
 * component[riskDrivers][9].extension[category].valueCodeableConcept = RDSRDC#LR "Lab Results"
+* component[riskDrivers][9].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][10].id = "TBNMissingRiskDriver"
 * component[riskDrivers][10].valueQuantity.value = 0.99
@@ -1279,6 +1326,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment03Test"
 * component[riskDrivers][10].referenceRange.high.value = 1.0
 * component[riskDrivers][10].referenceRange.text = "TBN-M Range"
 * component[riskDrivers][10].extension[category].valueCodeableConcept = RDSRDC#LR "Lab Results"
+* component[riskDrivers][10].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][11].id = "CO2RiskDriver"
 * component[riskDrivers][11].valueQuantity.value = 0.195
@@ -1288,6 +1336,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment03Test"
 * component[riskDrivers][11].referenceRange.high.value = 1.0
 * component[riskDrivers][11].referenceRange.text = "CO2 Range"
 * component[riskDrivers][11].extension[category].valueCodeableConcept = RDSRDC#LR "Lab Results"
+* component[riskDrivers][11].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][12].id = "DBNRiskDriver"
 * component[riskDrivers][12].valueQuantity.value = 0.733
@@ -1297,6 +1346,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment03Test"
 * component[riskDrivers][12].referenceRange.high.value = 1.0
 * component[riskDrivers][12].referenceRange.text = "DBN Range"
 * component[riskDrivers][12].extension[category].valueCodeableConcept = RDSRDC#LR "Lab Results"
+* component[riskDrivers][12].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][13].id = "BMIRiskDriver"
 * component[riskDrivers][13].valueQuantity.value = 0.75
@@ -1306,33 +1356,41 @@ Description: "Rationale associated with roninEdVisitRiskAssessment03Test"
 * component[riskDrivers][13].referenceRange.high.value = 1.0
 * component[riskDrivers][13].referenceRange.text = "BMI Range"
 * component[riskDrivers][13].extension[category].valueCodeableConcept = RDSRDC#Demographics "Demographics"
+* component[riskDrivers][13].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 
 * component[patientComparisons][0].id = "AgePatientComparison"
-* component[patientComparisons][0].code = RDSPC#AgeComparison "Age Comparison"
+* component[patientComparisons][0].code = RDSRD#AGE  "Age"
 * component[patientComparisons][0].valueQuantity.value = 10
+* component[patientComparisons][0].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
 * component[patientComparisons][1].id = "PerformanceStatusPatientComparison"
-* component[patientComparisons][1].code = RDSPC#PerformanceStatusComparison "Performance Status Comparison"
+* component[patientComparisons][1].code = RDSRD#PC "Platelet Count"
 * component[patientComparisons][1].valueQuantity.value = 100
+* component[patientComparisons][1].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
 * component[patientComparisons][2].id = "StageAndTNMPatientComparison"
-* component[patientComparisons][2].code = RDSPC#StageAndTNMComparison "Stage and TNM Comparison"
+* component[patientComparisons][2].code = RDSRD#NSP "N Stage (Pathologic)"
 * component[patientComparisons][2].valueQuantity.value = 29
+* component[patientComparisons][2].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
 * component[patientComparisons][3].id = "PriorOrCurrentTreatmentsPatientComparison"
-* component[patientComparisons][3].code = RDSPC#PriorOrCurrentTreatmentsComparison "Prior or Current Treatments Comparison"
+* component[patientComparisons][3].code = RDSRD#MTC "Medication Treatment Cycle"
 * component[patientComparisons][3].valueQuantity.value = 23
+* component[patientComparisons][3].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
 * component[patientComparisons][4].id = "ActiveMedicationPatientComparison"
-* component[patientComparisons][4].code = RDSPC#ActiveMedicationComparison "Active Medication Comparison"
+* component[patientComparisons][4].code = RDSRD#CAR "Cytotoxic Antibiotics and Related"
 * component[patientComparisons][4].valueQuantity.value = 44
+* component[patientComparisons][4].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
 * component[patientComparisons][5].id = "CCIPatientComparison"
-* component[patientComparisons][5].code = RDSPC#CCIComparison "Comorbidity Charlson Index Comparison"
+* component[patientComparisons][5].code = RDSRD#LD "Liver Disease"
 * component[patientComparisons][5].valueQuantity.value = 12
+* component[patientComparisons][5].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
 * component[labs].id = "Labs"
+* component[labs].extension[componentType].valueCodeableConcept = ROBSCT#Labs  "Labs Component"
 * component[labs].code.coding[0] = RDSLAB#fbce9f7b-2455-4ae0-9829-e22fc7ebd4e1  "LDH"
 * component[labs].code.coding[0].version = "v1.0"
 * component[labs].code.coding[0].extension[rank].valueQuantity.value = 0.20
@@ -1350,6 +1408,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment03Test"
 * component[labs].code.coding[3].extension[rank].valueQuantity.value = 0.45
 
 * component[symptoms].id = "Symptoms"
+* component[symptoms].extension[componentType].valueCodeableConcept = ROBSCT#Symptoms  "Symptoms Component"
 * component[symptoms].code.coding[0] = RDSSYMPTOM#Fever "Fever"
 * component[symptoms].code.coding[0].extension[eventDate].valueDate = "2021-10-31"
 
@@ -1388,6 +1447,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment04Test"
 * component[riskDrivers][0].referenceRange.high.value = 1.0
 * component[riskDrivers][0].referenceRange.text = "Age Range"
 * component[riskDrivers][0].extension[category].valueCodeableConcept = RDSRDC#Demographics "Demographics"
+* component[riskDrivers][0].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][1].id = "MaritalStatusRiskDriver"
 * component[riskDrivers][1].valueQuantity.value = 0.1
@@ -1397,6 +1457,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment04Test"
 * component[riskDrivers][1].referenceRange.high.value = 1.0
 * component[riskDrivers][1].referenceRange.text = "Marital Status Range"
 * component[riskDrivers][1].extension[category].valueCodeableConcept = RDSRDC#Demographics "Demographics"
+* component[riskDrivers][1].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][2].id = "ImmunosuppressantRiskDriver"
 * component[riskDrivers][2].valueQuantity.value = 0.45
@@ -1406,6 +1467,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment04Test"
 * component[riskDrivers][2].referenceRange.high.value = 1.0
 * component[riskDrivers][2].referenceRange.text = "Immunosuppressants Range"
 * component[riskDrivers][2].extension[category].valueCodeableConcept = RDSRDC#Medications "Medications"
+* component[riskDrivers][2].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][3].id = "TSP-1RiskDriver"
 * component[riskDrivers][3].valueQuantity.value = 0.1
@@ -1415,6 +1477,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment04Test"
 * component[riskDrivers][3].referenceRange.high.value = 1.0
 * component[riskDrivers][3].referenceRange.text = "T Stage (Pathologic) Range"
 * component[riskDrivers][3].extension[category].valueCodeableConcept = RDSRDC#DSRF "Disease-specific Risk Factors"
+* component[riskDrivers][3].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][4].id = "DiabetesRiskDriver"
 * component[riskDrivers][4].valueQuantity.value = 0.6
@@ -1424,6 +1487,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment04Test"
 * component[riskDrivers][4].referenceRange.high.value = 1.0
 * component[riskDrivers][4].referenceRange.text = "Diabetes (Complicated) Range"
 * component[riskDrivers][4].extension[category].valueCodeableConcept = RDSRDC#CAP "Comorbidities and Acute Problems"
+* component[riskDrivers][4].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][5].id = "HypertensionRiskDriver"
 * component[riskDrivers][5].valueQuantity.value = 0.45
@@ -1433,6 +1497,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment04Test"
 * component[riskDrivers][5].referenceRange.high.value = 1.0
 * component[riskDrivers][5].referenceRange.text = "Hypertension Range"
 * component[riskDrivers][5].extension[category].valueCodeableConcept = RDSRDC#CAP "Comorbidities and Acute Problems"
+* component[riskDrivers][5].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][6].id = "RheumatoidArthritisRiskDriver"
 * component[riskDrivers][6].valueQuantity.value = 0.35
@@ -1442,6 +1507,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment04Test"
 * component[riskDrivers][6].referenceRange.high.value = 0.7
 * component[riskDrivers][6].referenceRange.text = "Rheumatoid Arthritis Range"
 * component[riskDrivers][6].extension[category].valueCodeableConcept = RDSRDC#CAP "Comorbidities and Acute Problems"
+* component[riskDrivers][6].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][7].id = "CreatinineRiskDriver"
 * component[riskDrivers][7].valueQuantity.value = 0.08
@@ -1451,6 +1517,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment04Test"
 * component[riskDrivers][7].referenceRange.high.value = 0.1
 * component[riskDrivers][7].referenceRange.text = "Creatinine Range"
 * component[riskDrivers][7].extension[category].valueCodeableConcept = RDSRDC#LR "Lab Results"
+* component[riskDrivers][7].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][8].id = "PotassiumRiskDriver"
 * component[riskDrivers][8].valueQuantity.value = 0.7
@@ -1460,6 +1527,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment04Test"
 * component[riskDrivers][8].referenceRange.high.value = 1
 * component[riskDrivers][8].referenceRange.text = "Potassium Range"
 * component[riskDrivers][8].extension[category].valueCodeableConcept = RDSRDC#LR "Lab Results"
+* component[riskDrivers][8].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][9].id = "ANCRiskDriver"
 * component[riskDrivers][9].valueQuantity.value = 0.5
@@ -1469,6 +1537,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment04Test"
 * component[riskDrivers][9].referenceRange.high.value = 1.0
 * component[riskDrivers][9].referenceRange.text = "ANC Range"
 * component[riskDrivers][9].extension[category].valueCodeableConcept = RDSRDC#LR "Lab Results"
+* component[riskDrivers][9].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][10].id = "LDHMissingRiskDriver"
 * component[riskDrivers][10].valueQuantity.value = 0.5
@@ -1478,6 +1547,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment04Test"
 * component[riskDrivers][10].referenceRange.high.value = 1.0
 * component[riskDrivers][10].referenceRange.text = "LDH Missing Range"
 * component[riskDrivers][10].extension[category].valueCodeableConcept = RDSRDC#LR "Lab Results"
+* component[riskDrivers][10].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][11].id = "HGBMissingRiskDriver"
 * component[riskDrivers][11].valueQuantity.value = 0.7
@@ -1487,6 +1557,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment04Test"
 * component[riskDrivers][11].referenceRange.high.value = 1.0
 * component[riskDrivers][11].referenceRange.text = "ANC Range"
 * component[riskDrivers][11].extension[category].valueCodeableConcept = RDSRDC#LR "Lab Results"
+* component[riskDrivers][11].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][12].id = "GlucoseRiskDriver"
 * component[riskDrivers][12].valueQuantity.value = 0.8
@@ -1496,32 +1567,40 @@ Description: "Rationale associated with roninEdVisitRiskAssessment04Test"
 * component[riskDrivers][12].referenceRange.high.value = 1.0
 * component[riskDrivers][12].referenceRange.text = "ANC Range"
 * component[riskDrivers][12].extension[category].valueCodeableConcept = RDSRDC#LR "Lab Results"
+* component[riskDrivers][12].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[patientComparisons][0].id = "AgePatientComparison"
-* component[patientComparisons][0].code = RDSPC#AgeComparison "Age Comparison"
+* component[patientComparisons][0].code = RDSRD#AGE  "Age"
 * component[patientComparisons][0].valueQuantity.value = 4
+* component[patientComparisons][0].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
 * component[patientComparisons][1].id = "PerformanceStatusPatientComparison"
-* component[patientComparisons][1].code = RDSPC#PerformanceStatusComparison "Performance Status Comparison"
+* component[patientComparisons][1].code = RDSRD#OBE "Obesity"
 * component[patientComparisons][1].valueQuantity.value = 20
+* component[patientComparisons][1].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
 * component[patientComparisons][2].id = "StageAndTNMPatientComparison"
-* component[patientComparisons][2].code = RDSPC#StageAndTNMComparison "Stage and TNM Comparison"
+* component[patientComparisons][2].code = RDSRD#MSP "M Stage (Pathologic)"
 * component[patientComparisons][2].valueQuantity.value = 60
+* component[patientComparisons][2].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
 * component[patientComparisons][3].id = "PriorOrCurrentTreatmentsPatientComparison"
-* component[patientComparisons][3].code = RDSPC#PriorOrCurrentTreatmentsComparison "Prior or Current Treatments Comparison"
+* component[patientComparisons][3].code = RDSRD#FED "Fluid-Electrolyte Disorder"
 * component[patientComparisons][3].valueQuantity.value = 50
+* component[patientComparisons][3].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
 * component[patientComparisons][4].id = "ActiveMedicationPatientComparison"
-* component[patientComparisons][4].code = RDSPC#ActiveMedicationComparison "Active Medication Comparison"
+* component[patientComparisons][4].code = RDSRD#CAR "Cytotoxic Antibiotics and Related"
 * component[patientComparisons][4].valueQuantity.value = 90
+* component[patientComparisons][4].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
 * component[patientComparisons][5].id = "CCIPatientComparison"
-* component[patientComparisons][5].code = RDSPC#CCIComparison "Comorbidity Charlson Index Comparison"
+* component[patientComparisons][5].code = RDSRD#DIA-C "Diabetes (Complicated)"
 * component[patientComparisons][5].valueQuantity.value = 100
+* component[patientComparisons][5].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
 * component[labs].id = "Labs"
+* component[labs].extension[componentType].valueCodeableConcept = ROBSCT#Labs  "Labs Component"
 * component[labs].code.coding[0] = RDSLAB#c1c45bf7-e61b-4fed-a007-a0d2185a9ca9  "Sodium"
 * component[labs].code.coding[0].version = "v1.0"
 * component[labs].code.coding[0].extension[rank].valueQuantity.value = 0.50
@@ -1539,6 +1618,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment04Test"
 * component[labs].code.coding[3].extension[rank].valueQuantity.value = 0.90
 
 * component[symptoms].id = "Symptoms"
+* component[symptoms].extension[componentType].valueCodeableConcept = ROBSCT#Symptoms  "Symptoms Component"
 * component[symptoms].code.coding[0] = RDSSYMPTOM#Diarrhea "Diarrhea"
 * component[symptoms].code.coding[0].extension[eventDate].valueDate = "2020-08-10"
 
@@ -1571,6 +1651,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment05Test"
 * component[riskDrivers][0].referenceRange.high.value = 1.0
 * component[riskDrivers][0].referenceRange.text = "Age Range"
 * component[riskDrivers][0].extension[category].valueCodeableConcept = RDSRDC#Demographics "Demographics"
+* component[riskDrivers][0].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][1].id = "ImmunosuppressantRiskDriver"
 * component[riskDrivers][1].valueQuantity.value = 0.67
@@ -1580,6 +1661,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment05Test"
 * component[riskDrivers][1].referenceRange.high.value = 1.0
 * component[riskDrivers][1].referenceRange.text = "Immunosuppressants Range"
 * component[riskDrivers][1].extension[category].valueCodeableConcept = RDSRDC#Medications "Medications"
+* component[riskDrivers][1].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][2].id = "DiabetesRiskDriver"
 * component[riskDrivers][2].valueQuantity.value = 0.55
@@ -1589,6 +1671,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment05Test"
 * component[riskDrivers][2].referenceRange.high.value = 1.0
 * component[riskDrivers][2].referenceRange.text = "Diabetes (Complicated) Range"
 * component[riskDrivers][2].extension[category].valueCodeableConcept = RDSRDC#CAP "Comorbidities and Acute Problems"
+* component[riskDrivers][2].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][3].id = "CreatinineMissingRiskDriver"
 * component[riskDrivers][3].valueQuantity.value = 0.12
@@ -1598,6 +1681,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment05Test"
 * component[riskDrivers][3].referenceRange.high.value = 0.1
 * component[riskDrivers][3].referenceRange.text = "Creatinine Range"
 * component[riskDrivers][3].extension[category].valueCodeableConcept = RDSRDC#DSRF "Disease-specific Risk Factors"
+* component[riskDrivers][3].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][4].id = "PotassiumRiskDriver"
 * component[riskDrivers][4].valueQuantity.value = 0.35
@@ -1607,20 +1691,25 @@ Description: "Rationale associated with roninEdVisitRiskAssessment05Test"
 * component[riskDrivers][4].referenceRange.high.value = 1
 * component[riskDrivers][4].referenceRange.text = "Potassium Range"
 * component[riskDrivers][4].extension[category].valueCodeableConcept = RDSRDC#DSRF "Disease-specific Risk Factors"
+* component[riskDrivers][4].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[patientComparisons][0].id = "AgePatientComparison"
-* component[patientComparisons][0].code = RDSPC#AgeComparison "Age Comparison"
+* component[patientComparisons][0].code = RDSRD#AGE  "Age"
 * component[patientComparisons][0].valueQuantity.value = 85
+* component[patientComparisons][0].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
 * component[patientComparisons][1].id = "PerformanceStatusPatientComparison"
-* component[patientComparisons][1].code = RDSPC#PerformanceStatusComparison "Performance Status Comparison"
+* component[patientComparisons][1].code = RDSRD#FED "Fluid-Electrolyte Disorder"
 * component[patientComparisons][1].valueQuantity.value = 32
+* component[patientComparisons][1].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
 * component[patientComparisons][2].id = "StageAndTNMPatientComparison"
-* component[patientComparisons][2].code = RDSPC#StageAndTNMComparison "Stage and TNM Comparison"
+* component[patientComparisons][2].code = RDSRD#MSP "M Stage (Pathologic)"
 * component[patientComparisons][2].valueQuantity.value = 53
+* component[patientComparisons][2].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
 * component[labs].id = "Labs"
+* component[labs].extension[componentType].valueCodeableConcept = ROBSCT#Labs  "Labs Component"
 * component[labs].code.coding[0] = RDSLAB#31f8a5a3-19c5-4789-b46e-77d6a851a4cc "Amylase"
 * component[labs].code.coding[0].version = "v1.0"
 * component[labs].code.coding[0].extension[rank].valueQuantity.value = 0.90
@@ -1630,6 +1719,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment05Test"
 * component[labs].code.coding[1].extension[rank].valueQuantity.value = 0.30
 
 * component[symptoms].id = "Symptoms"
+* component[symptoms].extension[componentType].valueCodeableConcept = ROBSCT#Symptoms  "Symptoms Component"
 * component[symptoms].code.coding[0] = RDSSYMPTOM#Fever "Fever"
 * component[symptoms].code.coding[0].extension[eventDate].valueDate = "2021-10-31"
 

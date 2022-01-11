@@ -15,7 +15,7 @@ RuleSet: CreateRiskDriversComponent(sliceName, min, max, shortDescription, descr
 * component[{sliceName}] ^definition = {description}
 * component[{sliceName}].id MS
 * component[{sliceName}].code MS
-* component[{sliceName}].code from EDVisitRiskDriverCodesVS
+* component[{sliceName}].code from EDVisitRiskDriverCodesVS (required)
 * component[{sliceName}].value[x] MS
 * component[{sliceName}].value[x] only Quantity
 * component[{sliceName}].interpretation MS
@@ -32,7 +32,7 @@ RuleSet: CreatePatientComparisonComponent(sliceName, min, max, shortDescription,
 * component[{sliceName}] ^definition = {description}
 * component[{sliceName}].id MS
 * component[{sliceName}].code MS
-* component[{sliceName}].code from EDVisitPatientComparisonCodesVS
+* component[{sliceName}].code from EDVisitRiskDriverCodesVS (required)
 * component[{sliceName}].value[x] MS
 * component[{sliceName}].value[x] only Quantity
 * insert NotUsed(dataAbsentReason)
@@ -45,7 +45,7 @@ RuleSet: CreateLabsComponent(sliceName, min, max, shortDescription, description)
 * component[{sliceName}] ^definition = {description}
 * component[{sliceName}].id MS
 * component[{sliceName}].code MS
-* component[{sliceName}].code from EDVisitRationaleLabCodesVS
+* component[{sliceName}].code from EDVisitRationaleLabCodesVS (required)
 * component[{sliceName}].code.coding.extension contains
     LabRankType named rank 0..1 MS
 * component[{sliceName}].code.coding.extension[rank] MS
@@ -60,7 +60,7 @@ RuleSet: CreateSymptomsComponent(sliceName, min, max, shortDescription, descript
 * component[{sliceName}] ^definition = {description}
 * component[{sliceName}].id MS
 * component[{sliceName}].code MS
-* component[{sliceName}].code from EDVisitRationaleSymptomCodesVS
+* component[{sliceName}].code from EDVisitRationaleSymptomCodesVS (required)
 * component[{sliceName}].code.coding.extension MS
 * component[{sliceName}].code.coding.extension contains
     EventDateType named eventDate 0..1 MS

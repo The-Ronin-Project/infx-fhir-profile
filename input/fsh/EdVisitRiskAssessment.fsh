@@ -107,6 +107,8 @@ Description: "Observations to support ED Visit assessment, includes patient comp
 * focus only Reference(EDVisitRiskAssessment)
 * issued MS
 * insert ObservationComponentSlicingRules
+* component.extension contains
+    EDVisitComponentType named componentType 0..1
 
 // Risk Drivers and Patient Comparison have a cardinality 0..* and differentiated
 // by code from EDVisitRiskDriverCodesVS and EDVisitPatientComparisonCodesVS
@@ -166,7 +168,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment"
 * component[riskDrivers][0].referenceRange.high.value = 1
 * component[riskDrivers][0].referenceRange.text = "Age Range"
 * component[riskDrivers][0].extension[category].valueCodeableConcept = RDSRDC#Demographics   "Demographics"
-
+* component[riskDrivers][0].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 * component[riskDrivers][1].id = "MaritalStatusRiskDriver"
 * component[riskDrivers][1].valueQuantity.value = 0.9
@@ -176,21 +178,25 @@ Description: "Rationale associated with roninEdVisitRiskAssessment"
 * component[riskDrivers][1].referenceRange.high.value = 1
 * component[riskDrivers][1].referenceRange.text = "Marital Status Range"
 * component[riskDrivers][1].extension[category].valueCodeableConcept = RDSRDC#Demographics   "Demographics"
+* component[riskDrivers][1].extension[componentType].valueCodeableConcept = ROBSCT#RiskDriver  "Risk Driver Component"
 
 // A more complete example is in OncologyExamples.fsh
 * component[patientComparisons][0].id = "AgePatientComparison"
-* component[patientComparisons][0].code = RDSPC#AgeComparison "Age Comparison"
+* component[patientComparisons][0].code = RDSRD#AGE  "Age"
 * component[patientComparisons][0].valueQuantity.value = 65.3
+* component[patientComparisons][0].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
 * component[patientComparisons][1].id = "StageAndTNMPatientComparison"
-* component[patientComparisons][1].code = RDSPC#StageAndTNMComparison "Stage and TNM Comparison"
+* component[patientComparisons][1].code = RDSRD#TSP "T Stage (Pathologic)"
 * component[patientComparisons][1].valueQuantity.value = 54.6
+* component[patientComparisons][1].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
 //There is an informational message here that is suppressed
 //It's because we create a single slice for each labs/symptoms while the code is
 //from a valueset as opposed to set by "create" methods in RuleSets
 //This element does not match any known slice defined in the profile http://projectronin.com/fhir/us/ronin/StructureDefinition/ed-visit-rationale
 * component[labs].id = "Labs"
+* component[labs].extension[componentType].valueCodeableConcept = ROBSCT#Labs  "Labs Component"
 * component[labs].code.coding[0] = RDSLAB#ad691140-8ef7-4712-ac02-f8994f85c97a "CA27.29"
 * component[labs].code.coding[0].version = "1"
 
@@ -198,6 +204,7 @@ Description: "Rationale associated with roninEdVisitRiskAssessment"
 * component[labs].code.coding[1].version = "2"
 
 * component[symptoms].id = "Symptoms"
+* component[symptoms].extension[componentType].valueCodeableConcept = ROBSCT#Symptoms  "Symptoms Component"
 * component[symptoms].code.text = "Symptoms"
 * component[symptoms].code.coding[0] = RDSSYMPTOM#Diarrhea "Diarrhea"
 * component[symptoms].code.coding[0].extension[eventDate].valueDate = "2021-09-10"
