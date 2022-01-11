@@ -994,6 +994,11 @@ Description: "Rationale associated with roninEdVisitRiskAssessment01Test"
 * component[patientComparisons][5].valueQuantity.value = 10
 * component[patientComparisons][5].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
+* component[patientComparisons][6].id = "OverallPatientComparison"
+* component[patientComparisons][6].code = RDSPC#OC  "Overall Comparison"
+* component[patientComparisons][6].valueQuantity.value = 78.8
+* component[patientComparisons][6].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
+
 * component[labs].id = "Labs"
 * component[labs].extension[componentType].valueCodeableConcept = ROBSCT#Labs  "Labs Component"
 * component[labs].code.coding[0] = RDSLAB#65c86cb9-7ff6-486a-81f3-823779b73f4b "WBC"
@@ -1176,6 +1181,11 @@ Description: "Rationale associated with roninEdVisitRiskAssessment01Test"
 * component[patientComparisons][5].code = RDSRD#LD "Liver Disease"
 * component[patientComparisons][5].valueQuantity.value = 15
 * component[patientComparisons][5].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
+
+* component[patientComparisons][6].id = "OverallPatientComparison"
+* component[patientComparisons][6].code = RDSPC#OC  "Overall Comparison"
+* component[patientComparisons][6].valueQuantity.value = 86.2
+* component[patientComparisons][6].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
 * component[labs].id = "Labs"
 * component[labs].extension[componentType].valueCodeableConcept = ROBSCT#Labs  "Labs Component"
@@ -1389,6 +1399,11 @@ Description: "Rationale associated with roninEdVisitRiskAssessment03Test"
 * component[patientComparisons][5].valueQuantity.value = 12
 * component[patientComparisons][5].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
+* component[patientComparisons][6].id = "OverallPatientComparison"
+* component[patientComparisons][6].code = RDSPC#OC  "Overall Comparison"
+* component[patientComparisons][6].valueQuantity.value = 64
+* component[patientComparisons][6].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
+
 * component[labs].id = "Labs"
 * component[labs].extension[componentType].valueCodeableConcept = ROBSCT#Labs  "Labs Component"
 * component[labs].code.coding[0] = RDSLAB#fbce9f7b-2455-4ae0-9829-e22fc7ebd4e1  "LDH"
@@ -1599,6 +1614,11 @@ Description: "Rationale associated with roninEdVisitRiskAssessment04Test"
 * component[patientComparisons][5].valueQuantity.value = 100
 * component[patientComparisons][5].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
+* component[patientComparisons][6].id = "OverallPatientComparison"
+* component[patientComparisons][6].code = RDSPC#OC  "Overall Comparison"
+* component[patientComparisons][6].valueQuantity.value = 92.0
+* component[patientComparisons][6].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
+
 * component[labs].id = "Labs"
 * component[labs].extension[componentType].valueCodeableConcept = ROBSCT#Labs  "Labs Component"
 * component[labs].code.coding[0] = RDSLAB#c1c45bf7-e61b-4fed-a007-a0d2185a9ca9  "Sodium"
@@ -1707,6 +1727,11 @@ Description: "Rationale associated with roninEdVisitRiskAssessment05Test"
 * component[patientComparisons][2].code = RDSRD#MSP "M Stage (Pathologic)"
 * component[patientComparisons][2].valueQuantity.value = 53
 * component[patientComparisons][2].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
+
+* component[patientComparisons][3].id = "OverallPatientComparison"
+* component[patientComparisons][3].code = RDSPC#OC  "Overall Comparison"
+* component[patientComparisons][3].valueQuantity.value = 45.5
+* component[patientComparisons][3].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
 * component[labs].id = "Labs"
 * component[labs].extension[componentType].valueCodeableConcept = ROBSCT#Labs  "Labs Component"

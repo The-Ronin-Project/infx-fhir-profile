@@ -32,7 +32,7 @@ RuleSet: CreatePatientComparisonComponent(sliceName, min, max, shortDescription,
 * component[{sliceName}] ^definition = {description}
 * component[{sliceName}].id MS
 * component[{sliceName}].code MS
-* component[{sliceName}].code from EDVisitRiskDriverCodesVS (required)
+* component[{sliceName}].code from EDVisitPatientComparisonCodesVS (required)
 * component[{sliceName}].value[x] MS
 * component[{sliceName}].value[x] only Quantity
 * insert NotUsed(dataAbsentReason)

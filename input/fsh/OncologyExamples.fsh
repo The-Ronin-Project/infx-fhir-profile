@@ -383,6 +383,11 @@ Description: "Rationale associated with roninEdVisitRiskAssessmentExample01"
 * component[patientComparisons][5].valueQuantity.value = 10
 * component[patientComparisons][5].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
+* component[patientComparisons][6].id = "OverallPatientComparison"
+* component[patientComparisons][6].code = RDSPC#OC  "Overall Comparison"
+* component[patientComparisons][6].valueQuantity.value = 78
+* component[patientComparisons][6].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
+
 * component[labs].id = "Labs"
 * component[labs].extension[componentType].valueCodeableConcept = ROBSCT#Labs  "Labs Component"
 * component[labs].code.coding[0] = RDSLAB#31f8a5a3-19c5-4789-b46e-77d6a851a4cc "Amylase"

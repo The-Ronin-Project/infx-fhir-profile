@@ -191,6 +191,11 @@ Description: "Rationale associated with roninEdVisitRiskAssessment"
 * component[patientComparisons][1].valueQuantity.value = 54.6
 * component[patientComparisons][1].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
 
+* component[patientComparisons][2].id = "OverallPatientComparison"
+* component[patientComparisons][2].code = RDSPC#OC  "Overall Comparison"
+* component[patientComparisons][2].valueQuantity.value = 32.5
+* component[patientComparisons][2].extension[componentType].valueCodeableConcept = ROBSCT#PatientComparison  "Patient Comparison Component"
+
 //There is an informational message here that is suppressed
 //It's because we create a single slice for each labs/symptoms while the code is
 //from a valueset as opposed to set by "create" methods in RuleSets
