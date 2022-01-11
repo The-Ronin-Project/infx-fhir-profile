@@ -280,3 +280,10 @@ Description: "Contains the values related to the ED visit risk drivers"
 * RDSRD#PD-PMH              "Population Income"       // - Percent Mobile Home
 * RDSRD#PD-PCWGH            "Population Family Demographics" // - Percent Children with Grandparent Householder
 * RDSRD#PD-PDTW             "Population Transportation Access" // Population Demographics - Percent Drive to Work
+
+ValueSet: EDVisitPatientComparisonCodesVS
+Id: ed-visit-patient-comparison-codes-vs
+Title: "ED Visit Patient Comparison Codes ValueSet"
+Description: "Contains all Risk Driver codes and additional patient comparison specific codes"
+* include codes from valueset EDVisitRiskDriverCodesVS
+* RDSPC#OC  "Overall Comparison"
