@@ -1,0 +1,4 @@
+== Suppressed Messages ==
+
+# WARNINGS
+/Detected the following non-conformant Resource definitions.*/

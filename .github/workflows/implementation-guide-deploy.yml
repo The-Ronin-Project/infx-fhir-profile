@@ -25,9 +25,9 @@ jobs:
       - name: Update Publisher
         run: ./_updatePublisher.sh -y
       - name: Run sushi
-        run: sushi .
+        run: sushi -s .
       - name: Run genonce
-        run: ./_genonce.sh
+        run: ./_genonce.sh -no-sushi
       - name: Copy guide to dp-ronin-fhir-profile-page
         run: |
           cd ..

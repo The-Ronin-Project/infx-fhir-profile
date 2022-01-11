@@ -6,7 +6,7 @@ id: projectronin.fhir
 canonical: http://projectronin.com/fhir/us/ronin
 name: RoninOncologyFHIRProfile
 status: draft
-version: 0.6.0
+version: 0.7.0
 fhirVersion: 4.0.1
 copyrightYear: 2021+
 releaseLabel: ci-build
@@ -22,12 +22,28 @@ description: The Ronin oncology FHIR profile assembles a core set of structured 
 license: not-open-source
 dependencies:
   hl7.fhir.us.core: 3.1.0
-  hl7.fhir.us.mcode: 1.16.0 
+  hl7.fhir.us.mcode: 1.16.0
 parameters:
   show-inherited-invariants: true
   apply-contact: true
   apply-jurisdiction: true
   apply-publisher: true
+resources:
+  StructureDefinition/DetectedEDVisit:
+    name: Detected ED Visit
+groups:
+  DetectedEDVisit:
+    name: Detected ED Visit
+    description: Resources for Detected ED Visit
+    resources:
+      - StructureDefinition/DetectedEDVisit
+      - StructureDefinition/oncology-detected-ed-visit
+  RiskAssessment:
+    name: ED Visit Risk Assessment
+    description: Resources for ED Visit Risk Assessment
+    resources:
+      - StructureDefinition/ed-visit-risk-assessment
+      - StructureDefinition/ed-visit-rationale
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │

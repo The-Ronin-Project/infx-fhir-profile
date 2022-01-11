@@ -50,8 +50,8 @@ Description: "An assessment of the likely outcome(s) for a patient to visit ED a
 * basis MS
 * basis only Reference(EDVisitRationale)
 * prediction ^short = "Outcome Predicted e.g. 75% of similar patients visited the ED within 30 days"
-* prediction ^definition = "Describes the expected outcome for the subject. For Ronin, any field under 
-                            prediction can be used in support of the prediction. 
+* prediction ^definition = "Describes the expected outcome for the subject. For Ronin, any field under
+                            prediction can be used in support of the prediction.
                             Note that the goal is to use all fields necessary to state a prediction like:
                             \"75% of similar patients visited the ED within 30 days\"."
 * prediction MS
