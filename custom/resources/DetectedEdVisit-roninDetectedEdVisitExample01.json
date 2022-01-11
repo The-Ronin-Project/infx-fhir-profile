@@ -20,10 +20,12 @@
     "source": "this is a 01-22-2020 ED visit",
     "sourceEntityIndex": [
         {
+            "label": "DATE",
             "end": 20,
             "start": 10
         },
         {
+            "label": "ED",
             "end": 23,
             "start": 21
         }

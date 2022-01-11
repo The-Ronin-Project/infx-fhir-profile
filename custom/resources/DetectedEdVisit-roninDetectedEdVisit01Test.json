@@ -20,6 +20,7 @@
     "source": "prompting a visit to the emergency room",
     "sourceEntityIndex": [
         {
+            "label": "DATE",
             "end": 39,
             "start": 25
         }

@@ -20,10 +20,12 @@
     "source": "prompting a visit to the emergency room on 05/12/2014 at Baylor University Medical Center.",
     "sourceEntityIndex": [
         {
+            "label": "DATE",
             "end": 39,
             "start": 25
         },
         {
+            "label": "ED",
             "end": 53,
             "start": 43
         }
