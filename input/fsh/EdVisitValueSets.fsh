@@ -48,19 +48,6 @@ Description: "Contains the values for the ED Visit Lab Codes"
 * RDSLAB#eca5e803-675c-4615-8992-4e03508a778f  "INR"
 * RDSLAB#fbce9f7b-2455-4ae0-9829-e22fc7ebd4e1  "LDH"
 
-
-ValueSet: EDVisitPatientComparisonCodesVS
-Id: ed-visit-patient-comparison-codes-vs
-Title: "ED Visit Patient Comparison Codes Value Set"
-Description: "Contains the values related to the ED visit patient comparison"
-* RDSPC#PerformanceStatusComparison "Performance Status Comparison"
-* RDSPC#AgeComparison "Age Comparison"
-* RDSPC#StageAndTNMComparison "Stage and TNM Comparison"
-* RDSPC#PriorOrCurrentTreatmentsComparison "Prior or Current Treatments Comparison"
-* RDSPC#CCIComparison "Comorbidity Charlson Index Comparison"
-* RDSPC#ActiveMedicationComparison "Active Medication Comparison"
-
-
 ValueSet: EDVisitRiskDriverCategoryCodesVS
 Id: ed-visit-risk-driver-category-codes-vs
 Title: "ED Visit Risk Driver Category Codes Value Set"
@@ -75,6 +62,15 @@ Description: "Contains the values related to the ED visit risk drivers categorie
 * RDSRDC#TC             "Treatment Cycle"
 * RDSRDC#Symptoms       "Symptoms"
 * RDSRDC#LR             "Lab Results"
+
+ValueSet: EDVisitComponentTypeCodesVS
+Id: ed-visit-component-type-codes-vs
+Title: "ED Visit Component Type Codes Value Set"
+Description: "Contains Component Types for ED Visit"
+* ROBSCT#RiskDriver         "Risk Driver Component"
+* ROBSCT#PatientComparison  "Patient Comparison Component"
+* ROBSCT#Labs               "Labs Component"
+* ROBSCT#Symptoms           "Symptoms Component"
 
 ValueSet: EDVisitRiskDriverInterpretationCodesVS
 Id: ed-visit-risk-driver-codes-interpretation-vs
@@ -214,7 +210,7 @@ Description: "Contains the values related to the ED visit risk drivers"
 * RDSRD#PCD                 "Pulmonary Circulation Disorder"
 * RDSRD#CPD                 "Chronic Pulmonary Disease"
 * RDSRD#CHF                 "Congestive Heart Failure"
-* RDSRD#ANA                  "Anaemia"
+* RDSRD#ANA                 "Anaemia"
 * RDSRD#ND                  "Neurological Disorders"
 * RDSRD#RA                  "Rheumatoid Arthritis"
 * RDSRD#VD                  "Valvular Disease"
