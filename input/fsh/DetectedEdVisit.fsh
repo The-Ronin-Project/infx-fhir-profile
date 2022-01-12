@@ -18,8 +18,9 @@ Description: "A custom resource that is used for NLP detected emergency departme
 * startDate 0..1 SU date "ED visit date" "ED visit NLP detected date of service"
 * source 1..1 SU string "Sentence used by View Source" "Sentence detected to indicated ED Visit"
 * sourceEntityIndex 1..* SU BackboneElement "Indices of ED visit entities detected in source string"
-* sourceEntityIndex.start 1..1 SU positiveInt "start index of ED visit entity detected in source string"
-* sourceEntityIndex.end 1..1 SU positiveInt "end index of ED visit entity detected in source string"
+* sourceEntityIndex.label 1..1 SU string "label of ED visit entity detected in source string"
+* sourceEntityIndex.start 0..1 SU positiveInt "start index of ED visit entity detected in source string"
+* sourceEntityIndex.end 0..1 SU positiveInt "end index of ED visit entity detected in source string"
 // User Feedback will be stored in Banken initially and this flag is deprecated until later notice
 //* isValid 0..1 SU boolean "User feedback" "User feedback to indicate if prediction is false"
 * context 1..1 SU Reference(OncologyDocumentReference)

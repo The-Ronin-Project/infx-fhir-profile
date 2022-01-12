@@ -6,13 +6,17 @@
   "entities": {
     "EntityIndex": {
       "attrs": {
+        "label": {
+          "type": "string",
+          "isRequired": true
+        },
         "start": {
           "type": "positiveInt",
-          "isRequired": true
+          "isRequired": false
         },
         "end": {
           "type": "positiveInt",
-          "isRequired": true
+          "isRequired": false
         }
       }
     },

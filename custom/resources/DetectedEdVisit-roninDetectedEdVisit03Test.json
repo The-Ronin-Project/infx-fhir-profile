@@ -20,10 +20,12 @@
     "source": "abdominal pain and fevers prompting a visit to the emergency room at Palomar medical center on 02/22/2019",
     "sourceEntityIndex": [
         {
+            "label": "DATE",
             "end": 65,
             "start": 51
         },
         {
+            "label": "ED",
             "end": 105,
             "start": 95
         }
