@@ -1,15 +1,15 @@
 /*
-DetectedEDVisit is a resource that models ED Visits extracted from notes with NLP.
+DetectedEdVisit is a resource that models ED Visits extracted from notes with NLP.
 */
-Resource: DetectedEDVisit
-Id: DetectedEDVisit
+Resource: DetectedEdVisit
+Id: DetectedEdVisit
 Title: "Detected ED Visit"
 Description: "A custom resource that is used for NLP detected emergency department visit"
 * ^status = #draft
 * ^experimental = true
 
-* identifier 0..* SU Identifier "An identifier for this DetectedEDVisit" "An identifier for this DetectedEDVisit."
-* identifier ^requirements = "DetectedEDVisits are almost always assigned specific numerical identifiers."
+* identifier 0..* SU Identifier "An identifier for this DetectedEdVisit" "An identifier for this DetectedEdVisit."
+* identifier ^requirements = "DetectedEdVisits are almost always assigned specific numerical identifiers."
 * identifier ^mustSupport = false
 * identifier ^isModifier = false
 
@@ -29,8 +29,8 @@ Description: "A custom resource that is used for NLP detected emergency departme
 * location 0..1 SU string "Detected location of ED visit"
 
 
-Profile: OncologyDetectedEDVisit
-Parent: DetectedEDVisit
+Profile: OncologyDetectedEdVisit
+Parent: DetectedEdVisit
 Id: oncology-detected-ed-visit
 Title: "Oncology Detected ED Visit"
 Description: "A profile for NLP detected emergency department visit"
@@ -63,9 +63,9 @@ Description: "A profile for NLP detected emergency department visit"
 // publisher.jar (used in _genonce.sh) doesn't seem to allow custom resource
 // to be instantiated. For reference:
 // https://github.com/HL7/fhir-ig-publisher/blob/master/org.hl7.fhir.publisher.core/src/main/java/org/hl7/fhir/igtools/publisher/SimpleFetcher.java#L193-L194
-// Instance: ExampleDetectedEDVisit
-// InstanceOf: OncologyDetectedEDVisit
-// Description: "DetectedEDVisit example"
+// Instance: ExampleDetectedEdVisit
+// InstanceOf: OncologyDetectedEdVisit
+// Description: "DetectedEdVisit example"
 // * identifier[tenantId].system = "http://projectronin.com/id/tenantId"
 // * identifier[tenantId].value = "mdaoc"
 // * identifier[mrn].system = "http://projectronin.com/id/mrn"

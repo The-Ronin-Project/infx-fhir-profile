@@ -15,7 +15,7 @@
             "system": "http://projectronin.com/id/mrn"
         }
     ],
-    "id": "roninDetectedEDVisit04Test",
+    "id": "roninDetectedEdVisit04Test",
     "startDate": "2020-09-30",
     "source": "Went to ER on 09/30/2020 at Albert Einstein Medical Center",
     "sourceEntityIndex": [

@@ -15,7 +15,7 @@
             "system": "http://projectronin.com/id/mrn"
         }
     ],
-    "id": "roninDetectedEDVisit02Test",
+    "id": "roninDetectedEdVisit02Test",
     "startDate": "2014-05-12",
     "source": "prompting a visit to the emergency room on 05/12/2014 at Baylor University Medical Center.",
     "sourceEntityIndex": [

@@ -15,7 +15,7 @@
             "system": "http://projectronin.com/id/mrn"
         }
     ],
-    "id": "roninDetectedEDVisitExample01",
+    "id": "roninDetectedEdVisitExample01",
     "startDate": "2020-10-02",
     "source": "this is a 01-22-2020 ED visit",
     "sourceEntityIndex": [
