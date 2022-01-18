@@ -29,14 +29,14 @@ parameters:
   apply-jurisdiction: true
   apply-publisher: true
 resources:
-  StructureDefinition/DetectedEDVisit:
+  StructureDefinition/DetectedEdVisit:
     name: Detected ED Visit
 groups:
-  DetectedEDVisit:
+  DetectedEdVisit:
     name: Detected ED Visit
     description: Resources for Detected ED Visit
     resources:
-      - StructureDefinition/DetectedEDVisit
+      - StructureDefinition/DetectedEdVisit
       - StructureDefinition/oncology-detected-ed-visit
   RiskAssessment:
     name: ED Visit Risk Assessment

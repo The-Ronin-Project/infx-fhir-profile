@@ -1,4 +1,4 @@
-// EdVisitValueSets contains the codes related to ED Visit Rationale 
+// EdVisitValueSets contains the codes related to ED Visit Rationale
 // s.a. symptoms and labs.
 //
 ValueSet: EDVisitRationaleSymptomCodesVS
@@ -177,7 +177,7 @@ Description: "Contains the values related to the ED visit risk drivers"
 * RDSRD#PE-BD               "Population Highest Education Level" //Bachelor Degree
 * RDSRD#PE-GD               "Population Highest Education Level" //Graduate Degree
 * RDSRD#PFA-FS              "Population Food Insecurity" // Food Stamp
-* RDSRD#PO-A                "Population Occupation" // Agriculture 
+* RDSRD#PO-A                "Population Occupation" // Agriculture
 * RDSRD#PO-C                "Population Occupation" //Construction
 * RDSRD#PO-M                "Population Occupation" //Manufactoring
 * RDSRD#PO-W                "Population Occupation" //Wholesale

@@ -7,8 +7,8 @@ Parent: RiskAssessment
 Id: ed-visit-risk-assessment
 Title: "ED Visit Risk Assessment"
 Description: "An assessment of the likely outcome(s) for a patient to visit ED and the likelihood of each outcome.
-              The RiskAssessment has a basis pointing to an Observation that detail risk drivers and patient comparisons. 
-              LOINC code(s) for a risk driver would be in the Observation.component.code. 
+              The RiskAssessment has a basis pointing to an Observation that detail risk drivers and patient comparisons.
+              LOINC code(s) for a risk driver would be in the Observation.component.code.
               The LOINC code(s) for a single component of the risk driver can be used to retrieve all
               Lab observation values within a date range for that patient to draw the graph.
               Follow the FHIR: RiskAssessment -> .basis-> Observation-> .component (RiskDrivers/PatientComparison) for each entry."
@@ -112,13 +112,13 @@ Description: "Observations to support ED Visit assessment, includes patient comp
 
 // Risk Drivers and Patient Comparison have a cardinality 0..* and differentiated
 // by code from EDVisitRiskDriverCodesVS and EDVisitPatientComparisonCodesVS
-* insert CreateRiskDriversComponent(riskDrivers, 0, *, "Risk Driver slice", 
+* insert CreateRiskDriversComponent(riskDrivers, 0, *, "Risk Driver slice",
               "The risk drivers produced by the ML model")
 
 * insert CreatePatientComparisonComponent(patientComparisons, 0, *, "Patient Comparison",
             "The patient comparisons produced by the ML model")
 
-// Labs and Symptoms are different.  We don't use value[x] but we use a list of codes 
+// Labs and Symptoms are different.  We don't use value[x] but we use a list of codes
 // for a single Labs/Symptoms component and extend code with date for symptoms
 // Lab codes EDVisitRationaleLabCodesVS
 // Symptoms codes EDVisitRationaleSymptomCodesVS
