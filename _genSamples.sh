@@ -51,7 +51,7 @@ if ! type jq > /dev/null; then
   exit 1
 fi
 
-sushi ${PWD}
+sushi -s ${PWD}
 if [ ! $? ]
 then
   echo -e "${RED}ERROR: sushi failed!${NC}"

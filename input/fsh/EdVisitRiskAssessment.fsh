@@ -43,7 +43,7 @@ Description: "An assessment of the likely outcome(s) for a patient to visit ED a
 * method ^definition = "The algorithm, process or mechanism used to evaluate the risk. 
                          Contains the MLFlow model name (code) and version that created this RiskAssessment."
 * status MS
-* code MS
+* code = SCT#4525004 "Emergency department patient visit"
 * subject 1..1 MS
 * subject only Reference(OncologyPatient)
 * occurrenceDateTime MS
@@ -102,7 +102,7 @@ Description: "Observations to support ED Visit assessment, includes patient comp
 * insert(NotUsed(derivedFrom))
 
 * status MS
-* code MS
+* code = SCT#4525004 "Emergency department patient visit"
 * focus 1..1 MS
 * focus only Reference(EDVisitRiskAssessment)
 * issued MS
