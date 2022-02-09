@@ -1,16 +1,6 @@
 // EdVisitValueSets contains the codes related to ED Visit Rationale
 // s.a. symptoms and labs.
 //
-ValueSet: EDVisitRationaleSymptomCodesVS
-Id: ed-visit-rationale-symptom-codes-vs
-Title: "ED Visit Rationale Symptom Codes Value Set"
-Description: "Contains the values for the ED Visit Symptom Codes"
-* RDSSYMPTOM#Fever "Fever"
-* RDSSYMPTOM#Nausea-Vomiting "Nausea/Vomiting"
-* RDSSYMPTOM#Diarrhea "Diarrhea"
-* RDSSYMPTOM#ShortnessOfBreath "Shortness of breath"
-* RDSSYMPTOM#Pain "Pain"
-
 ValueSet: EDVisitRationaleLabCodesVS
 Id: ed-visit-rationale-lab-codes-vs
 Title: "ED Visit Rationale Lab Codes Value Set"
@@ -290,3 +280,9 @@ Title: "ED Visit Patient Comparison Codes ValueSet"
 Description: "Contains all Risk Driver codes and additional patient comparison specific codes"
 * include codes from valueset EDVisitRiskDriverCodesVS
 * RDSPC#OC  "Overall Comparison"
+
+ValueSet: EDVisitRationaleSymptomCodesVS
+Id: ed-visit-rationale-symptom-codes-vs
+Title: "ED Visit Rationale Symptom Codes Value Set"
+Description: "Contains the values for the ED Visit Symptom Codes"
+* include codes from valueset EDVisitRiskDriverCodesVS
