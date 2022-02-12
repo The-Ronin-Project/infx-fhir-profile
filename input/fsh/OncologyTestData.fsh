@@ -1001,20 +1001,20 @@ Description: "Rationale associated with roninEdVisitRiskAssessment01Test"
 
 * component[labs].id = "Labs"
 * component[labs].extension[componentType].valueCodeableConcept = ROBSCT#Labs  "Labs Component"
-* component[labs].code.coding[0] = RDSLAB#65c86cb9-7ff6-486a-81f3-823779b73f4b "WBC"
-* component[labs].code.coding[0].version = "v1.0"
+* component[labs].code.coding[0] = RDSLAB#96523e66-7ae6-11ec-ba14-00163e0e3b1e "WBC"
+* component[labs].code.coding[0].version = "2"
 * component[labs].code.coding[0].extension[rank].valueQuantity.value = 0.34
 
-* component[labs].code.coding[1] = RDSLAB#c1c45bf7-e61b-4fed-a007-a0d2185a9ca9 "Sodium"
-* component[labs].code.coding[1].version = "v1.0"
+* component[labs].code.coding[1] = RDSLAB#95f1088a-7ae6-11ec-ba14-00163e0e3b1e "Sodium"
+* component[labs].code.coding[1].version = "2"
 * component[labs].code.coding[1].extension[rank].valueQuantity.value = 0.67
 
-* component[labs].code.coding[2] = RDSLAB#dd0113d4-f448-478c-b8db-d84d4a36601f "CA15.3"
-* component[labs].code.coding[2].version = "v1.0"
+* component[labs].code.coding[2] = RDSLAB#93895b6a-7ae6-11ec-ba14-00163e0e3b1e "CA15.3"
+* component[labs].code.coding[2].version = "2"
 * component[labs].code.coding[2].extension[rank].valueQuantity.value = 0.60
 
-* component[labs].code.coding[3] = RDSLAB#31f8a5a3-19c5-4789-b46e-77d6a851a4cc "Amylase"
-* component[labs].code.coding[3].version = "v1.0"
+* component[labs].code.coding[3] = RDSLAB#9299bd8a-7ae6-11ec-ba14-00163e0e3b1e "Amylase"
+* component[labs].code.coding[3].version = "2"
 * component[labs].code.coding[3].extension[rank].valueQuantity.value = 0.90
 
 * component[symptoms].id = "Symptoms"
@@ -1189,16 +1189,16 @@ Description: "Rationale associated with roninEdVisitRiskAssessment01Test"
 
 * component[labs].id = "Labs"
 * component[labs].extension[componentType].valueCodeableConcept = ROBSCT#Labs  "Labs Component"
-* component[labs].code.coding[0] = RDSLAB#e6af1c3c-69a4-48cb-92be-56ee6e99450f  "HGB"
-* component[labs].code.coding[0].version = "v1.0"
+* component[labs].code.coding[0] = RDSLAB#941594ea-7ae6-11ec-ba14-00163e0e3b1e  "HGB"
+* component[labs].code.coding[0].version = "2"
 * component[labs].code.coding[0].extension[rank].valueQuantity.value = 0.90
 
-* component[labs].code.coding[1] = RDSLAB#c725d530-9de3-4c17-92ac-697c1f68f4f2  "Direct Bilirubin"
-* component[labs].code.coding[1].version = "v1.0"
+* component[labs].code.coding[1] = RDSLAB#c3a3afda-6d99-11ec-a98d-00163efae4c9  "Direct Bilirubin"
+* component[labs].code.coding[1].version = "1"
 * component[labs].code.coding[1].extension[rank].valueQuantity.value = 0.60
 
-* component[labs].code.coding[2] = RDSLAB#7fda0337-fef1-4a5a-a7e7-124d2da2f4b8  "Glucose"
-* component[labs].code.coding[2].version = "v1.0"
+* component[labs].code.coding[2] = RDSLAB#91da35be-7ae6-11ec-ba14-00163e0e3b1e  "Glucose"
+* component[labs].code.coding[2].version = "2"
 * component[labs].code.coding[2].extension[rank].valueQuantity.value = 0.30
 
 * component[symptoms].id = "Symptoms"
@@ -1406,20 +1406,20 @@ Description: "Rationale associated with roninEdVisitRiskAssessment03Test"
 
 * component[labs].id = "Labs"
 * component[labs].extension[componentType].valueCodeableConcept = ROBSCT#Labs  "Labs Component"
-* component[labs].code.coding[0] = RDSLAB#fbce9f7b-2455-4ae0-9829-e22fc7ebd4e1  "LDH"
-* component[labs].code.coding[0].version = "v1.0"
+* component[labs].code.coding[0] = RDSLAB#94741934-7ae6-11ec-ba14-00163e0e3b1e  "LDH"
+* component[labs].code.coding[0].version = "2"
 * component[labs].code.coding[0].extension[rank].valueQuantity.value = 0.20
 
-* component[labs].code.coding[1] = RDSLAB#ad691140-8ef7-4712-ac02-f8994f85c97a  "CA27.29"
-* component[labs].code.coding[1].version = "v1.0"
+* component[labs].code.coding[1] = RDSLAB#91b0399e-7ae6-11ec-ba14-00163e0e3b1e  "CA27.29"
+* component[labs].code.coding[1].version = "2"
 * component[labs].code.coding[1].extension[rank].valueQuantity.value = 0.30
 
-* component[labs].code.coding[2] = RDSLAB#9db71342-e580-4330-aba9-d4aa770ef904  "Beta HCG"
-* component[labs].code.coding[2].version = "v1.0"
+* component[labs].code.coding[2] = RDSLAB#92fd4472-7ae6-11ec-ba14-00163e0e3b1e  "Beta HCG"
+* component[labs].code.coding[2].version = "2"
 * component[labs].code.coding[2].extension[rank].valueQuantity.value = 0.50
 
-* component[labs].code.coding[3] = RDSLAB#7dfd4847-5a45-42c1-9c08-c17de4a24b0b  "BUN"
-* component[labs].code.coding[3].version = "v1.0"
+* component[labs].code.coding[3] = RDSLAB#932c0f5a-7ae6-11ec-ba14-00163e0e3b1e  "BUN"
+* component[labs].code.coding[3].version = "2"
 * component[labs].code.coding[3].extension[rank].valueQuantity.value = 0.45
 
 * component[symptoms].id = "Symptoms"
@@ -1621,20 +1621,20 @@ Description: "Rationale associated with roninEdVisitRiskAssessment04Test"
 
 * component[labs].id = "Labs"
 * component[labs].extension[componentType].valueCodeableConcept = ROBSCT#Labs  "Labs Component"
-* component[labs].code.coding[0] = RDSLAB#c1c45bf7-e61b-4fed-a007-a0d2185a9ca9  "Sodium"
-* component[labs].code.coding[0].version = "v1.0"
+* component[labs].code.coding[0] = RDSLAB#95f1088a-7ae6-11ec-ba14-00163e0e3b1e  "Sodium"
+* component[labs].code.coding[0].version = "2"
 * component[labs].code.coding[0].extension[rank].valueQuantity.value = 0.50
 
-* component[labs].code.coding[1] = RDSLAB#272438f6-fc56-498f-8791-8509a04925b8  "AFP"
-* component[labs].code.coding[1].version = "v1.0"
+* component[labs].code.coding[1] = RDSLAB#bce71d44-6d99-11ec-a98d-00163efae4c9  "AFP"
+* component[labs].code.coding[1].version = "1"
 * component[labs].code.coding[1].extension[rank].valueQuantity.value = 0.70
 
-* component[labs].code.coding[2] = RDSLAB#e50db242-3d3a-47a0-af20-00b1e0b3b46c  "Alkaline Phosphatase"
-* component[labs].code.coding[2].version = "v1.0"
+* component[labs].code.coding[2] = RDSLAB#923a8e78-7ae6-11ec-ba14-00163e0e3b1e  "Alkaline Phosphatase"
+* component[labs].code.coding[2].version = "2"
 * component[labs].code.coding[2].extension[rank].valueQuantity.value = 0.30
 
-* component[labs].code.coding[3] = RDSLAB#4cf9dcf2-8bb1-4952-90c8-4179b9ab2de9  "Potassium"
-* component[labs].code.coding[3].version = "v1.0"
+* component[labs].code.coding[3] = RDSLAB#95016654-7ae6-11ec-ba14-00163e0e3b1e  "Potassium"
+* component[labs].code.coding[3].version = "2"
 * component[labs].code.coding[3].extension[rank].valueQuantity.value = 0.90
 
 * component[symptoms].id = "Symptoms"
@@ -1735,12 +1735,12 @@ Description: "Rationale associated with roninEdVisitRiskAssessment05Test"
 
 * component[labs].id = "Labs"
 * component[labs].extension[componentType].valueCodeableConcept = ROBSCT#Labs  "Labs Component"
-* component[labs].code.coding[0] = RDSLAB#31f8a5a3-19c5-4789-b46e-77d6a851a4cc "Amylase"
-* component[labs].code.coding[0].version = "v1.0"
+* component[labs].code.coding[0] = RDSLAB#9299bd8a-7ae6-11ec-ba14-00163e0e3b1e "Amylase"
+* component[labs].code.coding[0].version = "2"
 * component[labs].code.coding[0].extension[rank].valueQuantity.value = 0.90
 
-* component[labs].code.coding[1] = RDSLAB#dd0113d4-f448-478c-b8db-d84d4a36601f "CA15.3"
-* component[labs].code.coding[1].version = "v1.0"
+* component[labs].code.coding[1] = RDSLAB#93895b6a-7ae6-11ec-ba14-00163e0e3b1e "CA15.3"
+* component[labs].code.coding[1].version = "2"
 * component[labs].code.coding[1].extension[rank].valueQuantity.value = 0.30
 
 * component[symptoms].id = "Symptoms"
@@ -1753,220 +1753,6 @@ Description: "Rationale associated with roninEdVisitRiskAssessment05Test"
 
 * component[symptoms].code.coding[2] = RDSSYMPTOM#Pain "Pain"
 * component[symptoms].code.coding[2].extension[eventDate].valueDate = "2018-08-12"
-
-
-ValueSet: WBC
-Id: 65c86cb9-7ff6-486a-81f3-823779b73f4b
-Title: "White Blood Count"
-Description: "Includes LOINC codes for White Blood Count"
-* LNC|v2.70#26464-8 "Leukocytes [#/volume] in Blood"
-* LNC|v2.70#6690-2  "Leukocytes [#/volume] in Blood by Automated count"
-* LNC|v2.70#49498-9 "Leukocytes [#/volume] in Blood by Estimate"
-* LNC|v2.70#804-5   "Leukocytes [#/volume] in Blood by Manual count"
-
-ValueSet: CA15_3
-Id: dd0113d4-f448-478c-b8db-d84d4a36601f
-Title: "Cancer Ag 15.3"
-Description: "Includes LOINC codes for Cancer Ag 15.3"
-* LNC|v2.70#19186-6 "Cancer Ag 15-3 [Units/volume] in Pleural fluid"
-* LNC|v2.70#2007-3  "Cancer Ag 15-3 [Presence] in Serum or Plasma"
-* LNC|v2.70#29153-4 "Cancer Ag 15-3 [Units/volume] in Body fluid"
-* LNC|v2.70#50776-4 "Cancer Ag 15-3 [Units/volume] in Cerebral spinal fluid"
-* LNC|v2.70#50777-2 "Cancer Ag 15-3 [Units/volume] in Pericardial fluid"
-* LNC|v2.70#50778-0 "Cancer Ag 15-3 [Units/volume] in Peritoneal fluid"
-* LNC|v2.70#6875-9  "Cancer Ag 15-3 [Units/volume] in Serum or Plasma"
-* LNC|v2.70#83083-6 "Cancer Ag 15-3 [Units/volume] in Serum or Plasma by Immunoassay"
-* LNC|v2.70#97749-6 "Cancer Ag 15-3 [Units/volume] in Aspirate"
-
-ValueSet: Amylase
-Id: 31f8a5a3-19c5-4789-b46e-77d6a851a4cc
-Title: "Amylase"
-Description: "Includes LOINC codes for Amylase"
-* LNC|v2.70#24333-7 "Amylase isoenzyme 3 panel - Serum or Plasma"
-* LNC|v2.70#14589-6 "Amylase isoenzymes [Interpretation] in Serum or Plasma"
-* LNC|v2.70#15020-1 "Amylase.P1/Amylase.total in Serum or Plasma"
-* LNC|v2.70#15021-9 "Amylase.P2/Amylase.total in Serum or Plasma"
-* LNC|v2.70#15022-7 "Amylase.P3/Amylase.total in Serum or Plasma"
-* LNC|v2.70#15023-5 "Amylase S1/Amylase.total in Serum or Plasma"
-* LNC|v2.70#15024-3 "Amylase S2/Amylase.total in Serum or Plasma"
-* LNC|v2.70#15025-0 "Amylase S3/Amylase.total in Serum or Plasma"
-* LNC|v2.70#1798-8  "Amylase [Enzymatic activity/volume] in Serum or Plasma"
-* LNC|v2.70#1802-8  "Amylase.P1 [Enzymatic activity/volume] in Serum or Plasma"
-* LNC|v2.70#1803-6  "Amylase.P2 [Enzymatic activity/volume] in Serum or Plasma"
-* LNC|v2.70#1804-4  "Amylase.P3 [Enzymatic activity/volume] in Serum or Plasma"
-* LNC|v2.70#1805-1  "Amylase.pancreatic [Enzymatic activity/volume] in Serum or Plasma"
-* LNC|v2.70#1806-9  "Amylase S1 [Enzymatic activity/volume] in Serum or Plasma"
-* LNC|v2.70#1807-7  "Amylase S2 [Enzymatic activity/volume] in Serum or Plasma"
-* LNC|v2.70#1808-5  "Amylase S3 [Enzymatic activity/volume] in Serum or Plasma"
-* LNC|v2.70#1809-3  "Amylase.salivary [Enzymatic activity/volume] in Serum or Plasma"
-* LNC|v2.70#25312-0 "Amylase.pancreatic/Amylase.total in Serum or Plasma"
-* LNC|v2.70#25313-8 "Amylase.salivary/Amylase.total in Serum or Plasma"
-* LNC|v2.70#26011-7 "Macroamylase/Amylase.total in Serum or Plasma"
-* LNC|v2.70#49251-2 "Amylase isoenzymes [Interpretation] in Serum or Plasma Narrative"
-* LNC|v2.70#54472-6 "Amylase.macromolecular/Amylase.total in Serum or Plasma"
-* LNC|v2.70#56776-8 "Amylase S3+S4/Amylase.total in Serum or Plasma"
-* LNC|v2.70#56782-6 "Amylase S4/Amylase.total in Serum or Plasma"
-* LNC|v2.70#72272-8 "Amylase and triacylglycerol lipase panel - Serum or Plasma"
-* LNC|v2.70#72571-3 "Amylase.pancreatic/Amylase.total [Pure catalytic fraction] in Serum or Plasma"
-* LNC|v2.70#72572-1 "Amylase.salivary/Amylase.total [Pure catalytic fraction] in Serum or Plasma"
-* LNC|v2.70#1810-1  "Amylase/Creatinine [Mass Ratio] in Serum or Plasma"
-
-ValueSet: Hemoglobin
-Id: e6af1c3c-69a4-48cb-92be-56ee6e99450f
-Title: "Hemoglobin"
-Description: "Includes LOINC codes for Hemoglobin"
-* LNC|v2.70#59260-0 "Hemoglobin [Moles/volume] in Blood"
-* LNC|v2.70#55782-7 "Hemoglobin [Mass/volume] in Blood by Oximetry"
-* LNC|v2.70#20509-6 "Hemoglobin [Mass/volume] in Blood by calculation"
-* LNC|v2.70#718-7   "Hemoglobin [Mass/volume] in Blood"
-* LNC|v2.70#717-9   "Hemoglobin [Presence] in Blood"
-
-ValueSet: DirectBilirubin
-Id: c725d530-9de3-4c17-92ac-697c1f68f4f2
-Title: "Direct Bilirubin"
-Description: "Includes LOINC codes for Direct Bilirubin"
-* LNC|v2.70#48623-3 "Bilirubin.direct [Mass/volume] in Cord blood"
-* LNC|v2.70#1968-7  "Bilirubin.direct [Mass/volume] in Serum or Plasma"
-
-ValueSet: Glucose
-Id: 7fda0337-fef1-4a5a-a7e7-124d2da2f4b8
-Title: "Glucose"
-Description: "Includes LOINC codes for Glucose"
-* LNC|v2.70#93791-2 "Glucose [Mass/volume] mean in Serum or Plasma"
-* LNC|v2.70#2339-0  "Glucose [Mass/volume] in Blood"
-* LNC|v2.70#32016-8 "Glucose [Mass/volume] in Capillary blood"
-* LNC|v2.70#2345-7  "Glucose [Mass/volume] in Serum or Plasma"
-* LNC|v2.70#41651-1 "Glucose [Mass/volume] in Arterial blood"
-* LNC|v2.70#96594-7 "Glucose [Mass/volume] in DBS"
-* LNC|v2.70#41652-9 "Glucose [Mass/volume] in Venous blood"
-* LNC|v2.70#74774-1 "Glucose [Mass/volume] in Serum, Plasma or Blood"
-* LNC|v2.70#41653-7 "Glucose [Mass/volume] in Capillary blood by Glucometer"
-* LNC|v2.70#2341-6  "Glucose [Mass/volume] in Blood by Test strip manual"
-* LNC|v2.70#2340-8  "Glucose [Mass/volume] in Blood by Automated test strip"
-
-ValueSet: LDH
-Id: fbce9f7b-2455-4ae0-9829-e22fc7ebd4e1
-Title: "LDH"
-Description: "Includes LOINC codes for LDH"
-* LNC|v2.70#2538-7  "Lactate dehydrogenase 2 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation"
-* LNC|v2.70#2545-2  "Lactate dehydrogenase 4/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis"
-* LNC|v2.70#2547-8  "Lactate dehydrogenase 5 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation"
-* LNC|v2.70#5910-5  "Lactate dehydrogenase isoenzymes [Interpretation] in Serum or Plasma"
-* LNC|v2.70#2546-0  "Lactate dehydrogenase 4 [Enzymatic activity/volume] in Serum or Plasma"
-* LNC|v2.70#19248-4 "Lactate dehydrogenase 2 [Enzymatic activity/volume] in Serum or Plasma by Electrophoresis"
-* LNC|v2.70#14119-2 "Lactate dehydrogenase 1/Lactate dehydrogenase 2 [Enzymatic activity ratio] in Serum or Plasma"
-* LNC|v2.70#2544-5  "Lactate dehydrogenase 4 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation"
-* LNC|v2.70#2542-9  "Lactate dehydrogenase 3/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis"
-* LNC|v2.70#2537-9  "Lactate dehydrogenase 1 [Enzymatic activity/volume] in Serum or Plasma"
-* LNC|v2.70#49279-3 "Lactate dehydrogenase isoenzymes [Interpretation] in Serum or Plasma Narrative"
-* LNC|v2.70#2539-5  "Lactate dehydrogenase 2/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis"
-* LNC|v2.70#2548-6  "Lactate dehydrogenase 5/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis"
-* LNC|v2.70#2535-3  "Lactate dehydrogenase 1 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation"
-* LNC|v2.70#2549-4  "Lactate dehydrogenase 5 [Enzymatic activity/volume] in Serum or Plasma"
-* LNC|v2.70#2536-1  "Lactate dehydrogenase 1/Lactate dehydrogenase.total in Serum or Plasma by Electrophoresis"
-* LNC|v2.70#2541-1  "Lactate dehydrogenase 3 [Enzymatic activity/volume] in Serum or Plasma by Chemical separation"
-* LNC|v2.70#2543-7  "Lactate dehydrogenase 3 [Enzymatic activity/volume] in Serum or Plasma"
-* LNC|v2.70#2540-3  "Lactate dehydrogenase 2 [Enzymatic activity/volume] in Serum or Plasma"
-* LNC|v2.70#14805-6 "Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Pyruvate to lactate reaction"
-* LNC|v2.70#14804-9 "Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction"
-* LNC|v2.70#42929-0 "Lactate dehydrogenase panel - Serum or Plasma"
-
-ValueSet: CA27_29
-Id: ad691140-8ef7-4712-ac02-f8994f85c97a
-Title: "Cancer Ag 27-29"
-Description: "Includes LOINC codes for Cancer Ag 27-29"
-* LNC|v2.70#17842-6 "Cancer Ag 27-29 [Units/volume] in Serum or Plasma"
-* LNC|v2.70#19187-4 "Cancer Ag 27-29 [Units/volume] in Pleural fluid"
-* LNC|v2.70#2012-3  "Cancer Ag 27-29 [Presence] in Serum or Plasma"
-* LNC|v2.70#50782-2 "Cancer Ag 27-29 [Units/volume] in Cerebral spinal fluid"
-
-ValueSet: BetaHCG
-Id: 9db71342-e580-4330-aba9-d4aa770ef904
-Title: "Beta HCG"
-Description: "Includes LOINC codes for Beta HCG"
-* LNC|v2.70#2111-3  "Choriogonadotropin.beta subunit [Moles/volume] in Serum or Plasma"
-* LNC|v2.70#20415-6 "Choriogonadotropin.beta subunit [Units/volume] in Serum or Plasma by Immunoassay (EIA) 3rd IS"
-* LNC|v2.70#23841-0 "Choriogonadotropin.beta subunit [Multiple of the median] adjusted in Serum or Plasma"
-* LNC|v2.70#55868-4 "Choriogonadotropin.beta subunit [Multiple of the median] in Serum or Plasma"
-* LNC|v2.70#55869-2 "Choriogonadotropin.beta subunit [Mass/volume] in Serum or Plasma"
-* LNC|v2.70#21198-7 "Choriogonadotropin.beta subunit [Units/volume] in Serum or Plasma"
-
-ValueSet: BUN
-Id: 7dfd4847-5a45-42c1-9c08-c17de4a24b0b
-Title: "BUN"
-Description: "Includes LOINC codes for BUN"
-* LNC|v2.70#12961-9 "Urea nitrogen [Mass/volume] in Arterial blood"
-* LNC|v2.70#35234-4 "Urea nitrogen [Mass or Moles/volume] in Serum or Plasma"
-* LNC|v2.70#59570-2 "Urea nitrogen [Moles/volume] in Blood"
-* LNC|v2.70#14937-7 "Urea nitrogen [Moles/volume] in Serum or Plasma"
-* LNC|v2.70#6299-2 "Urea nitrogen [Mass/volume] in Blood"
-* LNC|v2.70#12963-5 "Urea nitrogen [Mass/volume] in Peripheral blood"
-* LNC|v2.70#3094-0 "Urea nitrogen [Mass/volume] in Serum or Plasma"
-* LNC|v2.70#12962-7 "Urea nitrogen [Mass/volume] in Venous blood"
-
-ValueSet: Sodium
-Id: c1c45bf7-e61b-4fed-a007-a0d2185a9ca9
-Title: "Sodium"
-Description: "Includes LOINC codes for Sodium"
-* LNC|v2.70#39792-7 "Sodium [Moles/volume] in Capillary blood"
-* LNC|v2.70#77139-4 "Sodium [Moles/volume] in Serum, Plasma or Blood"
-* LNC|v2.70#41657-8 "Sodium [Moles/volume] in Mixed venous blood"
-* LNC|v2.70#2947-0 "Sodium [Moles/volume] in Blood"
-* LNC|v2.70#44783-9 "Sodium [Moles/volume] (Maximum value during study) in Serum or Plasma"
-* LNC|v2.70#2951-2 "Sodium [Moles/volume] in Serum or Plasma"
-* LNC|v2.70#39791-9 "Sodium [Moles/volume] in Venous blood"
-* LNC|v2.70#32717-1 "Sodium [Moles/volume] in Arterial blood"
-
-ValueSet: AFP
-Id: 272438f6-fc56-498f-8791-8509a04925b8
-Title: "AFP"
-Description: "Includes LOINC codes for AFP"
-* LNC|v2.70#19176-7 "Alpha-1-Fetoprotein [Units/volume] in Serum or Plasma"
-* LNC|v2.70#20450-3 "Alpha-1-Fetoprotein [Multiple of the median] in Serum or Plasma"
-* LNC|v2.70#49246-2 "Alpha-1-Fetoprotein interpretation in Serum or Plasma Narrative"
-* LNC|v2.70#83072-9 "Alpha-1-Fetoprotein [Units/volume] in Serum or Plasma by Immunoassay"
-* LNC|v2.70#42332-7 "Alpha-1-Fetoprotein L3/Alpha-1-fetoprotein.total in Serum or Plasma"
-* LNC|v2.70#41274-2 "Alpha-1-Fetoprotein interpretation in Serum or Plasma"
-* LNC|v2.70#96451-0 "Alpha-1-Fetoprotein and Alpha-1-Fetoprotein.L3 panel - Serum or Plasma"
-* LNC|v2.70#53960-1 "Alpha-1-fetoprotein.tumor marker [Moles/volume] in Serum or Plasma"
-* LNC|v2.70#48802-3 "Alpha-1-Fetoprotein panel - Serum or Plasma"
-* LNC|v2.70#43998-4 "Alpha-1-Fetoprotein [Multiple of the median] adjusted for diabetes in Serum or Plasma"
-* LNC|v2.70#31993-9 "Alpha-1-Fetoprotein [Presence] in Serum or Plasma"
-* LNC|v2.70#1834-1 "Alpha-1-Fetoprotein [Mass/volume] in Serum or Plasma"
-* LNC|v2.70#83073-7 "Alpha-1-Fetoprotein [Mass/volume] in Serum or Plasma by Immunoassay"
-* LNC|v2.70#19177-5 "Alpha-1-Fetoprotein [Moles/volume] in Serum or Plasma"
-* LNC|v2.70#90293-2 "Liver cancer antibodies and AFP panel - Serum or Plasma by Immunoassay"
-* LNC|v2.70#53962-7 "Alpha-1-fetoprotein.tumor marker [Mass/volume] in Serum or Plasma"
-* LNC|v2.70#43997-6 "Alpha-1-Fetoprotein [Multiple of the median] adjusted for weight in Serum or Plasma"
-* LNC|v2.70#53961-9 "Alpha-1-fetoprotein.tumor marker [Units/volume] in Serum or Plasma"
-* LNC|v2.70#90292-4 "Liver cancer antibodies and AFP [Interpretation] in Serum or Plasma Qualitative"
-* LNC|v2.70#49585-3 "Alpha-1-Fetoprotein multiple of the median cutoff [Multiple of the median] in Serum or Plasma"
-* LNC|v2.70#50610-5 "Alpha-1-Fetoprotein [Multiple of the median] adjusted for multiple gestations in Serum or Plasma"
-* LNC|v2.70#43996-8 "Alpha-1-Fetoprotein [Multiple of the median] adjusted for diabetes+weight in Serum or Plasma"
-* LNC|v2.70#23811-3 "Alpha-1-Fetoprotein [Multiple of the median] adjusted in Serum or Plasma"
-* LNC|v2.70#90290-8 "Alpha-1-Fetoprotein Ab [Units/volume] in Serum or Plasma by Immunoassay"
-
-ValueSet: AlkalinePhosphatase
-Id: e50db242-3d3a-47a0-af20-00b1e0b3b46c
-Title: "Alkaline Phosphatase"
-Description: "Includes LOINC codes for Alkaline Phosphatase"
-* LNC|v2.70#1783-0 "Alkaline phosphatase [Enzymatic activity/volume] in Blood"
-* LNC|v2.70#6768-6 "Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma"
-* LNC|v2.70#55971-6 "Alkaline phosphatase [Enzymatic activity/volume] in Cord blood"
-* LNC|v2.70#77141-0 "Alkaline phosphatase [Enzymatic activity/volume] in Serum, Plasma or Blood"
-
-ValueSet: Potassium
-Id: 4cf9dcf2-8bb1-4952-90c8-4179b9ab2de9
-Title: "Potassium"
-Description: "Includes LOINC codes for Potassium"
-* LNC|v2.70#75940-7 "Potassium [Mass/volume] in Blood"
-* LNC|v2.70#6298-4 "Potassium [Moles/volume] in Blood"
-* LNC|v2.70#77142-8 "Potassium [Moles/volume] in Serum, Plasma or Blood"
-* LNC|v2.70#39790-1 "Potassium [Moles/volume] in Capillary blood"
-* LNC|v2.70#39789-3 "Potassium [Moles/volume] in Venous blood"
-* LNC|v2.70#32713-0 "Potassium [Moles/volume] in Arterial blood"
-* LNC|v2.70#2823-3 "Potassium [Moles/volume] in Serum or Plasma"
-* LNC|v2.70#41656-0 "Potassium [Moles/volume] in Mixed venous blood"
 
 
 Instance: OncologyObservation01Test

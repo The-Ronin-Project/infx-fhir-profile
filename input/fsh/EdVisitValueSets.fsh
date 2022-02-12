@@ -43,7 +43,7 @@ Description: "Contains the values for the ED Visit Lab Codes"
 * RDSLAB#93b84c40-7ae6-11ec-ba14-00163e0e3b1e  "CA19.9"   // version: 2
 * RDSLAB#c2dd2c48-6d99-11ec-a98d-00163efae4c9  "CA72.4"   // version: 1
 * RDSLAB#93e6e5c8-7ae6-11ec-ba14-00163e0e3b1e  "Creatinine"   // version: 2
-* RDSLAB#c3a3afda-6d99-11ec-a98d-00163efae4c9  "Direct bilirubin"   // version: 1
+* RDSLAB#c3a3afda-6d99-11ec-a98d-00163efae4c9  "Direct Bilirubin"   // version: 1
 * RDSLAB#c3f4cbfe-6d99-11ec-a98d-00163efae4c9  "Fibrinogen"   // version: 1
 * RDSLAB#941594ea-7ae6-11ec-ba14-00163e0e3b1e  "HGB"   // version: 2
 * RDSLAB#9445cafc-7ae6-11ec-ba14-00163e0e3b1e  "INR"   // version: 2
@@ -57,7 +57,7 @@ Description: "Contains the values for the ED Visit Lab Codes"
 * RDSLAB#95907ba0-7ae6-11ec-ba14-00163e0e3b1e  "PTT"   // version: 2
 * RDSLAB#95c1379a-7ae6-11ec-ba14-00163e0e3b1e  "RBC"   // version: 2
 * RDSLAB#95f1088a-7ae6-11ec-ba14-00163e0e3b1e  "Sodium"   // version: 2
-* RDSLAB#96216d2c-7ae6-11ec-ba14-00163e0e3b1e  "Total bilirubin"   // version: 2
+* RDSLAB#96216d2c-7ae6-11ec-ba14-00163e0e3b1e  "Total Bilirubin"   // version: 2
 * RDSLAB#96523e66-7ae6-11ec-ba14-00163e0e3b1e  "WBC"   // version: 2
 * RDSLAB#9682d580-7ae6-11ec-ba14-00163e0e3b1e  "HCT"   // version: 2
 * RDSLAB#26e1b290-6d8b-11ec-b06c-ab4a70f9f045  "Alcohol Abuse"   // version: 1
