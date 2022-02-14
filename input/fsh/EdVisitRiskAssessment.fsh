@@ -202,10 +202,10 @@ Description: "Rationale associated with roninEdVisitRiskAssessment"
 //This element does not match any known slice defined in the profile http://projectronin.com/fhir/us/ronin/StructureDefinition/ed-visit-rationale
 * component[labs].id = "Labs"
 * component[labs].extension[componentType].valueCodeableConcept = ROBSCT#Labs  "Labs Component"
-* component[labs].code.coding[0] = RDSLAB#ad691140-8ef7-4712-ac02-f8994f85c97a "CA27.29"
+* component[labs].code.coding[0] = RDSLAB#91b0399e-7ae6-11ec-ba14-00163e0e3b1e "CA27.29"
 * component[labs].code.coding[0].version = "1"
 
-* component[labs].code.coding[1] = RDSLAB#1e9062ea-bc7b-4d89-a0ad-3dfcc47af02f "Lipase"
+* component[labs].code.coding[1] = RDSLAB#94a4b72e-7ae6-11ec-ba14-00163e0e3b1e "Lipase"
 * component[labs].code.coding[1].version = "2"
 
 * component[symptoms].id = "Symptoms"
