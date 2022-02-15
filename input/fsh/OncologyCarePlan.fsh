@@ -1,0 +1,112 @@
+/*
+OncologyCarePlan is a resource that models the CarePlan for an oncology patient.
+*/
+Profile: OncologyCarePlan
+Parent: USCoreCarePlan
+Id: oncology-care-plan
+Title: "Oncology Care Plan"
+Description: "A CarePlan resource that is used for oncology patients"
+
+* ^status = #draft
+* ^experimental = true
+* identifier 1..* MS
+//Slice identifier to ensure tenantId identifier is present.
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+
+* identifier contains
+    tenantId 1..1
+
+* identifier[tenantId].type = RTID#TID "Ronin-specified Tenant Identifier"
+* identifier[tenantId].system = RTID //"http://projectronin.com/id/tenantId"
+
+* activity MS
+* activity.detail MS
+// * goal MS -> included in R4/USCore
+// * title MS -> included in R4/USCore
+
+* extension contains OncologyCarePlanTreatmentDayName named treatmentDayName 0..1
+* extension contains OncologyCarePlanTreatmentDayNumber named treatmentDayNumber 0..1
+* extension contains OncologyCarePlanStartDate named treatmentStartDate 0..1
+* extension contains OncologyCarePlanEndDate named treatmentEndDate 0..1
+* extension contains OncologyCarePlanLineOfTreatment named lineOfTreatment 0..1
+* extension contains OncologyCarePlanDayStatus named dayStatus 0..1
+* extension contains OncologyCarePlanCycleName named cycleName 0..1
+* extension contains OncologyCarePlanCycleNumber named cycleNumber 0..1
+* extension contains OncologyCarePlanCycleStartDate named cycleStartDate 0..1
+
+Extension: OncologyCarePlanTreatmentDayName
+Id:  treatmentDayName
+Title: "Treatment Day Name"
+Description: "Treatment Day Name"
+* value[x] only string
+
+Extension: OncologyCarePlanTreatmentDayNumber
+Id:  treatmentDayNumber
+Title: "Treatment Day Number"
+Description: "Treatment Day Number"
+* value[x] only decimal
+
+Extension: OncologyCarePlanStartDate
+Id:  treatmentStartDate
+Title: "Treatment Plan Start Date"
+Description: "Treatment Plan Start Date"
+* value[x] only date
+
+Extension: OncologyCarePlanEndDate
+Id:  treatmentEndDate
+Title: "Treatment Plan End Date"
+Description: "Treatment Plan End Date"
+* value[x] only date
+
+Extension: OncologyCarePlanLineOfTreatment
+Id:  lineOfTreatment
+Title: "Line of Treatment"
+Description: "Line of Treatment"
+* value[x] only string
+
+Extension: OncologyCarePlanDayStatus
+Id:  dayStatus
+Title: "Treatment Day Status"
+Description: "Treatment Day Status"
+* value[x] only string
+
+Extension: OncologyCarePlanCycleName
+Id:  cycleName
+Title: "Cycle Name"
+Description: "Cycle Name"
+* value[x] only string
+
+Extension: OncologyCarePlanCycleNumber
+Id:  cycleNumber
+Title: "Cycle Number"
+Description: "Cycle Number"
+* value[x] only decimal
+
+Extension: OncologyCarePlanCycleStartDate
+Id:  cycleStartDate
+Title: "Cycle Start Date"
+Description: "Cycle Start Date"
+* value[x] only date
+
+Instance: ExampleCarePlan
+InstanceOf: OncologyCarePlan
+Description: "Example CarePlan"
+* id = "carePlanExampleId"
+* identifier[tenantId].system = "http://projectronin.com/id/tenantId"
+* identifier[tenantId].value = "013"
+* status = #active
+* intent = #proposal
+* subject = Reference(ExamplePatient)
+* text.status = #additional
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">There is a history of <span id=\"a1\">Asthma</span></div>"
+* extension[treatmentDayName].valueString = "Thursday"
+* extension[treatmentDayNumber].valueDecimal = 10
+* extension[treatmentStartDate].valueDate = "2019-02-07"
+* extension[treatmentEndDate].valueDate = "2019-02-10"
+* extension[lineOfTreatment].valueString = "test"
+* extension[dayStatus].valueString = "good"
+* extension[cycleName].valueString = "some name"
+* extension[cycleNumber].valueDecimal = 20
+* extension[cycleStartDate].valueDate = "2019-02-07"
